@@ -225,6 +225,11 @@ main section#lorem img {
   transition: filter .5s ease, -webkit-filter .5s ease;
 }
 
+main section#lorem img:hover {
+  -webkit-filter: saturate(0.99) contrast(0.99);
+          filter: saturate(0.99) contrast(0.99);
+}
+
 main section#lorem .text {
   z-index: 2;
   width: 600px;
@@ -414,6 +419,11 @@ main section#ipsum .works-wrapper .work-container div p {
   margin-top: 80px;
   mix-blend-mode: color-burn;
   z-index: 2;
+  cursor: pointer;
+}
+
+main section#ipsum .works-wrapper .work-container div p:hover {
+  mix-blend-mode: normal;
 }
 
 main section#ipsum .back {
@@ -452,7 +462,7 @@ main section#ipsum .back:hover::before {
 
 main section#dolor {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -461,13 +471,13 @@ main section#dolor {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -477,27 +487,107 @@ main section#dolor {
   border-radius: 50%;
 }
 
-main section#dolor img {
+main section#dolor .works-wrapper {
+  margin: 0px 0px 0px 0;
+  padding: 0 200px;
+  width: 100vw;
+  height: auto;
+  overflow-y: scroll;
+}
+
+main section#dolor .works-wrapper::-webkit-scrollbar {
+  width: 0px;
+}
+
+main section#dolor .works-wrapper::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+main section#dolor .works-wrapper::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+main section#dolor .works-wrapper .work-container {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  width: 100%;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main section#dolor .works-wrapper .work-container img {
   -webkit-filter: saturate(0);
           filter: saturate(0);
-  width: 600px;
-  height: 560px;
+  width: 46%;
+  height: 400px;
   -o-object-fit: cover;
      object-fit: cover;
   z-index: 1;
-  margin-top: -60px;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transition: -webkit-filter .5s ease;
+  transition: -webkit-filter .5s ease;
+  transition: filter .5s ease;
+  transition: filter .5s ease, -webkit-filter .5s ease;
 }
 
-main section#dolor p {
-  width: 640px;
-  font-size: 2rem;
-  line-height: 48px;
+main section#dolor .works-wrapper .work-container img:hover {
+  -webkit-filter: saturate(0.99) contrast(0.99);
+          filter: saturate(0.99) contrast(0.99);
+}
+
+main section#dolor .works-wrapper .work-container div {
+  width: 40%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+main section#dolor .works-wrapper .work-container div a {
+  text-decoration: none;
+  width: 100%;
+  margin-left: -100px;
+  margin-top: 80px;
+  cursor: pointer;
+}
+
+main section#dolor .works-wrapper .work-container div a p {
+  font-size: 5rem;
+  line-height: 75px;
   letter-spacing: 1.1px;
   color: #615f42;
-  margin-left: -380px;
-  margin-top: 240px;
   mix-blend-mode: color-burn;
   z-index: 2;
+  position: relative;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+}
+
+main section#dolor .works-wrapper .work-container div a p:hover {
+  mix-blend-mode: normal;
 }
 
 main section#dolor .back {
@@ -545,43 +635,82 @@ main section#sit {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   background-color: #c5c3aa;
   z-index: 1;
   opacity: 0;
   border-radius: 50%;
+  padding: 0 150px;
 }
 
-main section#sit img {
-  -webkit-filter: saturate(0);
-          filter: saturate(0);
-  width: 600px;
-  height: 560px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  z-index: 1;
-  margin-top: -60px;
+main section#sit h2#find-me {
+  font-size: 5rem;
+  line-height: 84px;
+  letter-spacing: 1.1px;
+  margin-bottom: 16px;
+  color: #615f42;
+  mix-blend-mode: color-burn;
 }
 
-main section#sit p {
-  width: 640px;
-  font-size: 2rem;
+main section#sit .social-media-links {
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main section#sit .social-media-links a {
+  text-decoration: none;
+}
+
+main section#sit .social-media-links a:not(:last-child) {
+  margin-right: 24px;
+}
+
+main section#sit .social-media-links a p {
+  font-size: 2.4rem;
   line-height: 48px;
   letter-spacing: 1.1px;
   color: #615f42;
-  margin-left: -380px;
-  margin-top: 240px;
   mix-blend-mode: color-burn;
   z-index: 2;
+}
+
+main section#sit h2#feel-free {
+  font-size: 2.2rem;
+  font-weight: 200;
+  line-height: 84px;
+  letter-spacing: 1.1px;
+  margin-bottom: 0px;
+  color: #615f42;
+  mix-blend-mode: color-burn;
+}
+
+main section#sit h2#feel-free a {
+  font-weight: 800;
+  text-decoration: none;
+  color: #95956a;
+  font-style: italic;
+  mix-blend-mode: multiply !important;
 }
 
 main section#sit .back {

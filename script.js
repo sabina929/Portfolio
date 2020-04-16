@@ -208,21 +208,15 @@ let select = (selector) => {
 
     .fromTo("section#sit", {yPercent: 50,scale: 0, opacity: 0, borderRadius: "50%"}, {yPercent: -50,scale: 1, opacity: 1, borderRadius: "0px"})
     
-  
     .to(".logo", {
-      color:"hsl(56, 19%, 72%)",
+      color:"hsl(56, 19%, 92%)",
       opacity: 1
     }, "<.6")
     .to(".copyright", {
-      color:"hsl(56, 19%, 72%)",
+      color:"hsl(56, 19%, 92%)",
       opacity: 1
     }, "<.6")
-    
 
-
-    .fromTo("section#sit img", {duration: 5, y: -100, opacity: 0, ease: "elastic(2, .1)"}, {
-        y:0, opacity:1
-    }, "<.6")
 
     .from("section#sit .splitting .char", {
         y: 40,
