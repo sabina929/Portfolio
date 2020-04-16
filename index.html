@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=DM+Serif+Display:400,400i&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+
+
+    <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.css" />
+    <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting-cells.css" />
+    <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+    <title>GSAP Animations</title>
+</head>
+<body>
+  
+    <div class="wrapper">
+      <div class="loader"></div>
+    </div>
+
+    <main>
+
+      <p class="logo">Sabina</br>Abbasova</p>
+        <section id="nav">
+          <p class="to-left">
+            <span>About</span>
+            <span>Works</span>
+            <span>Blog</span>
+            <span>Contact</span>
+          </p>
+          <p class="to-right">
+            <span>Contact</span>
+            <span>Blog</span>
+               <span>Works</span>
+               <span>About</span>
+          </p>
+        </section>  
+        <p class="copyright">&copy; Copyright, 2020.</p>
+        
+
+        <section id="lorem">
+            
+            <p data-splitting>I love being able to create. I am always eager to learn new skills and passionate in what I am doing. My skills stretch over a variety of areas with focus on front-end development, graphic and motion design, and digital art. So I believe that I can make projects remarkable and accessible as well by using my design and art skills. I currently have knowledge of developing web projects using JavaScript, CSS3/Sass, HTML5, React, GSAP3, jQuery and Bootstrap. In my spare time, I like to try creating new/enjoyable things on my CodePen account, sketching or painting some artworks on Sketchbook or Photoshop, digital sculpting on Zbrush, reading science-fiction, fantasy, and comic books, medical and tech articles and playing indie video games.</div>
+              <div class="back">Back To Home</div>
+        </section>
+        <section id="ipsum">
+            <img src="https://images.unsplash.com/photo-1535582080427-3e0c99c284c0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" alt="image">
+            <p data-splitting>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates aperiam, voluptate minima officiis maiores atque impedit qui tempora incidunt odio earum optio sunt. Reiciendis, aperiam veniam, expedita labore alias ut ab eum cupiditate repellendus, atque nulla. Odit nisi amet nam deserunt doloremque fugiat, cum similique, eos saepe ratione praesentium consequuntur.</p>
+            <div class="back">Back To Home</div>
+        </section>
+        <section id="dolor">
+            <img src="https://images.unsplash.com/photo-1464777649758-8747547e793f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=995&q=80" alt="image">
+            <p data-splitting>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates aperiam, voluptate minima officiis maiores atque impedit qui tempora incidunt odio earum optio sunt. Reiciendis, aperiam veniam, expedita labore alias ut ab eum cupiditate repellendus, atque nulla. Odit nisi amet nam deserunt doloremque fugiat, cum similique, eos saepe ratione praesentium consequuntur.</p>
+            <div class="back">Back To Home</div>
+        </section>
+        <section id="sit">
+            <img src="https://images.unsplash.com/photo-1554052055-1013f2570185?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" alt="image">
+            <p data-splitting>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates aperiam, voluptate minima officiis maiores atque impedit qui tempora incidunt odio earum optio sunt. Reiciendis, aperiam veniam, expedita labore alias ut ab eum cupiditate repellendus, atque nulla. Odit nisi amet nam deserunt doloremque fugiat, cum similique, eos saepe ratione praesentium consequuntur.</p>
+            <div class="back">Back To Home</div>
+        </section>
+        <!-- <section id="amet">
+            <img src="https://images.unsplash.com/photo-1433832597046-4f10e10ac764?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" alt="image">
+            <p data-splitting>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates aperiam, voluptate minima officiis maiores atque impedit qui tempora incidunt odio earum optio sunt. Reiciendis, aperiam veniam, expedita labore alias ut ab eum cupiditate repellendus, atque nulla. Odit nisi amet nam deserunt doloremque fugiat, cum similique, eos saepe ratione praesentium consequuntur.</p>
+            <div class="back">Back To Home</div>
+        </section> -->
+      </main>
+
+
+        <!-- <nav>
+            <button id="prev">prev</button>
+            <button id="next">next</button>
+        </nav> -->
+    
+        <div id="tracker"></div>
+
+        
+
+        <script>
+            const tracker = document.querySelector('#tracker');
+document.addEventListener('mousemove', e => {
+  tracker.setAttribute("style", "top: "+(e.pageY - 10)+"px; left: "+(e.pageX - 10)+"px;")
+})
+        </script>
+    <script src="./script.js"></script>
+</body>
+</html>
