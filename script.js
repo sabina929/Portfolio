@@ -198,10 +198,10 @@ let select = (selector) => {
   let sitLeft = select("#nav > p.to-left > span:nth-child(4)");
   let sitRight = select("#nav > p.to-right > span:nth-child(1)");
   let sitBack = select("section#sit .back");
-
-
+  
+  
   let tlSit = gsap
-    .timeline({
+  .timeline({
       paused: true,
       defaults: { duration: 1.4,transformOrigin: "50% 50%", opacity: 0, ease: "elastic(.1, 1)" }
     })
@@ -217,77 +217,41 @@ let select = (selector) => {
       opacity: 1
     }, "<.6")
 
-
+    
     .from("section#sit .splitting .char", {
-        y: 40,
+      y: 40,
         duration: 1.8,
         stagger: 0.01,
         ease: "elastic(.8, 0.0)"
       }, "<.6")
 
-
+      
       .to("#tracker", {
         background:"hsl(56, 19%, 16%)",
         opacity: 1
       }, "<.6")
-
-    sitLeft.addEventListener("click", () => tlSit.play());
+      
+      sitLeft.addEventListener("click", () => tlSit.play());
     sitRight.addEventListener("click", () => tlSit.play());
     sitBack.addEventListener("click", () => tlSit.reverse());
 
-  //   // AMET SECTION
-  // // let ametLeft = select("#nav > p.to-left > span:nth-child(5)");
-  // let ametRight = select("#nav > p.to-right > span:nth-child(1)");
-  // let ametBack = select("section#amet .back");
-
-
-  // let tlAmet = gsap
-  //   .timeline({
-  //     paused: true,
-  //     defaults: { duration: 1.4,transformOrigin: "50% 50%", opacity: 0, ease: "elastic(.1, 1)" }
-  //   })
-
-  //   .fromTo("section#amet", {yPercent: 50,scale: 0, opacity: 0, borderRadius: "50%"}, {yPercent: -50,scale: 1, opacity: 1, borderRadius: "0px"})
-    
   
-  //   .to(".logo", {
-  //     color:"hsl(34, 50%, 88%)",
-  //     opacity: 1
-  //   }, "<.6")
-    
+    // let theLongDark = select("section#ipsum #the-long-dark >div");
 
+    // let tlTheLongDark = gsap.timeline({
+    //   paused:true,
+    // })
 
-  //   .fromTo("section#amet img", {duration: 5, y: -100, opacity: 0, ease: "elastic(2, .1)"}, {
-  //       y:0, opacity:1
-  //   }, "<.6")
+    // .to("section#ipsum #the-long-dark >img", {
+    //   zIndex: 9999999999,
+    //   position:"absolute",
+    //   top: "0%",
+    //   right: "0%",
+    //   bottom: "0%",
+    //   left: "0%",
+    //   width: "100%",
+    //   height: "100%",
+    //   filter: "saturate(1)"
+    // }, "<.6")
 
-  //   .from("section#amet .splitting .char", {
-  //       y: 40,
-  //       duration: 1.8,
-  //       stagger: 0.01,
-  //       ease: "elastic(.8, 0.0)"
-  //     }, "<.6")
-
-
-  //     .to("#tracker", {
-  //       background:"hsl(34, 50%, 16%)",
-  //       opacity: 1
-  //     }, "<.6")
-
-  //   // ametLeft.addEventListener("click", () => tlAmet.play());
-  //   ametRight.addEventListener("click", () => tlAmet.play());
-  //   ametBack.addEventListener("click", () => tlAmet.reverse());
-
-
-
-
-
-
-//       document.addEventListener("click", () => {
-//         tracker.classList.add("clicked");
-//         setTimeout(() => {
-//           tracker.classList.remove("clicked");
-//         }, 640);
-// });
-  
-
+    // theLongDark.addEventListener("click", () => tlTheLongDark.play());

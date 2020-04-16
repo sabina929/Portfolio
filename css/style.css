@@ -380,10 +380,10 @@ main section#ipsum .works-wrapper .work-container img {
   z-index: 1;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
-  -webkit-transition: -webkit-filter .5s ease;
-  transition: -webkit-filter .5s ease;
-  transition: filter .5s ease;
-  transition: filter .5s ease, -webkit-filter .5s ease;
+  -webkit-transition: -webkit-filter .4s ease;
+  transition: -webkit-filter .4s ease;
+  transition: filter .4s ease;
+  transition: filter .4s ease, -webkit-filter .4s ease;
 }
 
 main section#ipsum .works-wrapper .work-container img:hover {
@@ -409,20 +409,27 @@ main section#ipsum .works-wrapper .work-container div {
           align-items: flex-start;
 }
 
-main section#ipsum .works-wrapper .work-container div p {
+main section#ipsum .works-wrapper .work-container div a {
+  text-decoration: none;
   width: 100%;
+  margin-left: -100px;
+  margin-top: 80px;
+  cursor: pointer;
+}
+
+main section#ipsum .works-wrapper .work-container div a p {
   font-size: 5rem;
   line-height: 75px;
   letter-spacing: 1.1px;
   color: #615f42;
-  margin-left: -100px;
-  margin-top: 80px;
   mix-blend-mode: color-burn;
   z-index: 2;
-  cursor: pointer;
+  position: relative;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
 }
 
-main section#ipsum .works-wrapper .work-container div p:hover {
+main section#ipsum .works-wrapper .work-container div a p:hover {
   mix-blend-mode: normal;
 }
 
@@ -537,10 +544,10 @@ main section#dolor .works-wrapper .work-container img {
   z-index: 1;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
-  -webkit-transition: -webkit-filter .5s ease;
-  transition: -webkit-filter .5s ease;
-  transition: filter .5s ease;
-  transition: filter .5s ease, -webkit-filter .5s ease;
+  -webkit-transition: -webkit-filter .4s ease;
+  transition: -webkit-filter .4s ease;
+  transition: filter .4s ease;
+  transition: filter .4s ease, -webkit-filter .4s ease;
 }
 
 main section#dolor .works-wrapper .work-container img:hover {
@@ -693,6 +700,12 @@ main section#sit .social-media-links a p {
   color: #615f42;
   mix-blend-mode: color-burn;
   z-index: 2;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+main section#sit .social-media-links a p:hover {
+  color: #4b1367;
 }
 
 main section#sit h2#feel-free {
@@ -711,6 +724,12 @@ main section#sit h2#feel-free a {
   color: #95956a;
   font-style: italic;
   mix-blend-mode: multiply !important;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+main section#sit h2#feel-free a:hover {
+  color: #4b1367;
 }
 
 main section#sit .back {
