@@ -22,7 +22,7 @@ function loading() {
 
     main.style.display = "block";
     setTimeout(() => (main.style.opacity = 1), 50);  
-  }, 3000);
+  }, 300);
 }
 document.addEventListener("DOMContentLoaded", function() {
   window.addEventListener(
@@ -30,15 +30,15 @@ document.addEventListener("DOMContentLoaded", function() {
     function() {
       setTimeout(() => {
         loading();
-      }, 3000);
+      }, 300);
     },
     false
   );
 });
 
 // GSAP ANIMATIONS
-gsap.to(".to-left", {x: -250, duration: 10, ease: "linear", yoyo:true, repeat: -1})
-gsap.to(".to-right", {x: 0, duration: 10, ease: "linear", yoyo:true, repeat: -1})
+gsap.to(".to-left", {x: -720, duration: 15, ease: "linear", yoyo:true, repeat: -1})
+gsap.to(".to-right", {x: 0, duration: 15, ease: "linear", yoyo:true, repeat: -1})
 
 
 Splitting();
@@ -72,6 +72,11 @@ let select = (selector) => {
       opacity: 1
     }, "<.6")
     
+
+    .fromTo("section#lorem img", {duration: 5, y: -100, opacity: 0, ease: "elastic(2, .1)"}, {
+      y:0, opacity:1
+  }, "<.6")
+
     .from("section#lorem .splitting .char", {
         y: 40,
         duration: 1.8,
