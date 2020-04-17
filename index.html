@@ -7,12 +7,12 @@
     <link href="https://fonts.googleapis.com/css?family=DM+Serif+Display:400,400i&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+    <script rel="preload" as="script" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
 
 
     <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.css" />
     <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting-cells.css" />
-    <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+    <script rel="preload" as="type/plain" src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
     <title>GSAP Animations</title>
 </head>
 <body>
@@ -44,12 +44,14 @@
         
 
         <section id="lorem">
-          <img src="./images/artworks/me.png" alt="image">
+          <img rel="preload" as="image" src="./images/artworks/me.png" alt="image">
           <div class="text">
             <h2 data-splitting>Hey! I'm Sabina Abbasova.</h2>
             <p data-splitting>I love being able to create. I am always eager to learn new skills and passionate in what I am doing. My skills stretch over a variety of areas with focus on front-end development, graphic and motion design, and digital art. So I believe that I can make projects remarkable and accessible as well by using my design and art skills. I currently have knowledge of developing web projects using JavaScript, CSS3/Sass, HTML5, React, GSAP3, jQuery and Bootstrap. In my spare time, I like to try creating new/enjoyable things on my CodePen account, sketching or painting some artworks on Sketchbook or Photoshop, digital sculpting on Zbrush, reading science-fiction, fantasy, and comic books, medical and tech articles and playing indie video games.</p>
           </div>
-              <div class="back">Back To Home</div>
+          <div class="lines-tr"></div>
+          <div class="back">Back To Home</div>
+          <div class="lines-bl"></div>
         </section>
         <section id="ipsum">
           <div class="works-wrapper">
@@ -150,16 +152,14 @@
               </div>
             </div>
           </div>
-            
-
-
-            
+            <div class="lines-tr"></div>
             <div class="back">Back To Home</div>
+            <div class="lines-bl"></div>
         </section>
         <section id="dolor">
           <div class="works-wrapper">
             <div class="work-container">
-              <img src="./images/websites/website-01.png" alt="image">
+              <img src="./images/websites/website-01-min.png" alt="image">
               <div>
                 <a href="https://www.vriendly.co/" target="_blank">
                   <p data-splitting>Vriendly</p>
@@ -167,7 +167,7 @@
               </div>
             </div>
             <div class="work-container">
-              <img src="./images/websites/website-02.png" alt="image">
+              <img src="./images/websites/website-02-min.png" alt="image">
               <div>
                 <a href="https://liquiddistortion.netlify.com/" target="_blank">
                   <p data-splitting>Liquid Distortion</p>
@@ -175,7 +175,7 @@
               </div>
             </div>
             <div class="work-container">
-              <img src="./images/websites/website-03.png" alt="image">
+              <img src="./images/websites/website-03-min.png" alt="image">
               <div>
                 <a href="https://aghababart-test.netlify.com/" target="_blank">
                   <p data-splitting>Aghababa Art</p>
@@ -183,7 +183,7 @@
               </div>
             </div>
             <div class="work-container">
-              <img src="./images/websites/website-04.png" alt="image">
+              <img src="./images/websites/website-04-min.png" alt="image">
               <div>
                 <a href="https://codepen.io/sabina_abbasova/full/bGGbaMV" target="_blank">
                   <p data-splitting>Loading Animations</p>
@@ -191,7 +191,7 @@
               </div>
             </div>
             <div class="work-container">
-              <img src="./images/websites/website-05.png" alt="image">
+              <img src="./images/websites/website-05-min.png" alt="image">
               <div>
                 <a href="https://rickandmortyepisodes.netlify.com/" target="_blank">
                   <p data-splitting>Rick And Morty</p>
@@ -199,7 +199,7 @@
               </div>
             </div>
             <div class="work-container">
-              <img src="./images/websites/website-06.png" alt="image">
+              <img src="./images/websites/website-06-min.png" alt="image">
               <div>
                 <a href="https://codepen.io/sabina_abbasova/full/ydgqbx" target="_blank">
                   <p data-splitting>Color Generator</p>
@@ -207,7 +207,7 @@
               </div>
             </div>
             <div class="work-container">
-              <img src="./images/websites/website-07.png" alt="image">
+              <img src="./images/websites/website-07-min.png" alt="image">
               <div>
                 <a href="https://olios.netlify.com" target="_blank">
                   <p data-splitting>Furniture Shop Website</p>
@@ -215,7 +215,7 @@
               </div>
             </div>
             <div class="work-container">
-              <img src="./images/websites/website-08.png" alt="image">
+              <img rel="preload" as="image" src="./images/websites/website-08-min.png" alt="image">
               <div>
                 <a href="https://animations-on-scroll.netlify.com/" target="_blank">
                   <p data-splitting>Animations On Scroll</p>
@@ -223,7 +223,7 @@
               </div>
             </div>
             <div class="work-container">
-              <img src="./images/websites/website-09.png" alt="image">
+              <img src="./images/websites/website-09-min.png" alt="image">
               <div>
                 <a href="https://codepen.io/sabina_abbasova/full/KKKGEJW" target="_blank">
                   <p data-splitting>Ripple Animations</p>
@@ -231,7 +231,7 @@
               </div>
             </div>
             <div class="work-container">
-              <img src="./images/websites/website-10.png" alt="image">
+              <img src="./images/websites/website-10-min.png" alt="image">
               <div>
                 <a href="https://codepen.io/sabina_abbasova/full/MMLVJx" target="_blank">
                   <p data-splitting>HTML5 Canvas</p>
@@ -239,7 +239,7 @@
               </div>
             </div>
             <div class="work-container">
-              <img src="./images/websites/website-11.png" alt="image">
+              <img rel="preload" as="image" src="./images/websites/website-11-min.png" alt="image">
               <div>
                 <a href="https://olios.netlify.com" target="_blank">
                   <p data-splitting>Furniture Shop Website</p>
@@ -247,7 +247,7 @@
               </div>
             </div>
             <div class="work-container">
-              <img src="./images/websites/website-12.png" alt="image">
+              <img src="./images/websites/website-12-min.png" alt="image">
               <div>
                 <a href="https://merkury-dashboard.netlify.com/" target="_blank">
                   <p data-splitting>Merkury Dashboard</p>
@@ -255,7 +255,7 @@
               </div>
             </div>
             <div class="work-container">
-              <img src="./images/websites/website-13.png" alt="image">
+              <img src="./images/websites/website-13-min.png" alt="image">
               <div>
                 <a href="https://libraryapp.netlify.com" target="_blank">
                   <p data-splitting>React Library App</p>
@@ -263,7 +263,7 @@
               </div>
             </div>
             <div class="work-container">
-              <img src="./images/websites/website-14.png" alt="image">
+              <img src="./images/websites/website-14-min.png" alt="image">
               <div>
                 <a href="https://sabinaabbasova.netlify.com/" target="_blank">
                   <p data-splitting>My Old Portfolio</p>
@@ -271,7 +271,9 @@
               </div>
             </div>
           </div>
+            <div class="lines-tr"></div>
             <div class="back">Back To Home</div>
+            <div class="lines-bl"></div>
         </section>
         <section id="sit">
             
@@ -290,29 +292,45 @@
                 <p class="artstation" data-splitting>ArtStation</p>
               </a>
             </div>
-            <h2 id="feel-free" data-splitting>Feel free to <a href="mailto:sabina.abbasova2909@gmail.com">
+            <h2 id="feel-free" data-splitting>Feel free to <a data-link="sabina.abbasova2909@gmail.com" href="#">
               <span>email</span>
             </a> me. :)</h2>
+            
+            <div class="lines-tr"></div>
             <div class="back">Back To Home</div>
+            <div class="lines-bl"></div>
         </section>
         
       </main>
-
-
-        <!-- <nav>
-            <button id="prev">prev</button>
-            <button id="next">next</button>
-        </nav> -->
+      <!-- href="mailto:sabina.abbasova2909@gmail.com" -->
     
         <div id="tracker"></div>
 
-        
-
+        <!-- SCRIPTS -->
         <script>
             const tracker = document.querySelector('#tracker');
-document.addEventListener('mousemove', e => {
-  tracker.setAttribute("style", "top: "+(e.pageY - 10)+"px; left: "+(e.pageX - 10)+"px;")
-})
+            document.addEventListener('mousemove', e => {
+              tracker.setAttribute("style", "top: "+(e.pageY - 10)+"px; left: "+(e.pageX - 10)+"px;")
+            })
+
+            var body = document.querySelector("body");
+            var textTarget = document.querySelector("#feel-free > a")
+            textTarget.addEventListener("click", copyText)
+            function copyText() {
+              var text = textTarget.dataset.link;
+              var temp = document.createElement("input");
+              temp.value = text;
+              body.appendChild(temp);
+              temp.select();
+              document.execCommand("copy");
+              body.removeChild(temp);
+              textTarget.classList.add("copied")
+
+              setTimeout(()=>{
+                textTarget.classList.remove("copied")
+              }, 1200)
+            }
+
         </script>
     <script src="./script.js"></script>
 </body>

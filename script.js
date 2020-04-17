@@ -1,5 +1,4 @@
 // LOADING SCREEN
-const body = document.querySelector("body");
 const wrapper = document.querySelector(".wrapper");
 const main = document.querySelector("main");
 
@@ -14,15 +13,14 @@ let tlLoader = gsap
 // LOADING
 function loading() {
   setTimeout(() => {
-
     tlLoader.play()
-
     // wrapper.style.display = "none";
     // wrapper.style.opacity = 0;
 
     main.style.display = "block";
     setTimeout(() => (main.style.opacity = 1), 50);  
-  }, 300);
+    
+  }, 5000);
 }
 document.addEventListener("DOMContentLoaded", function() {
   window.addEventListener(
@@ -30,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function() {
     function() {
       setTimeout(() => {
         loading();
-      }, 300);
+      }, 500);
     },
     false
   );
@@ -64,11 +62,11 @@ let select = (selector) => {
     
   
     .to(".logo", {
-      color:"hsl(56, 19%, 92%)",
+      color:"hsl(251, 60%, 17%)",
       opacity: 1
     }, "<.6")
     .to(".copyright", {
-      color:"hsl(56, 19%, 92%)",
+      color:"hsl(251, 60%, 17%)",
       opacity: 1
     }, "<.6")
     
@@ -111,11 +109,11 @@ let select = (selector) => {
     
   
     .to(".logo", {
-      color:"hsl(56, 19%, 92%)",
+      color:"hsl(251, 60%, 17%)",
       opacity: 1
     }, "<.6")
     .to(".copyright", {
-      color:"hsl(56, 19%, 92%)",
+      color:"hsl(251, 60%, 17%)",
       opacity: 1
     }, "<.6")
     
@@ -160,11 +158,11 @@ let select = (selector) => {
     
   
     .to(".logo", {
-      color:"hsl(56, 19%, 92%)",
+      color:"hsl(251, 60%, 17%)",
       opacity: 1
     }, "<.6")
     .to(".copyright", {
-      color:"hsl(56, 19%, 92%)",
+      color:"hsl(251, 60%, 17%)",
       opacity: 1
     }, "<.6")
     
@@ -209,13 +207,13 @@ let select = (selector) => {
     .fromTo("section#sit", {yPercent: 50,scale: 0, opacity: 0, borderRadius: "50%"}, {yPercent: -50,scale: 1, opacity: 1, borderRadius: "0px"})
     
     .to(".logo", {
-      color:"hsl(56, 19%, 92%)",
+      color:"hsl(251, 60%, 17%)",
       opacity: 1
     }, "<.6")
     .to(".copyright", {
-      color:"hsl(56, 19%, 92%)",
+      color:"hsl(251, 60%, 17%)",
       opacity: 1
-    }, "<.6")
+    }, "<")
 
     
     .from("section#sit .splitting .char", {
