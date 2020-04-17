@@ -1,6 +1,6 @@
     $main1-05:hsl(280, 69%, 13%);
     $main2-05:hsl(251, 60%, 17%);
-    $main3-05:#ddbf6e;
+    $main3-05:hsl(44, 62%, 65%);
     $main4-05:hsl(105, 9%, 65%);
     $main5-05:hsl(56, 19%, 72%);
     $main6-05:hsl(81, 51%, 91%);
@@ -54,14 +54,44 @@ body {
     transition: all 2s;
     .loader {
       background-color:  $main2-05;
-      width: 200px;
-      height:200px;
+      width: 240px;
+      height:240px;
       position: absolute;
       pointer-events: none;
       z-index: 999999;
       animation: deformRotate 6s linear infinite;
       border-radius: 40% 60% 60% 40% / 60% 60% 40% 40%;
     }
+    h1 {
+        // color: #000;
+        font-size: 140px;
+        color: transparent;
+        -webkit-text-stroke: 3px  hsl(44, 62%, 32%);
+        margin-top: -300px;
+        // mix-blend-mode: exclusion;
+        z-index: 999999;
+        /*     opacity:0; */
+      }
+      
+      svg {
+        overflow: visible;
+        height: 100%;
+        /* Fix Safari rendering bug */
+        transform: translateZ(0);
+      }
+      
+      path {
+        margin-top: -50px;
+        stroke-width: 1;
+        fill: transparent;
+        stroke: transparent;
+        /*   stroke:  $main3-05; */
+      }
+      
+
+
+
+
   }
 
 
@@ -676,14 +706,14 @@ body {
                     position: relative;
 
                     &:hover{
-                        color: hsl(280, 69%, 24%);
+                        color: hsl(252, 60%, 22%);
                     }
 
 
                     &.copied::before{
                         content: "Successfully Copied!";
                         position: absolute;
-                        top: -6%;
+                        top: -10%;
                         left: -28%;
                         width: 140px;
                         height: 28px;
@@ -691,14 +721,17 @@ body {
                         justify-content: center;
                         align-items: center;
                         line-height: 26px;
-                        color: #d5d5c3;
+                        // color: #d5d5c3;
+                        color: hsl(252, 60%, 22%);
                         font-style: normal;
                         font-weight: 200;
                         font-family: Helvetica;
                         opacity: 1;
                         letter-spacing: 0.2px;
                         font-size: 0.8rem;
-                        background-color: #551575;
+                        // background-color: #551575;
+                        background-color: hsla(0, 100%, 100%, 1);
+                        border: 1px solid hsl(252, 60%, 22%);
                         transform-origin: left;
                         transition: all .4s ease;
                         mix-blend-mode: normal;
@@ -706,13 +739,17 @@ body {
                     &.copied::after{
                         content: "";
                         position: absolute;
-                        top: -8%;
+                        top: 13%;
                         left: 47%;
-                        width: 25px;
-                        height: 25px;
+                        width: 9px;
+                        height: 9px;
                         opacity: 1;
-                        z-index: -1;
-                        background-color: #551575;
+                        z-index: 1;
+                        // background-color: #551575;
+                        background-color: hsl(0, 100%, 101%);
+                        border: 1px solid hsl(252, 60%, 22%);
+                        border-top: 1px solid transparent;
+                        border-left: 1px solid transparent;
                         transform-origin: left;
                         transition: all .4s ease;
                         mix-blend-mode: normal;

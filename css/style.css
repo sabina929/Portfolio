@@ -74,14 +74,39 @@ body {
 
 .wrapper .loader {
   background-color: #1b1145;
-  width: 200px;
-  height: 200px;
+  width: 240px;
+  height: 240px;
   position: absolute;
   pointer-events: none;
   z-index: 999999;
   -webkit-animation: deformRotate 6s linear infinite;
           animation: deformRotate 6s linear infinite;
   border-radius: 40% 60% 60% 40% / 60% 60% 40% 40%;
+}
+
+.wrapper h1 {
+  font-size: 140px;
+  color: transparent;
+  -webkit-text-stroke: 3px #84691f;
+  margin-top: -300px;
+  z-index: 999999;
+  /*     opacity:0; */
+}
+
+.wrapper svg {
+  overflow: visible;
+  height: 100%;
+  /* Fix Safari rendering bug */
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+}
+
+.wrapper path {
+  margin-top: -50px;
+  stroke-width: 1;
+  fill: transparent;
+  stroke: transparent;
+  /*   stroke:  $main3-05; */
 }
 
 main {
@@ -129,7 +154,7 @@ main section#nav p span {
   font-size: 9rem;
   letter-spacing: 1.1px;
   color: transparent;
-  -webkit-text-stroke: 1px #ddbf6e;
+  -webkit-text-stroke: 1px #ddc06e;
   text-transform: capitalize;
   font-family: 'DM Serif Display', serif;
   margin-right: 90px;
@@ -850,13 +875,13 @@ main section#sit h2#feel-free a {
 }
 
 main section#sit h2#feel-free a:hover {
-  color: #4b1367;
+  color: #24165a;
 }
 
 main section#sit h2#feel-free a.copied::before {
   content: "Successfully Copied!";
   position: absolute;
-  top: -6%;
+  top: -10%;
   left: -28%;
   width: 140px;
   height: 28px;
@@ -870,14 +895,15 @@ main section#sit h2#feel-free a.copied::before {
       -ms-flex-align: center;
           align-items: center;
   line-height: 26px;
-  color: #d5d5c3;
+  color: #24165a;
   font-style: normal;
   font-weight: 200;
   font-family: Helvetica;
   opacity: 1;
   letter-spacing: 0.2px;
   font-size: 0.8rem;
-  background-color: #551575;
+  background-color: white;
+  border: 1px solid #24165a;
   -webkit-transform-origin: left;
           transform-origin: left;
   -webkit-transition: all .4s ease;
@@ -888,13 +914,16 @@ main section#sit h2#feel-free a.copied::before {
 main section#sit h2#feel-free a.copied::after {
   content: "";
   position: absolute;
-  top: -8%;
+  top: 13%;
   left: 47%;
-  width: 25px;
-  height: 25px;
+  width: 9px;
+  height: 9px;
   opacity: 1;
-  z-index: -1;
-  background-color: #551575;
+  z-index: 1;
+  background-color: white;
+  border: 1px solid #24165a;
+  border-top: 1px solid transparent;
+  border-left: 1px solid transparent;
   -webkit-transform-origin: left;
           transform-origin: left;
   -webkit-transition: all .4s ease;
@@ -996,7 +1025,7 @@ main section#sit .lines-bl::before {
   opacity: .7;
   font-family: Helvetica !important;
   font-weight: 100;
-  color: #ddbf6e;
+  color: #ddc06e;
   text-transform: capitalize;
   font-family: 'DM Serif Display', serif;
   margin-right: 50px;
@@ -1019,7 +1048,7 @@ main section#sit .lines-bl::before {
   opacity: .7;
   font-family: Helvetica !important;
   font-weight: 200;
-  color: #ddbf6e;
+  color: #ddc06e;
   text-transform: capitalize;
   font-family: 'DM Serif Display', serif;
   margin-right: 50px;
@@ -1040,7 +1069,7 @@ main section#sit .lines-bl::before {
   opacity: .7;
   width: 200px;
   height: 1px;
-  background-color: #ddbf6e;
+  background-color: #ddc06e;
   z-index: 1;
   cursor: none;
   -webkit-user-select: none;
@@ -1058,7 +1087,7 @@ main section#sit .lines-bl::before {
   opacity: .7;
   width: 1px;
   height: 125px;
-  background-color: #ddbf6e;
+  background-color: #ddc06e;
   cursor: none;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -1074,7 +1103,7 @@ main section#sit .lines-bl::before {
   opacity: .7;
   width: 200px;
   height: 1px;
-  background-color: #ddbf6e;
+  background-color: #ddc06e;
   z-index: 1;
   cursor: none;
   -webkit-user-select: none;
@@ -1092,7 +1121,7 @@ main section#sit .lines-bl::before {
   opacity: .7;
   width: 1px;
   height: 125px;
-  background-color: #ddbf6e;
+  background-color: #ddc06e;
   cursor: none;
   -webkit-user-select: none;
      -moz-user-select: none;

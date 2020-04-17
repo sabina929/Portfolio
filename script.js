@@ -2,13 +2,342 @@
 const wrapper = document.querySelector(".wrapper");
 const main = document.querySelector("main");
 
+
+gsap.registerPlugin(MotionPathPlugin);
+Splitting();
+
+let target = document.querySelector(".wrapper h1")
+
+let results = Splitting({ target: target, by: "chars" });
+// console.log(results[0].chars);
+
+results[0].chars.forEach((char) => {
+  // console.log(char);
+  char.style.marginRight = "5px";
+  char.style.opacity = 1;
+});
+
+console.log(results[0].words[0]);
+// results[0].words[0].style.marginRight = "50px";
+
+// let distanceDistributor = gsap.utils.distribute({
+//   base: 1.5,
+//   amount: 1.5,
+//   from: "center",
+//   ease: "power2.in"
+// });
+
+gsap
+  .timeline({
+    defaults: {
+      duration: 6,
+      opacity: 1
+    }
+  })
+  .to(
+    results[0].chars[16],
+    {
+      repeat: -1,
+      // opacity: distanceDistributor,
+      repeatDelay: 1,
+      yoyo: true,
+      ease: "linear",
+      motionPath: {
+        path: "#path",
+        align: "#path",
+        autoRotate: true,
+        alignOrigin: [0.5, 0.5]
+      }
+    },
+    "<.4"
+  )
+  .to(
+    results[0].chars[15],
+    {
+      repeat: -1,
+      // opacity: distanceDistributor,
+      repeatDelay: 1,
+      yoyo: true,
+      ease: "linear",
+      motionPath: {
+        path: "#path",
+        align: "#path",
+        autoRotate: true,
+        alignOrigin: [0.5, 0.5]
+      }
+    },
+    "<.4"
+  )
+  .to(
+    results[0].chars[14],
+    {
+      repeat: -1,
+      // opacity: distanceDistributor,
+      repeatDelay: 1,
+      yoyo: true,
+      ease: "linear",
+      motionPath: {
+        path: "#path",
+        align: "#path",
+        autoRotate: true,
+        alignOrigin: [0.5, 0.5]
+      }
+    },
+    "<.4"
+  )
+  .to(
+    results[0].chars[13],
+    {
+      repeat: -1,
+      // opacity: distanceDistributor,
+      repeatDelay: 1,
+      yoyo: true,
+      ease: "linear",
+      motionPath: {
+        path: "#path",
+        align: "#path",
+        autoRotate: true,
+        alignOrigin: [0.5, 0.5]
+      }
+    },
+    "<.4"
+  )
+  .to(
+    results[0].chars[12],
+    {
+      repeat: -1,
+      // opacity: distanceDistributor,
+      repeatDelay: 1,
+      yoyo: true,
+      ease: "linear",
+      motionPath: {
+        path: "#path",
+        align: "#path",
+        autoRotate: true,
+        alignOrigin: [0.5, 0.5]
+      }
+    },
+    "<.4"
+  )
+  .to(
+    results[0].chars[11],
+    {
+      repeat: -1,
+      // opacity: distanceDistributor,
+      repeatDelay: 1,
+      yoyo: true,
+      ease: "linear",
+      motionPath: {
+        path: "#path",
+        align: "#path",
+        autoRotate: true,
+        alignOrigin: [0.5, 0.5]
+      }
+    },
+    "<.4"
+  )
+  .to(
+    results[0].chars[10],
+    {
+      repeat: -1,
+      // opacity: distanceDistributor,
+      repeatDelay: 1,
+      yoyo: true,
+      ease: "linear",
+      motionPath: {
+        path: "#path",
+        align: "#path",
+        autoRotate: true,
+        alignOrigin: [0.5, 0.5]
+      }
+    },
+    "<.4"
+  )
+  .to(
+    results[0].chars[9],
+    {
+      repeat: -1,
+      // opacity: distanceDistributor,
+      repeatDelay: 1,
+      yoyo: true,
+      ease: "linear",
+      motionPath: {
+        path: "#path",
+        align: "#path",
+        autoRotate: true,
+        alignOrigin: [0.5, 0.5]
+      }
+    },
+    "<.4"
+  )
+  .to(
+    results[0].chars[8],
+    {
+      repeat: -1,
+      // opacity: distanceDistributor,
+      repeatDelay: 1,
+      yoyo: true,
+      ease: "linear",
+      motionPath: {
+        path: "#path",
+        align: "#path",
+        autoRotate: true,
+        alignOrigin: [0.5, 0.5]
+      }
+    },
+    "<.4"
+  )
+  .to(
+    results[0].chars[7],
+    {
+      repeat: -1,
+      // opacity: distanceDistributor,
+      repeatDelay: 1,
+      yoyo: true,
+      ease: "linear",
+      motionPath: {
+        path: "#path",
+        align: "#path",
+        autoRotate: true,
+        alignOrigin: [0.5, 0.5]
+      }
+    },
+    "<.4"
+  )
+  .to(
+    results[0].chars[6],
+    {
+      repeat: -1,
+      // opacity: distanceDistributor,
+      repeatDelay: 1,
+      yoyo: true,
+      ease: "linear",
+      motionPath: {
+        path: "#path",
+        align: "#path",
+        autoRotate: true,
+        alignOrigin: [0.5, 0.5]
+      }
+    },
+    "<.4"
+  )
+  .to(
+    results[0].chars[5],
+    {
+      repeat: -1,
+      // opacity: distanceDistributor,
+      repeatDelay: 1,
+      yoyo: true,
+      ease: "linear",
+      motionPath: {
+        path: "#path",
+        align: "#path",
+        autoRotate: true,
+        alignOrigin: [0.5, 0.5]
+      }
+    },
+    "<.4"
+  )
+
+  .to(
+    results[0].chars[4],
+    {
+      repeat: -1,
+      // opacity: distanceDistributor,
+      repeatDelay: 1,
+      yoyo: true,
+      ease: "linear",
+      motionPath: {
+        path: "#path",
+        align: "#path",
+        autoRotate: true,
+        alignOrigin: [0.5, 0.5]
+      }
+    },
+    "<.4"
+  )
+
+  .to(
+    results[0].chars[3],
+    {
+      repeat: -1,
+      // opacity: distanceDistributor,
+      repeatDelay: 1,
+      yoyo: true,
+      ease: "linear",
+      motionPath: {
+        path: "#path",
+        align: "#path",
+        autoRotate: true,
+        alignOrigin: [0.5, 0.5]
+      }
+    },
+    "<.4"
+  )
+
+  .to(
+    results[0].chars[2],
+    {
+      repeat: -1,
+      // opacity: distanceDistributor,
+      repeatDelay: 1,
+      yoyo: true,
+      ease: "linear",
+      motionPath: {
+        path: "#path",
+        align: "#path",
+        autoRotate: true,
+        alignOrigin: [0.5, 0.5]
+      }
+    },
+    "<.4"
+  )
+
+  .to(
+    results[0].chars[1],
+    {
+      repeat: -1,
+      // opacity: distanceDistributor,
+      repeatDelay: 1,
+      yoyo: true,
+      ease: "linear",
+      motionPath: {
+        path: "#path",
+        align: "#path",
+        autoRotate: true,
+        alignOrigin: [0.5, 0.5]
+      }
+    },
+    "<.4"
+  )
+
+  .to(
+    results[0].chars[0],
+    {
+      repeat: -1,
+      // opacity: distanceDistributor,
+      repeatDelay: 1,
+      yoyo: true,
+      ease: "linear",
+      motionPath: {
+        path: "#path",
+        align: "#path",
+        autoRotate: true,
+        alignOrigin: [0.5, 0.5]
+      }
+    },
+    "<.4"
+  );
+
+
 let tlLoader = gsap
     .timeline({
       paused: true,
-      defaults: { duration: 2 }
+      defaults: { duration: 1.8 }
     })
-    .fromTo(".wrapper .loader", {duration: 1,opacity:1}, {opacity:0})
-    .fromTo(".wrapper", {ease: "elastic(2, .1)",transformOrigin: "50% 0%", yPercent: 0,scale: 1,borderRadius: "0px"}, {yPercent: -100,scale: 0,borderRadius: "50%"}, "<.2")
+    .fromTo(".wrapper .loader", {duration: 1.8,opacity:1}, {opacity:0})
+    .fromTo(".wrapper h1", {duration: 1.8,opacity:1}, {opacity:0}, "<.5")
+    .fromTo(".wrapper", {ease: "elastic(2, .1)",transformOrigin: "50% 0%", yPercent: 0,scale: 1,borderRadius: "0px"}, {yPercent: -100,scale: 0,borderRadius: "50%"}, "<.1")
 
 // LOADING
 function loading() {
@@ -20,7 +349,7 @@ function loading() {
     main.style.display = "block";
     setTimeout(() => (main.style.opacity = 1), 50);  
     
-  }, 5000);
+  }, 12000);
 }
 document.addEventListener("DOMContentLoaded", function() {
   window.addEventListener(
@@ -39,7 +368,6 @@ gsap.to(".to-left", {x: -720, duration: 15, ease: "linear", yoyo:true, repeat: -
 gsap.to(".to-right", {x: 0, duration: 15, ease: "linear", yoyo:true, repeat: -1})
 
 
-Splitting();
 
 let select = (selector) => {
     return document.querySelector(selector);
