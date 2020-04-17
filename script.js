@@ -18,7 +18,6 @@ results[0].chars.forEach((char) => {
 });
 
 console.log(results[0].words[0]);
-// results[0].words[0].style.marginRight = "50px";
 
 // let distanceDistributor = gsap.utils.distribute({
 //   base: 1.5,
