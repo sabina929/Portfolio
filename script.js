@@ -1,4 +1,3 @@
-// LOADING SCREEN
 const wrapper = document.querySelector(".wrapper");
 const main = document.querySelector("main");
 
@@ -305,6 +304,7 @@ gsap
   );
 
 
+// LOADING SCREEN  
 let tlLoader = gsap
     .timeline({
       paused: true,
@@ -314,19 +314,13 @@ let tlLoader = gsap
     .fromTo(".wrapper h1", {duration: 1.8,opacity:1}, {opacity:0}, "<.5")
     .fromTo(".wrapper", {ease: "elastic(2, .1)",transformOrigin: "50% 0%", yPercent: 0,scale: 1,borderRadius: "0px"}, {yPercent: -100,scale: 0,borderRadius: "50%"}, "<.1")
 
-// LOADING
 function loading() {
   setTimeout(() => {
     tlLoader.play()
-    // wrapper.style.display = "none";
-    // wrapper.style.opacity = 0;
-
     main.style.display = "block";
     setTimeout(() => (main.style.opacity = 1), 50);  
-    
-  // }, 12000);
-  }, 10);
-  // }, 100);
+  }, 12000);
+  // }, 10);
 }
 document.addEventListener("DOMContentLoaded", function() {
   window.addEventListener(
@@ -345,26 +339,24 @@ gsap.to(".to-left", {x: -720, duration: 15, ease: "linear", yoyo:true, repeat: -
 gsap.to(".to-right", {x: 0, duration: 15, ease: "linear", yoyo:true, repeat: -1})
 
 
-
 let select = (selector) => {
     return document.querySelector(selector);
   };
   
-  // LOREM SECTION
-  let loremLeft = select("#nav > p.to-left > span:nth-child(1)");
-  let loremRight = select("#nav > p.to-right > span:nth-child(4)");
-  let loremBack = select("section#lorem .back");
+  // ABOUT SECTION
+  let aboutLeft = select("#nav > p.to-left > span:nth-child(1)");
+  let aboutRight = select("#nav > p.to-right > span:nth-child(4)");
+  let aboutBack = select("section#about .back");
 
 
-  let tlLorem = gsap
+  let tlAbout = gsap
     .timeline({
       paused: true,
       defaults: { duration: 1.4,transformOrigin: "50% 50%", opacity: 0, ease: "elastic(.1, 1)" }
     })
 
-    .fromTo("section#lorem", {yPercent: 50,scale: 0, opacity: 0, borderRadius: "50%"}, {yPercent: -50,scale: 1, opacity: 1, borderRadius: "0px"})
+    .fromTo("section#about", {yPercent: 50,scale: 0, opacity: 0, borderRadius: "50%"}, {yPercent: -50,scale: 1, opacity: 1, borderRadius: "0px"})
     
-  
     .to(".logo", {
       color:"hsl(251, 60%, 17%)",
       opacity: 1
@@ -375,11 +367,11 @@ let select = (selector) => {
     }, "<.6")
     
 
-    .fromTo("section#lorem img", {duration: 5, y: -100, opacity: 0, ease: "elastic(2, .1)"}, {
+    .fromTo("section#about img", {duration: 5, y: -100, opacity: 0, ease: "elastic(2, .1)"}, {
       y:0, opacity:1
   }, "<.6")
 
-    .from("section#lorem .splitting .char", {
+    .from("section#about .splitting .char", {
         y: 40,
         duration: 1.8,
         stagger: 0.008,
@@ -392,24 +384,24 @@ let select = (selector) => {
         opacity: 1
       }, "<.6")
 
-    loremLeft.addEventListener("click", () => tlLorem.play());
-    loremRight.addEventListener("click", () => tlLorem.play());
-    loremBack.addEventListener("click", () => tlLorem.reverse());
+    aboutLeft.addEventListener("click", () => tlAbout.play());
+    aboutRight.addEventListener("click", () => tlAbout.play());
+    aboutBack.addEventListener("click", () => tlAbout.reverse());
 
 
-  // IPSUM SECTION
-  let ipsumLeft = select("#nav > p.to-left > span:nth-child(2)");
-  let ipsumRight = select("#nav > p.to-right > span:nth-child(3)");
-  let ipsumBack = select("section#ipsum .back");
+  // ARTORKS SECTION
+  let artworksLeft = select("#nav > p.to-left > span:nth-child(2)");
+  let artworksRight = select("#nav > p.to-right > span:nth-child(3)");
+  let artworksBack = select("section#artworks .back");
 
 
-  let tlIpsum = gsap
+  let tlArtworks = gsap
     .timeline({
       paused: true,
       defaults: { duration: 1.4,transformOrigin: "50% 50%", opacity: 0, ease: "elastic(.1, 1)" }
     })
 
-    .fromTo("section#ipsum", {yPercent: 50,scale: 0, opacity: 0, borderRadius: "50%"}, {yPercent: -50,scale: 1, opacity: 1, borderRadius: "0px"})
+    .fromTo("section#artworks", {yPercent: 50,scale: 0, opacity: 0, borderRadius: "50%"}, {yPercent: -50,scale: 1, opacity: 1, borderRadius: "0px"})
     
   
     .to(".logo", {
@@ -423,11 +415,11 @@ let select = (selector) => {
     
 
 
-    .fromTo("section#ipsum img", {duration: 5, y: -100, opacity: 0, ease: "elastic(2, .1)"}, {
+    .fromTo("section#artworks img", {duration: 5, y: -100, opacity: 0, ease: "elastic(2, .1)"}, {
         y:0, opacity:1
     }, "<.6")
 
-    .from("section#ipsum .splitting .char", {
+    .from("section#artworks .splitting .char", {
         y: 40,
         duration: 1.8,
         stagger: 0.01,
@@ -440,27 +432,22 @@ let select = (selector) => {
         opacity: 1
       }, "<.6")
 
-    ipsumLeft.addEventListener("click", () => tlIpsum.play());
-    ipsumRight.addEventListener("click", () => tlIpsum.play());
-    ipsumBack.addEventListener("click", () => tlIpsum.reverse());
+  artworksLeft.addEventListener("click", () => tlArtworks.play());
+  artworksRight.addEventListener("click", () => tlArtworks.play());
+  artworksBack.addEventListener("click", () => tlArtworks.reverse());
+
+  // WEBSITES SECTION
+  let websitesLeft = select("#nav > p.to-left > span:nth-child(3)");
+  let websitesRight = select("#nav > p.to-right > span:nth-child(2)");
+  let websitesBack = select("section#websites .back");
 
 
-
-  // DOLOR SECTION
-  let dolorLeft = select("#nav > p.to-left > span:nth-child(3)");
-  let dolorRight = select("#nav > p.to-right > span:nth-child(2)");
-  let dolorBack = select("section#dolor .back");
-
-
-  let tlDolor = gsap
+  let tlWebsites = gsap
     .timeline({
       paused: true,
       defaults: { duration: 1.4,transformOrigin: "50% 50%", opacity: 0, ease: "elastic(.1, 1)" }
     })
-
-    .fromTo("section#dolor", {yPercent: 50,scale: 0, opacity: 0, borderRadius: "50%"}, {yPercent: -50,scale: 1, opacity: 1, borderRadius: "0px"})
-    
-  
+    .fromTo("section#websites", {yPercent: 50,scale: 0, opacity: 0, borderRadius: "50%"}, {yPercent: -50,scale: 1, opacity: 1, borderRadius: "0px"})
     .to(".logo", {
       color:"hsl(251, 60%, 17%)",
       opacity: 1
@@ -469,46 +456,36 @@ let select = (selector) => {
       color:"hsl(251, 60%, 17%)",
       opacity: 1
     }, "<.6")
-    
-
-
-    .fromTo("section#dolor img", {duration: 5, y: -100, opacity: 0, ease: "elastic(2, .1)"}, {
+    .fromTo("section#websites img", {duration: 5, y: -100, opacity: 0, ease: "elastic(2, .1)"}, {
         y:0, opacity:1
     }, "<.6")
-
-    .from("section#dolor .splitting .char", {
+    .from("section#websites .splitting .char", {
         y: 40,
         duration: 1.8,
         stagger: 0.01,
         ease: "elastic(.8, 0.0)"
-      }, "<.6")
+    }, "<.6")
+    .to("#tracker", {
+      background:"hsl(56, 19%, 16%)",
+      opacity: 1
+    }, "<.6")
 
+    websitesLeft.addEventListener("click", () => tlWebsites.play());
+    websitesRight.addEventListener("click", () => tlWebsites.play());
+    websitesBack.addEventListener("click", () => tlWebsites.reverse());
 
-      .to("#tracker", {
-        background:"hsl(56, 19%, 16%)",
-        opacity: 1
-      }, "<.6")
-
-    dolorLeft.addEventListener("click", () => tlDolor.play());
-    dolorRight.addEventListener("click", () => tlDolor.play());
-    dolorBack.addEventListener("click", () => tlDolor.reverse());
-
-
-
-
-    // SIT SECTION
-  let sitLeft = select("#nav > p.to-left > span:nth-child(4)");
-  let sitRight = select("#nav > p.to-right > span:nth-child(1)");
-  let sitBack = select("section#sit .back");
+    // CONTACT SECTION
+  let contactLeft = select("#nav > p.to-left > span:nth-child(4)");
+  let contactRight = select("#nav > p.to-right > span:nth-child(1)");
+  let contactBack = select("section#contact .back");
   
-  
-  let tlSit = gsap
+  let tlContact = gsap
   .timeline({
       paused: true,
       defaults: { duration: 1.4,transformOrigin: "50% 50%", opacity: 0, ease: "elastic(.1, 1)" }
     })
 
-    .fromTo("section#sit", {yPercent: 50,scale: 0, opacity: 0, borderRadius: "50%"}, {yPercent: -50,scale: 1, opacity: 1, borderRadius: "0px"})
+    .fromTo("section#contact", {yPercent: 50,scale: 0, opacity: 0, borderRadius: "50%"}, {yPercent: -50,scale: 1, opacity: 1, borderRadius: "0px"})
     
     .to(".logo", {
       color:"hsl(251, 60%, 17%)",
@@ -520,22 +497,21 @@ let select = (selector) => {
     }, "<")
 
     
-    .from("section#sit .splitting .char", {
+    .from("section#contact .splitting .char", {
       y: 40,
         duration: 1.8,
         stagger: 0.01,
         ease: "elastic(.8, 0.0)"
       }, "<.6")
-
       
-      .to("#tracker", {
-        background:"hsl(56, 19%, 16%)",
-        opacity: 1
-      }, "<.6")
+    .to("#tracker", {
+      background:"hsl(56, 19%, 16%)",
+      opacity: 1
+    }, "<.6")
       
-      sitLeft.addEventListener("click", () => tlSit.play());
-    sitRight.addEventListener("click", () => tlSit.play());
-    sitBack.addEventListener("click", () => tlSit.reverse());
+    contactLeft.addEventListener("click", () => tlContact.play());
+    contactRight.addEventListener("click", () => tlContact.play());
+    contactBack.addEventListener("click", () => tlContact.reverse());
 
   
     // let theLongDark = select("section#ipsum #the-long-dark >div");
@@ -543,7 +519,6 @@ let select = (selector) => {
     // let tlTheLongDark = gsap.timeline({
     //   paused:true,
     // })
-
     // .to("section#ipsum #the-long-dark >img", {
     //   zIndex: 9999999999,
     //   position:"absolute",

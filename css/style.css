@@ -39,11 +39,11 @@ body {
 }
 
 ::-moz-selection {
-  background-color: #481264;
+  background-color: #c5c3aa;
 }
 
 ::selection {
-  background-color: #481264;
+  background-color: #c5c3aa;
 }
 
 .wrapper {
@@ -92,13 +92,11 @@ body {
   -webkit-text-stroke: 3px #84691f;
   margin-top: -300px;
   z-index: 999999;
-  /*     opacity:0; */
 }
 
 .wrapper svg {
   overflow: visible;
   height: 100%;
-  /* Fix Safari rendering bug */
   -webkit-transform: translateZ(0);
           transform: translateZ(0);
 }
@@ -108,7 +106,6 @@ body {
   stroke-width: 1;
   fill: transparent;
   stroke: transparent;
-  /*   stroke:  $main3-05; */
 }
 
 main {
@@ -237,7 +234,7 @@ main section#nav p:nth-child(2) span:hover::before {
           transform: translate(-10px, 10px);
 }
 
-main section#lorem {
+main section#about {
   width: 100%;
   height: 100vh;
   position: absolute;
@@ -265,7 +262,7 @@ main section#lorem {
   padding: 0 150px;
 }
 
-main section#lorem img {
+main section#about img {
   -webkit-filter: saturate(0);
           filter: saturate(0);
   width: 500px;
@@ -273,7 +270,7 @@ main section#lorem img {
   -o-object-fit: cover;
      object-fit: cover;
   z-index: 1;
-  margin-top: 0px;
+  margin-top: -50px;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   -webkit-transition: -webkit-filter .5s ease;
@@ -282,12 +279,12 @@ main section#lorem img {
   transition: filter .5s ease, -webkit-filter .5s ease;
 }
 
-main section#lorem img:hover {
+main section#about img:hover {
   -webkit-filter: saturate(0.99) contrast(0.99);
           filter: saturate(0.99) contrast(0.99);
 }
 
-main section#lorem .text {
+main section#about .text {
   z-index: 2;
   width: 600px;
   height: 500px;
@@ -307,25 +304,48 @@ main section#lorem .text {
   mix-blend-mode: color-burn;
 }
 
-main section#lorem .text h2 {
-  width: 100%;
+main section#about .text h2 {
+  width: 106%;
   font-size: 5rem;
+  font-style: italic;
   line-height: 84px;
   letter-spacing: 1.1px;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   color: #615f42;
 }
 
-main section#lorem p {
+main section#about .text h3 {
+  color: #777755;
+  /* font-style: italic; */
+  font-weight: 800;
+  font-size: 2.2rem;
+  margin-bottom: 12px;
+}
+
+main section#about .text p {
   width: 100%;
   font-size: 1.2rem;
   line-height: 30px;
   letter-spacing: 0.5px;
   color: #615f42;
-  margin-bottom: -70px;
+  margin-bottom: -60px;
 }
 
-main section#lorem .back {
+main section#about .text p a {
+  text-decoration: none;
+  color: #777755;
+  font-style: italic;
+  mix-blend-mode: multiply !important;
+  display: inline-block;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+main section#about .text p a:hover {
+  color: #24165a;
+}
+
+main section#about .back {
   position: absolute;
   top: 30px;
   right: 35px;
@@ -336,7 +356,7 @@ main section#lorem .back {
   cursor: pointer;
 }
 
-main section#lorem .back::before {
+main section#about .back::before {
   content: "";
   position: absolute;
   top: 105%;
@@ -353,35 +373,35 @@ main section#lorem .back::before {
   transition: all .4s ease;
 }
 
-main section#lorem .back:hover::before {
+main section#about .back:hover::before {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
   opacity: 1;
 }
 
-main section#lorem .lines-tr {
+main section#about .lines-tr {
   opacity: 1;
   background-color: #1b1145;
   z-index: 999998;
 }
 
-main section#lorem .lines-tr::before {
+main section#about .lines-tr::before {
   opacity: 1;
   background-color: #1b1145;
 }
 
-main section#lorem .lines-bl {
+main section#about .lines-bl {
   opacity: 1;
   background-color: #1b1145;
   z-index: 999998;
 }
 
-main section#lorem .lines-bl::before {
+main section#about .lines-bl::before {
   opacity: 1;
   background-color: #1b1145;
 }
 
-main section#ipsum {
+main section#artworks {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -408,7 +428,7 @@ main section#ipsum {
   border-radius: 50%;
 }
 
-main section#ipsum .works-wrapper {
+main section#artworks .works-wrapper {
   margin: 0px 0px 0px 0;
   padding: 0 223px;
   width: 100vw;
@@ -416,18 +436,18 @@ main section#ipsum .works-wrapper {
   overflow-y: scroll;
 }
 
-main section#ipsum .works-wrapper::-webkit-scrollbar {
+main section#artworks .works-wrapper::-webkit-scrollbar {
   width: 10px;
   opacity: 1;
 }
 
-main section#ipsum .works-wrapper::-webkit-scrollbar-track {
+main section#artworks .works-wrapper::-webkit-scrollbar-track {
   background: transparent;
   width: 7px;
   margin: 0px;
 }
 
-main section#ipsum .works-wrapper::-webkit-scrollbar-thumb {
+main section#artworks .works-wrapper::-webkit-scrollbar-thumb {
   background-color: rgba(0, 0, 0, 0.24);
   opacity: 0.1;
   width: 7px;
@@ -436,11 +456,11 @@ main section#ipsum .works-wrapper::-webkit-scrollbar-thumb {
   transition: background-color .3s ease;
 }
 
-main section#ipsum .works-wrapper::-webkit-scrollbar-thumb:hover {
+main section#artworks .works-wrapper::-webkit-scrollbar-thumb:hover {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-main section#ipsum .works-wrapper .work-container {
+main section#artworks .works-wrapper .work-container {
   margin-top: 100px;
   margin-bottom: 100px;
   width: 100%;
@@ -460,7 +480,7 @@ main section#ipsum .works-wrapper .work-container {
           align-items: center;
 }
 
-main section#ipsum .works-wrapper .work-container img {
+main section#artworks .works-wrapper .work-container img {
   -webkit-filter: saturate(0);
           filter: saturate(0);
   width: 46%;
@@ -476,12 +496,12 @@ main section#ipsum .works-wrapper .work-container img {
   transition: filter .4s ease, -webkit-filter .4s ease;
 }
 
-main section#ipsum .works-wrapper .work-container img:hover {
+main section#artworks .works-wrapper .work-container img:hover {
   -webkit-filter: saturate(0.99) contrast(0.99);
           filter: saturate(0.99) contrast(0.99);
 }
 
-main section#ipsum .works-wrapper .work-container div {
+main section#artworks .works-wrapper .work-container div {
   width: 40%;
   height: 100%;
   display: -webkit-box;
@@ -499,7 +519,7 @@ main section#ipsum .works-wrapper .work-container div {
           align-items: flex-start;
 }
 
-main section#ipsum .works-wrapper .work-container div a {
+main section#artworks .works-wrapper .work-container div a {
   text-decoration: none;
   width: 100%;
   margin-left: -100px;
@@ -507,7 +527,7 @@ main section#ipsum .works-wrapper .work-container div a {
   cursor: pointer;
 }
 
-main section#ipsum .works-wrapper .work-container div a p {
+main section#artworks .works-wrapper .work-container div a p {
   font-size: 5rem;
   line-height: 75px;
   letter-spacing: 1.1px;
@@ -519,11 +539,11 @@ main section#ipsum .works-wrapper .work-container div a p {
   transition: all .4s ease;
 }
 
-main section#ipsum .works-wrapper .work-container div a p:hover {
+main section#artworks .works-wrapper .work-container div a p:hover {
   mix-blend-mode: normal;
 }
 
-main section#ipsum .back {
+main section#artworks .back {
   position: absolute;
   top: 30px;
   right: 35px;
@@ -534,7 +554,7 @@ main section#ipsum .back {
   cursor: pointer;
 }
 
-main section#ipsum .back::before {
+main section#artworks .back::before {
   content: "";
   position: absolute;
   top: 105%;
@@ -551,35 +571,35 @@ main section#ipsum .back::before {
   transition: all .4s ease;
 }
 
-main section#ipsum .back:hover::before {
+main section#artworks .back:hover::before {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
   opacity: 1;
 }
 
-main section#ipsum .lines-tr {
+main section#artworks .lines-tr {
   opacity: 1;
   background-color: #1b1145;
   z-index: 999998;
 }
 
-main section#ipsum .lines-tr::before {
+main section#artworks .lines-tr::before {
   opacity: 1;
   background-color: #1b1145;
 }
 
-main section#ipsum .lines-bl {
+main section#artworks .lines-bl {
   opacity: 1;
   background-color: #1b1145;
   z-index: 999998;
 }
 
-main section#ipsum .lines-bl::before {
+main section#artworks .lines-bl::before {
   opacity: 1;
   background-color: #1b1145;
 }
 
-main section#dolor {
+main section#websites {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -606,7 +626,7 @@ main section#dolor {
   border-radius: 50%;
 }
 
-main section#dolor .works-wrapper {
+main section#websites .works-wrapper {
   margin: 0px 0px 0px 0;
   padding: 0 223px;
   width: 100vw;
@@ -614,18 +634,18 @@ main section#dolor .works-wrapper {
   overflow-y: scroll;
 }
 
-main section#dolor .works-wrapper::-webkit-scrollbar {
+main section#websites .works-wrapper::-webkit-scrollbar {
   width: 10px;
   opacity: 1;
 }
 
-main section#dolor .works-wrapper::-webkit-scrollbar-track {
+main section#websites .works-wrapper::-webkit-scrollbar-track {
   background: transparent;
   width: 7px;
   margin: 0px;
 }
 
-main section#dolor .works-wrapper::-webkit-scrollbar-thumb {
+main section#websites .works-wrapper::-webkit-scrollbar-thumb {
   background-color: rgba(0, 0, 0, 0.24);
   opacity: 0.1;
   width: 7px;
@@ -634,11 +654,11 @@ main section#dolor .works-wrapper::-webkit-scrollbar-thumb {
   transition: background-color .3s ease;
 }
 
-main section#dolor .works-wrapper::-webkit-scrollbar-thumb:hover {
+main section#websites .works-wrapper::-webkit-scrollbar-thumb:hover {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-main section#dolor .works-wrapper .work-container {
+main section#websites .works-wrapper .work-container {
   margin-top: 100px;
   margin-bottom: 100px;
   width: 100%;
@@ -658,7 +678,7 @@ main section#dolor .works-wrapper .work-container {
           align-items: center;
 }
 
-main section#dolor .works-wrapper .work-container img {
+main section#websites .works-wrapper .work-container img {
   -webkit-filter: saturate(0);
           filter: saturate(0);
   width: 46%;
@@ -674,12 +694,12 @@ main section#dolor .works-wrapper .work-container img {
   transition: filter .4s ease, -webkit-filter .4s ease;
 }
 
-main section#dolor .works-wrapper .work-container img:hover {
+main section#websites .works-wrapper .work-container img:hover {
   -webkit-filter: saturate(0.99) contrast(0.99);
           filter: saturate(0.99) contrast(0.99);
 }
 
-main section#dolor .works-wrapper .work-container div {
+main section#websites .works-wrapper .work-container div {
   width: 40%;
   height: 100%;
   display: -webkit-box;
@@ -697,7 +717,7 @@ main section#dolor .works-wrapper .work-container div {
           align-items: flex-start;
 }
 
-main section#dolor .works-wrapper .work-container div a {
+main section#websites .works-wrapper .work-container div a {
   text-decoration: none;
   width: 100%;
   margin-left: -100px;
@@ -705,7 +725,7 @@ main section#dolor .works-wrapper .work-container div a {
   cursor: pointer;
 }
 
-main section#dolor .works-wrapper .work-container div a p {
+main section#websites .works-wrapper .work-container div a p {
   font-size: 5rem;
   line-height: 75px;
   letter-spacing: 1.1px;
@@ -717,11 +737,11 @@ main section#dolor .works-wrapper .work-container div a p {
   transition: all .4s ease;
 }
 
-main section#dolor .works-wrapper .work-container div a p:hover {
+main section#websites .works-wrapper .work-container div a p:hover {
   mix-blend-mode: normal;
 }
 
-main section#dolor .back {
+main section#websites .back {
   position: absolute;
   top: 30px;
   right: 35px;
@@ -732,7 +752,7 @@ main section#dolor .back {
   cursor: pointer;
 }
 
-main section#dolor .back::before {
+main section#websites .back::before {
   content: "";
   position: absolute;
   top: 105%;
@@ -749,35 +769,35 @@ main section#dolor .back::before {
   transition: all .4s ease;
 }
 
-main section#dolor .back:hover::before {
+main section#websites .back:hover::before {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
   opacity: 1;
 }
 
-main section#dolor .lines-tr {
+main section#websites .lines-tr {
   opacity: 1;
   background-color: #1b1145;
   z-index: 999998;
 }
 
-main section#dolor .lines-tr::before {
+main section#websites .lines-tr::before {
   opacity: 1;
   background-color: #1b1145;
 }
 
-main section#dolor .lines-bl {
+main section#websites .lines-bl {
   opacity: 1;
   background-color: #1b1145;
   z-index: 999998;
 }
 
-main section#dolor .lines-bl::before {
+main section#websites .lines-bl::before {
   opacity: 1;
   background-color: #1b1145;
 }
 
-main section#sit {
+main section#contact {
   width: 100%;
   height: 100vh;
   position: absolute;
@@ -805,7 +825,7 @@ main section#sit {
   padding: 0 223px;
 }
 
-main section#sit h2#find-me {
+main section#contact h2#find-me {
   font-size: 5rem;
   line-height: 84px;
   letter-spacing: 1.1px;
@@ -814,7 +834,7 @@ main section#sit h2#find-me {
   mix-blend-mode: color-burn;
 }
 
-main section#sit .social-media-links {
+main section#contact .social-media-links {
   margin-bottom: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -831,15 +851,15 @@ main section#sit .social-media-links {
           align-items: center;
 }
 
-main section#sit .social-media-links a {
+main section#contact .social-media-links a {
   text-decoration: none;
 }
 
-main section#sit .social-media-links a:not(:last-child) {
+main section#contact .social-media-links a:not(:last-child) {
   margin-right: 24px;
 }
 
-main section#sit .social-media-links a p {
+main section#contact .social-media-links a p {
   font-size: 2.4rem;
   line-height: 48px;
   letter-spacing: 1.1px;
@@ -850,11 +870,11 @@ main section#sit .social-media-links a p {
   transition: all .5s ease;
 }
 
-main section#sit .social-media-links a p:hover {
+main section#contact .social-media-links a p:hover {
   color: #4b1367;
 }
 
-main section#sit h2#feel-free {
+main section#contact h2#feel-free {
   font-size: 2.2rem;
   font-weight: 200;
   line-height: 84px;
@@ -864,7 +884,7 @@ main section#sit h2#feel-free {
   mix-blend-mode: color-burn;
 }
 
-main section#sit h2#feel-free a {
+main section#contact h2#feel-free a {
   font-weight: 800;
   text-decoration: none;
   color: #95956a;
@@ -876,11 +896,11 @@ main section#sit h2#feel-free a {
   position: relative;
 }
 
-main section#sit h2#feel-free a:hover {
+main section#contact h2#feel-free a:hover {
   color: #24165a;
 }
 
-main section#sit h2#feel-free a.copied::before {
+main section#contact h2#feel-free a.copied::before {
   content: "Successfully Copied!";
   position: absolute;
   top: -10%;
@@ -913,7 +933,7 @@ main section#sit h2#feel-free a.copied::before {
   mix-blend-mode: normal;
 }
 
-main section#sit h2#feel-free a.copied::after {
+main section#contact h2#feel-free a.copied::after {
   content: "";
   position: absolute;
   top: 13%;
@@ -935,12 +955,12 @@ main section#sit h2#feel-free a.copied::after {
           transform: rotate(45deg);
 }
 
-main section#sit h2#feel-free a:active {
+main section#contact h2#feel-free a:active {
   -webkit-transform: scale(0.96);
           transform: scale(0.96);
 }
 
-main section#sit .back {
+main section#contact .back {
   position: absolute;
   top: 30px;
   right: 35px;
@@ -951,7 +971,7 @@ main section#sit .back {
   cursor: pointer;
 }
 
-main section#sit .back::before {
+main section#contact .back::before {
   content: "";
   position: absolute;
   top: 105%;
@@ -968,30 +988,30 @@ main section#sit .back::before {
   transition: all .4s ease;
 }
 
-main section#sit .back:hover::before {
+main section#contact .back:hover::before {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
   opacity: 1;
 }
 
-main section#sit .lines-tr {
+main section#contact .lines-tr {
   opacity: 1;
   background-color: #1b1145;
   z-index: 999998;
 }
 
-main section#sit .lines-tr::before {
+main section#contact .lines-tr::before {
   opacity: 1;
   background-color: #1b1145;
 }
 
-main section#sit .lines-bl {
+main section#contact .lines-bl {
   opacity: 1;
   background-color: #1b1145;
   z-index: 999998;
 }
 
-main section#sit .lines-bl::before {
+main section#contact .lines-bl::before {
   opacity: 1;
   background-color: #1b1145;
 }
