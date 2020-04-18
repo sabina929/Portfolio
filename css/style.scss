@@ -1,15 +1,20 @@
-    $main1-05:hsl(280, 69%, 13%);
+    $main1-05:#290a38;
     $main2-05:hsl(251, 60%, 17%);
-    $main3-05:hsl(44, 62%, 65%);
+    $main3-05:#ddc06e;
     $main4-05:hsl(105, 9%, 65%);
     $main5-05:hsl(56, 19%, 72%);
-    $main6-05:hsl(81, 51%, 91%);
+    $main6-05:#ecf4dc;
 
+    // @keyframes deform {
+    //     0%{
+    //         border-radius: 50% 70% 50% 70% / 70% 70% 50% 50%;
+    //     }
+    //     100%{
+    //         border-radius: 70% 50% 70% 50% / 50% 50% 70% 70%;
+    //     }
+    // }
     @keyframes deform {
-        0%{
-            border-radius: 50% 70% 50% 70% / 70% 70% 50% 50%;
-        }
-        100%{
+        50%{
             border-radius: 70% 50% 70% 50% / 50% 50% 70% 70%;
         }
     }
@@ -36,6 +41,10 @@ body {
     transition: all 0.8s ease-in;
   }
 
+  ::selection{
+      background-color: hsl(280, 70%, 23%);
+  }
+
   .wrapper {
     position: absolute;
     top: 0;
@@ -59,7 +68,7 @@ body {
       position: absolute;
       pointer-events: none;
       z-index: 999999;
-      animation: deformRotate 6s linear infinite;
+      animation: deformRotate 5.4s linear infinite;
       border-radius: 40% 60% 60% 40% / 60% 60% 40% 40%;
     }
     h1 {
@@ -830,7 +839,8 @@ body {
     pointer-events: none;
     z-index: 99999;
     mix-blend-mode: overlay;
-    animation: deform 3.6s ease infinite alternate;
+    animation: deform 3.6s ease infinite;
+    // animation: deformRotate 3s ease infinite alternate;
 }
 .logo{
     position: absolute;

@@ -17,14 +17,7 @@ results[0].chars.forEach((char) => {
   char.style.opacity = 1;
 });
 
-console.log(results[0].words[0]);
-
-// let distanceDistributor = gsap.utils.distribute({
-//   base: 1.5,
-//   amount: 1.5,
-//   from: "center",
-//   ease: "power2.in"
-// });
+// console.log(results[0].words[0]);
 
 gsap
   .timeline({
@@ -37,7 +30,6 @@ gsap
     results[0].chars[16],
     {
       repeat: -1,
-      // opacity: distanceDistributor,
       repeatDelay: 1,
       yoyo: true,
       ease: "linear",
@@ -54,7 +46,6 @@ gsap
     results[0].chars[15],
     {
       repeat: -1,
-      // opacity: distanceDistributor,
       repeatDelay: 1,
       yoyo: true,
       ease: "linear",
@@ -71,7 +62,6 @@ gsap
     results[0].chars[14],
     {
       repeat: -1,
-      // opacity: distanceDistributor,
       repeatDelay: 1,
       yoyo: true,
       ease: "linear",
@@ -88,7 +78,6 @@ gsap
     results[0].chars[13],
     {
       repeat: -1,
-      // opacity: distanceDistributor,
       repeatDelay: 1,
       yoyo: true,
       ease: "linear",
@@ -105,7 +94,6 @@ gsap
     results[0].chars[12],
     {
       repeat: -1,
-      // opacity: distanceDistributor,
       repeatDelay: 1,
       yoyo: true,
       ease: "linear",
@@ -122,7 +110,6 @@ gsap
     results[0].chars[11],
     {
       repeat: -1,
-      // opacity: distanceDistributor,
       repeatDelay: 1,
       yoyo: true,
       ease: "linear",
@@ -139,7 +126,6 @@ gsap
     results[0].chars[10],
     {
       repeat: -1,
-      // opacity: distanceDistributor,
       repeatDelay: 1,
       yoyo: true,
       ease: "linear",
@@ -156,7 +142,6 @@ gsap
     results[0].chars[9],
     {
       repeat: -1,
-      // opacity: distanceDistributor,
       repeatDelay: 1,
       yoyo: true,
       ease: "linear",
@@ -173,7 +158,6 @@ gsap
     results[0].chars[8],
     {
       repeat: -1,
-      // opacity: distanceDistributor,
       repeatDelay: 1,
       yoyo: true,
       ease: "linear",
@@ -190,7 +174,6 @@ gsap
     results[0].chars[7],
     {
       repeat: -1,
-      // opacity: distanceDistributor,
       repeatDelay: 1,
       yoyo: true,
       ease: "linear",
@@ -207,7 +190,6 @@ gsap
     results[0].chars[6],
     {
       repeat: -1,
-      // opacity: distanceDistributor,
       repeatDelay: 1,
       yoyo: true,
       ease: "linear",
@@ -224,7 +206,6 @@ gsap
     results[0].chars[5],
     {
       repeat: -1,
-      // opacity: distanceDistributor,
       repeatDelay: 1,
       yoyo: true,
       ease: "linear",
@@ -242,7 +223,6 @@ gsap
     results[0].chars[4],
     {
       repeat: -1,
-      // opacity: distanceDistributor,
       repeatDelay: 1,
       yoyo: true,
       ease: "linear",
@@ -260,7 +240,6 @@ gsap
     results[0].chars[3],
     {
       repeat: -1,
-      // opacity: distanceDistributor,
       repeatDelay: 1,
       yoyo: true,
       ease: "linear",
@@ -278,7 +257,6 @@ gsap
     results[0].chars[2],
     {
       repeat: -1,
-      // opacity: distanceDistributor,
       repeatDelay: 1,
       yoyo: true,
       ease: "linear",
@@ -296,7 +274,6 @@ gsap
     results[0].chars[1],
     {
       repeat: -1,
-      // opacity: distanceDistributor,
       repeatDelay: 1,
       yoyo: true,
       ease: "linear",
@@ -314,7 +291,6 @@ gsap
     results[0].chars[0],
     {
       repeat: -1,
-      // opacity: distanceDistributor,
       repeatDelay: 1,
       yoyo: true,
       ease: "linear",
@@ -348,7 +324,9 @@ function loading() {
     main.style.display = "block";
     setTimeout(() => (main.style.opacity = 1), 50);  
     
-  }, 12000);
+  // }, 12000);
+  }, 10);
+  // }, 100);
 }
 document.addEventListener("DOMContentLoaded", function() {
   window.addEventListener(
@@ -372,7 +350,6 @@ let select = (selector) => {
     return document.querySelector(selector);
   };
   
-
   // LOREM SECTION
   let loremLeft = select("#nav > p.to-left > span:nth-child(1)");
   let loremRight = select("#nav > p.to-right > span:nth-child(4)");
@@ -405,7 +382,7 @@ let select = (selector) => {
     .from("section#lorem .splitting .char", {
         y: 40,
         duration: 1.8,
-        stagger: 0.01,
+        stagger: 0.008,
         ease: "elastic(.8, 0.0)"
       }, "<.6")
 

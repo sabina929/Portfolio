@@ -1,17 +1,11 @@
 @-webkit-keyframes deform {
-  0% {
-    border-radius: 50% 70% 50% 70% / 70% 70% 50% 50%;
-  }
-  100% {
+  50% {
     border-radius: 70% 50% 70% 50% / 50% 50% 70% 70%;
   }
 }
 
 @keyframes deform {
-  0% {
-    border-radius: 50% 70% 50% 70% / 70% 70% 50% 50%;
-  }
-  100% {
+  50% {
     border-radius: 70% 50% 70% 50% / 50% 50% 70% 70%;
   }
 }
@@ -42,6 +36,14 @@ body {
   background-color: #a2ae9e;
   -webkit-transition: all 0.8s ease-in;
   transition: all 0.8s ease-in;
+}
+
+::-moz-selection {
+  background-color: #481264;
+}
+
+::selection {
+  background-color: #481264;
 }
 
 .wrapper {
@@ -79,8 +81,8 @@ body {
   position: absolute;
   pointer-events: none;
   z-index: 999999;
-  -webkit-animation: deformRotate 6s linear infinite;
-          animation: deformRotate 6s linear infinite;
+  -webkit-animation: deformRotate 5.4s linear infinite;
+          animation: deformRotate 5.4s linear infinite;
   border-radius: 40% 60% 60% 40% / 60% 60% 40% 40%;
 }
 
@@ -1007,8 +1009,8 @@ main section#sit .lines-bl::before {
   pointer-events: none;
   z-index: 99999;
   mix-blend-mode: overlay;
-  -webkit-animation: deform 3.6s ease infinite alternate;
-          animation: deform 3.6s ease infinite alternate;
+  -webkit-animation: deform 3.6s ease infinite;
+          animation: deform 3.6s ease infinite;
 }
 
 .logo {
