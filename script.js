@@ -319,8 +319,8 @@ function loading() {
     tlLoader.play()
     main.style.display = "block";
     setTimeout(() => (main.style.opacity = 1), 50);  
-  }, 12000);
-  // }, 10);
+  // }, 12000);
+  }, 10);
 }
 document.addEventListener("DOMContentLoaded", function() {
   window.addEventListener(
@@ -415,7 +415,7 @@ let select = (selector) => {
     
 
 
-    .fromTo("section#artworks img", {duration: 5, y: -100, opacity: 0, ease: "elastic(2, .1)"}, {
+    .fromTo("section#artworks .work-img", {duration: 5, y: -100, opacity: 0, ease: "elastic(2, .1)"}, {
         y:0, opacity:1
     }, "<.6")
 
@@ -456,7 +456,7 @@ let select = (selector) => {
       color:"hsl(251, 60%, 17%)",
       opacity: 1
     }, "<.6")
-    .fromTo("section#websites img", {duration: 5, y: -100, opacity: 0, ease: "elastic(2, .1)"}, {
+    .fromTo("section#websites .work-img", {duration: 5, y: -100, opacity: 0, ease: "elastic(2, .1)"}, {
         y:0, opacity:1
     }, "<.6")
     .from("section#websites .splitting .char", {

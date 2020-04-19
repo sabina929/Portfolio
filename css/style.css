@@ -162,7 +162,7 @@ main section#nav p span {
   cursor: pointer;
 }
 
-main section#nav p span:nth-child(2n+1) {
+main section#nav p:nth-child(1) span:nth-child(2n+1) {
   font-style: italic;
 }
 
@@ -198,6 +198,10 @@ main section#nav p:nth-child(1) span:hover::before {
   opacity: 1;
   -webkit-transform: translate(10px, -10px);
           transform: translate(10px, -10px);
+}
+
+main section#nav p:nth-child(2) span:nth-child(2n) {
+  font-style: italic;
 }
 
 main section#nav p:nth-child(2) span::before {
@@ -480,28 +484,53 @@ main section#artworks .works-wrapper .work-container {
           align-items: center;
 }
 
-main section#artworks .works-wrapper .work-container img {
+main section#artworks .works-wrapper .work-container .work-img {
+  width: 40%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+main section#artworks .works-wrapper .work-container .work-img img {
   -webkit-filter: saturate(0);
           filter: saturate(0);
-  width: 46%;
+  width: 100%;
   height: 400px;
   -o-object-fit: cover;
      object-fit: cover;
   z-index: 1;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
-  -webkit-transition: -webkit-filter .4s ease;
-  transition: -webkit-filter .4s ease;
-  transition: filter .4s ease;
-  transition: filter .4s ease, -webkit-filter .4s ease;
+  -webkit-transition: all .6s;
+  transition: all .6s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+  -webkit-transform: translate(0px, 0px) scale(1);
+          transform: translate(0px, 0px) scale(1);
 }
 
-main section#artworks .works-wrapper .work-container img:hover {
+main section#artworks .works-wrapper .work-container .work-img img:hover {
   -webkit-filter: saturate(0.99) contrast(0.99);
           filter: saturate(0.99) contrast(0.99);
+  -webkit-transform: translate(0px, 0px) scale(1.05);
+          transform: translate(0px, 0px) scale(1.05);
 }
 
-main section#artworks .works-wrapper .work-container div {
+main section#artworks .works-wrapper .work-container div.work-title {
   width: 40%;
   height: 100%;
   display: -webkit-box;
@@ -519,7 +548,7 @@ main section#artworks .works-wrapper .work-container div {
           align-items: flex-start;
 }
 
-main section#artworks .works-wrapper .work-container div a {
+main section#artworks .works-wrapper .work-container div.work-title a {
   text-decoration: none;
   width: 100%;
   margin-left: -100px;
@@ -527,7 +556,7 @@ main section#artworks .works-wrapper .work-container div a {
   cursor: pointer;
 }
 
-main section#artworks .works-wrapper .work-container div a p {
+main section#artworks .works-wrapper .work-container div.work-title a p {
   font-size: 5rem;
   line-height: 75px;
   letter-spacing: 1.1px;
@@ -539,7 +568,7 @@ main section#artworks .works-wrapper .work-container div a p {
   transition: all .4s ease;
 }
 
-main section#artworks .works-wrapper .work-container div a p:hover {
+main section#artworks .works-wrapper .work-container div.work-title a p:hover {
   mix-blend-mode: normal;
 }
 
@@ -678,28 +707,53 @@ main section#websites .works-wrapper .work-container {
           align-items: center;
 }
 
-main section#websites .works-wrapper .work-container img {
+main section#websites .works-wrapper .work-container .work-img {
+  width: 40%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+main section#websites .works-wrapper .work-container .work-img img {
   -webkit-filter: saturate(0);
           filter: saturate(0);
-  width: 46%;
+  width: 100%;
   height: 400px;
   -o-object-fit: cover;
      object-fit: cover;
   z-index: 1;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
-  -webkit-transition: -webkit-filter .4s ease;
-  transition: -webkit-filter .4s ease;
-  transition: filter .4s ease;
-  transition: filter .4s ease, -webkit-filter .4s ease;
+  -webkit-transition: all .6s;
+  transition: all .6s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+  -webkit-transform: translate(0px, 0px) scale(1);
+          transform: translate(0px, 0px) scale(1);
 }
 
-main section#websites .works-wrapper .work-container img:hover {
+main section#websites .works-wrapper .work-container .work-img img:hover {
   -webkit-filter: saturate(0.99) contrast(0.99);
           filter: saturate(0.99) contrast(0.99);
+  -webkit-transform: translate(0px, 0px) scale(1.05);
+          transform: translate(0px, 0px) scale(1.05);
 }
 
-main section#websites .works-wrapper .work-container div {
+main section#websites .works-wrapper .work-container div.work-title {
   width: 40%;
   height: 100%;
   display: -webkit-box;
@@ -717,7 +771,7 @@ main section#websites .works-wrapper .work-container div {
           align-items: flex-start;
 }
 
-main section#websites .works-wrapper .work-container div a {
+main section#websites .works-wrapper .work-container div.work-title a {
   text-decoration: none;
   width: 100%;
   margin-left: -100px;
@@ -725,7 +779,7 @@ main section#websites .works-wrapper .work-container div a {
   cursor: pointer;
 }
 
-main section#websites .works-wrapper .work-container div a p {
+main section#websites .works-wrapper .work-container div.work-title a p {
   font-size: 5rem;
   line-height: 75px;
   letter-spacing: 1.1px;
@@ -737,7 +791,7 @@ main section#websites .works-wrapper .work-container div a p {
   transition: all .4s ease;
 }
 
-main section#websites .works-wrapper .work-container div a p:hover {
+main section#websites .works-wrapper .work-container div.work-title a p:hover {
   mix-blend-mode: normal;
 }
 
