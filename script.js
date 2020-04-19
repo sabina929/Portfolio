@@ -367,7 +367,7 @@ let select = (selector) => {
     }, "<.6")
     
 
-    .fromTo("section#about img", {duration: 5, y: -100, opacity: 0, ease: "elastic(2, .1)"}, {
+    .fromTo("section#about .about-img", {duration: 5, y: -100, opacity: 0, ease: "elastic(2, .1)"}, {
       y:0, opacity:1
   }, "<.6")
 
