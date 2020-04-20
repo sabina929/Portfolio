@@ -1097,19 +1097,27 @@ main section#contact .lines-bl::before {
 
 /* MOUSE TRACKER START */
 #tracker {
+  display: none;
   width: 75px;
   height: 75px;
   background: #1b1145;
   border-radius: 50% 70% 50% 70% / 70% 70% 50% 50%;
   position: absolute;
   opacity: 1;
-  -webkit-transition: width .1s ease-out;
-  transition: width .1s ease-out;
+  -webkit-transition: -webkit-transform .2s ease-out;
+  transition: -webkit-transform .2s ease-out;
+  transition: transform .2s ease-out;
+  transition: transform .2s ease-out, -webkit-transform .2s ease-out;
   pointer-events: none;
-  z-index: 99999;
+  z-index: 9999999;
   mix-blend-mode: overlay;
   -webkit-animation: deform 3.6s ease infinite;
           animation: deform 3.6s ease infinite;
+}
+
+#tracker.scale-up {
+  -webkit-transform: scale(2);
+          transform: scale(2);
 }
 
 .logo {

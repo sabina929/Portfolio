@@ -318,9 +318,43 @@ function loading() {
   setTimeout(() => {
     tlLoader.play()
     main.style.display = "block";
-    setTimeout(() => (main.style.opacity = 1), 50);  
-  // }, 12000);
-  }, 10);
+    setTimeout(() => (main.style.opacity = 1), 50); 
+    
+    
+        //MOUSE TRACKER
+    const tracker = document.querySelector('#tracker');
+    setTimeout(() => {
+            document.addEventListener('mousemove', e => {
+              tracker.setAttribute("style", "top: "+(e.pageY - 10)+"px; left: "+(e.pageX - 10)+"px; display:block;")
+            })
+    }, 2000)
+
+    //  MENU ITEMS HOVER EFFECT
+    let menuItemsUpper = document.querySelectorAll("#nav > p.to-left > span")
+    let menuItemsLower = document.querySelectorAll("#nav > p.to-right > span")
+    function scaleUp() {
+      // console.log(tracker)
+      // debugger
+      tracker.classList.toggle("scale-up");
+      // debugger
+      // console.log("executed")
+    }
+    menuItemsUpper.forEach(menuItem => {
+      menuItem.addEventListener("mouseover", scaleUp)
+      // console.log("executed")
+    })
+    menuItemsUpper.forEach(menuItem => {
+      menuItem.addEventListener("mouseout", scaleUp)
+    })
+    menuItemsLower.forEach(menuItem => {
+      menuItem.addEventListener("mouseover", scaleUp)
+    })
+    menuItemsLower.forEach(menuItem => {
+      menuItem.addEventListener("mouseout", scaleUp)
+    })
+
+  }, 12000);
+  // }, 1000);
 }
 document.addEventListener("DOMContentLoaded", function() {
   window.addEventListener(
