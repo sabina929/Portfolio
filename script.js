@@ -320,6 +320,9 @@ function loading() {
     main.style.display = "block";
     setTimeout(() => (main.style.opacity = 1), 50); 
     
+
+    gsap.to(".to-left", {x: -720, duration: 15, ease: "linear", yoyo:true, repeat: -1})
+    gsap.to(".to-right", {x: 0, duration: 15, ease: "linear", yoyo:true, repeat: -1})
     
         //MOUSE TRACKER
     const tracker = document.querySelector('#tracker');
@@ -369,8 +372,8 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 // GSAP ANIMATIONS
-gsap.to(".to-left", {x: -720, duration: 15, ease: "linear", yoyo:true, repeat: -1})
-gsap.to(".to-right", {x: 0, duration: 15, ease: "linear", yoyo:true, repeat: -1})
+// gsap.to(".to-left", {x: -720, duration: 15, ease: "linear", yoyo:true, repeat: -1})
+// gsap.to(".to-right", {x: 0, duration: 15, ease: "linear", yoyo:true, repeat: -1})
 
 
 let select = (selector) => {
@@ -389,7 +392,7 @@ let select = (selector) => {
       defaults: { duration: 1.4,transformOrigin: "50% 50%", opacity: 0, ease: "elastic(.1, 1)" }
     })
 
-    .fromTo("section#about", {yPercent: 50,scale: 0, opacity: 0, borderRadius: "50%"}, {yPercent: -50,scale: 1, opacity: 1, borderRadius: "0px"})
+    .fromTo("section#about", {yPercent: 50, xPercent: -50,scale: 0, opacity: 0, borderRadius: "50%"}, {yPercent: -50, xPercent: -50,scale: 1, opacity: 1, borderRadius: "0px"})
     
     .to(".logo", {
       color:"hsl(251, 60%, 17%)",
@@ -435,7 +438,7 @@ let select = (selector) => {
       defaults: { duration: 1.4,transformOrigin: "50% 50%", opacity: 0, ease: "elastic(.1, 1)" }
     })
 
-    .fromTo("section#artworks", {yPercent: 50,scale: 0, opacity: 0, borderRadius: "50%"}, {yPercent: -50,scale: 1, opacity: 1, borderRadius: "0px"})
+    .fromTo("section#artworks", {yPercent: 50,xPercent: -50,scale: 0, opacity: 0, borderRadius: "50%"}, {yPercent: -50, xPercent: -50,scale: 1, opacity: 1, borderRadius: "0px"})
     
   
     .to(".logo", {
@@ -481,7 +484,7 @@ let select = (selector) => {
       paused: true,
       defaults: { duration: 1.4,transformOrigin: "50% 50%", opacity: 0, ease: "elastic(.1, 1)" }
     })
-    .fromTo("section#websites", {yPercent: 50,scale: 0, opacity: 0, borderRadius: "50%"}, {yPercent: -50,scale: 1, opacity: 1, borderRadius: "0px"})
+    .fromTo("section#websites", {yPercent: 50,xPercent: -50,scale: 0, opacity: 0, borderRadius: "50%"}, {yPercent: -50,xPercent: -50,scale: 1, opacity: 1, borderRadius: "0px"})
     .to(".logo", {
       color:"hsl(251, 60%, 17%)",
       opacity: 1
@@ -519,7 +522,7 @@ let select = (selector) => {
       defaults: { duration: 1.4,transformOrigin: "50% 50%", opacity: 0, ease: "elastic(.1, 1)" }
     })
 
-    .fromTo("section#contact", {yPercent: 50,scale: 0, opacity: 0, borderRadius: "50%"}, {yPercent: -50,scale: 1, opacity: 1, borderRadius: "0px"})
+    .fromTo("section#contact", {yPercent: 50,xPercent: -50,scale: 0, opacity: 0, borderRadius: "50%"}, {yPercent: -50,xPercent: -50,scale: 1, opacity: 1, borderRadius: "0px"})
     
     .to(".logo", {
       color:"hsl(251, 60%, 17%)",

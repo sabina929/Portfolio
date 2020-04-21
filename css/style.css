@@ -109,6 +109,7 @@ body {
 }
 
 main {
+  display: none;
   height: 100vh;
   width: 100vw;
   opacity: 0;
@@ -244,6 +245,8 @@ main section#about {
   position: absolute;
   top: 50%;
   left: 50%;
+  -webkit-transform-origin: center;
+          transform-origin: center;
   -webkit-transform: translate(-50%, -50%) scaleY(0);
           transform: translate(-50%, -50%) scaleY(0);
   display: -webkit-box;
@@ -1237,5 +1240,24 @@ main section#contact .lines-bl::before {
       -ms-user-select: none;
           user-select: none;
   pointer-events: none;
+}
+
+@media only screen and (max-width: 1170px) {
+  .wrapper .loader {
+    width: 220px;
+    height: 220px;
+  }
+  .wrapper h1 {
+    font-size: 100px;
+    color: transparent;
+    -webkit-text-stroke: 2.4px #84691f;
+    margin-top: -300px;
+  }
+  .wrapper svg {
+    overflow: visible;
+  }
+  .wrapper path {
+    margin-top: -50px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
