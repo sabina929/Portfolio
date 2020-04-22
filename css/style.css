@@ -1261,5 +1261,231 @@ main section#contact .lines-bl::before {
   .wrapper path {
     margin-top: -50px;
   }
+  main {
+    height: 100vh;
+    width: 100vw;
+  }
+  main section#nav {
+    width: 100%;
+    height: 100vh;
+  }
+  main section#nav p {
+    width: 160%;
+  }
+  main section#nav p:nth-child(2) {
+    -webkit-transform: translateX(-720px);
+            transform: translateX(-720px);
+  }
+  main section#nav p span {
+    font-size: 9rem;
+    letter-spacing: 1.1px;
+    -webkit-text-stroke: 1px #ddc06e;
+    margin-right: 90px;
+  }
+  main section#nav p:nth-child(1) span:hover::before {
+    -webkit-transform: translate(10px, -10px);
+            transform: translate(10px, -10px);
+  }
+  main section#nav p:nth-child(2) span:hover::before {
+    -webkit-transform: translate(-10px, 10px);
+            transform: translate(-10px, 10px);
+  }
+  main section#about {
+    width: 100%;
+    height: 100vh;
+    padding: 0 150px;
+  }
+  main section#about .about-img {
+    width: 500px;
+    height: 500px;
+    margin-top: -50px;
+  }
+  main section#about .about-img img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main section#about .text {
+    width: 600px;
+    height: 500px;
+  }
+  main section#about .text h2 {
+    width: 106%;
+    font-size: 5rem;
+    line-height: 84px;
+    letter-spacing: 1.1px;
+    margin-bottom: 16px;
+  }
+  main section#about .text h3 {
+    font-weight: 800;
+    font-size: 2.2rem;
+    margin-bottom: 12px;
+  }
+  main section#about .text p {
+    width: 100%;
+    font-size: 1.2rem;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+    margin-bottom: -60px;
+  }
+  main section#about .back {
+    top: 30px;
+    right: 35px;
+    font-size: 1.2rem;
+    letter-spacing: 1.1px;
+  }
+  main section#about .back::before {
+    top: 105%;
+  }
+  main section#artworks {
+    width: 100%;
+    height: 100%;
+  }
+  main section#artworks .works-wrapper {
+    margin: 0px 0px 0px 0;
+    padding: 0 223px;
+  }
+  main section#artworks .works-wrapper .work-container {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 100%;
+    height: 400px;
+  }
+  main section#artworks .works-wrapper .work-container .work-img {
+    width: 40%;
+    height: 100%;
+  }
+  main section#artworks .works-wrapper .work-container .work-img img {
+    height: 400px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main section#artworks .works-wrapper .work-container div.work-title {
+    width: 40%;
+    height: 100%;
+  }
+  main section#artworks .works-wrapper .work-container div.work-title a {
+    width: 100%;
+    margin-left: -100px;
+    margin-top: 80px;
+  }
+  main section#artworks .works-wrapper .work-container div.work-title a p {
+    font-size: 5rem;
+    line-height: 75px;
+    letter-spacing: 1.1px;
+  }
+  main section#artworks .back {
+    top: 30px;
+    right: 35px;
+    font-size: 1.2rem;
+    letter-spacing: 1.1px;
+  }
+  main section#artworks .back::before {
+    top: 105%;
+  }
+  main section#websites {
+    width: 100%;
+    height: 100%;
+  }
+  main section#websites .works-wrapper {
+    margin: 0px 0px 0px 0;
+    padding: 0 223px;
+  }
+  main section#websites .works-wrapper .work-container {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 100%;
+    height: 400px;
+  }
+  main section#websites .works-wrapper .work-container .work-img {
+    width: 40%;
+    height: 100%;
+  }
+  main section#websites .works-wrapper .work-container .work-img img {
+    height: 400px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main section#websites .works-wrapper .work-container div.work-title {
+    width: 40%;
+    height: 100%;
+  }
+  main section#websites .works-wrapper .work-container div.work-title a {
+    width: 100%;
+    margin-left: -100px;
+    margin-top: 80px;
+  }
+  main section#websites .works-wrapper .work-container div.work-title a p {
+    font-size: 5rem;
+    line-height: 75px;
+    letter-spacing: 1.1px;
+  }
+  main section#websites .back {
+    top: 30px;
+    right: 35px;
+    font-size: 1.2rem;
+    letter-spacing: 1.1px;
+  }
+  main section#websites .back::before {
+    top: 105%;
+  }
+  main section#contact {
+    padding: 0 223px;
+  }
+  main section#contact h2#find-me {
+    font-size: 5rem;
+    line-height: 84px;
+    letter-spacing: 1.1px;
+    margin-bottom: 16px;
+  }
+  main section#contact .social-media-links {
+    margin-bottom: 30px;
+  }
+  main section#contact .social-media-links a {
+    text-decoration: none;
+  }
+  main section#contact .social-media-links a:not(:last-child) {
+    margin-right: 24px;
+  }
+  main section#contact .social-media-links a p {
+    font-size: 2.4rem;
+    line-height: 48px;
+    letter-spacing: 1.1px;
+  }
+  main section#contact h2#feel-free {
+    font-size: 2.2rem;
+    font-weight: 200;
+    line-height: 84px;
+    letter-spacing: 1.1px;
+    margin-bottom: 0px;
+  }
+  main section#contact h2#feel-free a {
+    font-weight: 800;
+  }
+  main section#contact h2#feel-free a.copied::before {
+    top: -10%;
+    left: -28%;
+    width: 140px;
+    height: 28px;
+    line-height: 26px;
+    letter-spacing: 0.2px;
+    font-size: 0.8rem;
+  }
+  main section#contact h2#feel-free a.copied::after {
+    top: 13%;
+    left: 47%;
+    width: 9px;
+    height: 9px;
+  }
+  main section#contact .back {
+    top: 30px;
+    right: 35px;
+    font-size: 1.2rem;
+    letter-spacing: 1.1px;
+  }
+  main section#contact .back::before {
+    top: 105%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
