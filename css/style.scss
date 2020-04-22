@@ -85,9 +85,12 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
+        overflow:hidden;
                 
         p{
             width: 160%;
+            overflow:hidden;
+
 
             &:nth-child(2){
                transform: translateX(-720px);
@@ -104,7 +107,6 @@ body {
                 position: relative;
                 font-style: normal;
                 cursor: pointer;
-                
                
             }
 
