@@ -356,36 +356,39 @@ function loading() {
       menuItem.addEventListener("mouseout", scaleUp)
     })
 
-  }, 12000);
-  // }, 1000);
+  // }, 12000);
+  }, 10);
 }
-document.addEventListener("DOMContentLoaded", function() {
-  window.addEventListener(
-    "load",
-    function() {
-      setTimeout(() => {
-        loading();
-      }, 500);
-    },
-    false
-  );
-});
 
-// GSAP ANIMATIONS
-// gsap.to(".to-left", {x: -720, duration: 15, ease: "linear", yoyo:true, repeat: -1})
-// gsap.to(".to-right", {x: 0, duration: 15, ease: "linear", yoyo:true, repeat: -1})
-
-
-let select = (selector) => {
+function startGSAPAnimations (){
+  let select = (selector) => {
     return document.querySelector(selector);
   };
-  
-  // ABOUT SECTION
+  let aboutSection = select("section#about");
+  let artworksSection = select("section#artworks");
+  let websitesSection = select("section#websites");
+  let contactSection = select("section#contact");
+
+  aboutSection.style.display = "flex";
+  artworksSection.style.display = "flex";
+  websitesSection.style.display = "flex";
+  contactSection.style.display = "flex";
+
   let aboutLeft = select("#nav > p.to-left > span:nth-child(1)");
   let aboutRight = select("#nav > p.to-right > span:nth-child(4)");
   let aboutBack = select("section#about .back");
+  let artworksLeft = select("#nav > p.to-left > span:nth-child(2)");
+  let artworksRight = select("#nav > p.to-right > span:nth-child(3)");
+  let artworksBack = select("section#artworks .back");
+  let websitesLeft = select("#nav > p.to-left > span:nth-child(3)");
+  let websitesRight = select("#nav > p.to-right > span:nth-child(2)");
+  let websitesBack = select("section#websites .back");
+  let contactLeft = select("#nav > p.to-left > span:nth-child(4)");
+  let contactRight = select("#nav > p.to-right > span:nth-child(1)");
+  let contactBack = select("section#contact .back");
 
 
+  // ABOUT SECTION
   let tlAbout = gsap
     .timeline({
       paused: true,
@@ -427,11 +430,6 @@ let select = (selector) => {
 
 
   // ARTORKS SECTION
-  let artworksLeft = select("#nav > p.to-left > span:nth-child(2)");
-  let artworksRight = select("#nav > p.to-right > span:nth-child(3)");
-  let artworksBack = select("section#artworks .back");
-
-
   let tlArtworks = gsap
     .timeline({
       paused: true,
@@ -450,8 +448,6 @@ let select = (selector) => {
       opacity: 1
     }, "<.6")
     
-
-
     .fromTo("section#artworks .work-img", {duration: 5, y: -100, opacity: 0, ease: "elastic(2, .1)"}, {
         y:0, opacity:1
     }, "<.6")
@@ -463,7 +459,6 @@ let select = (selector) => {
         ease: "elastic(.8, 0.0)"
       }, "<.6")
 
-
       .to("#tracker", {
         background:"hsl(56, 19%, 16%)",
         opacity: 1
@@ -474,11 +469,6 @@ let select = (selector) => {
   artworksBack.addEventListener("click", () => tlArtworks.reverse());
 
   // WEBSITES SECTION
-  let websitesLeft = select("#nav > p.to-left > span:nth-child(3)");
-  let websitesRight = select("#nav > p.to-right > span:nth-child(2)");
-  let websitesBack = select("section#websites .back");
-
-
   let tlWebsites = gsap
     .timeline({
       paused: true,
@@ -511,11 +501,7 @@ let select = (selector) => {
     websitesRight.addEventListener("click", () => tlWebsites.play());
     websitesBack.addEventListener("click", () => tlWebsites.reverse());
 
-    // CONTACT SECTION
-  let contactLeft = select("#nav > p.to-left > span:nth-child(4)");
-  let contactRight = select("#nav > p.to-right > span:nth-child(1)");
-  let contactBack = select("section#contact .back");
-  
+    // CONTACT SECTION  
   let tlContact = gsap
   .timeline({
       paused: true,
@@ -549,6 +535,199 @@ let select = (selector) => {
     contactLeft.addEventListener("click", () => tlContact.play());
     contactRight.addEventListener("click", () => tlContact.play());
     contactBack.addEventListener("click", () => tlContact.reverse());
+
+}
+document.addEventListener("DOMContentLoaded", function() {
+  window.addEventListener(
+    "load",
+    function() {
+      setTimeout(() => {
+        loading();
+        startGSAPAnimations();
+      }, 500);
+    },
+    false
+  );
+});
+
+// GSAP ANIMATIONS
+// gsap.to(".to-left", {x: -720, duration: 15, ease: "linear", yoyo:true, repeat: -1})
+// gsap.to(".to-right", {x: 0, duration: 15, ease: "linear", yoyo:true, repeat: -1})
+
+
+  // let select = (selector) => {
+  //   return document.querySelector(selector);
+  // };
+  
+  // // ABOUT SECTION
+  // let aboutLeft = select("#nav > p.to-left > span:nth-child(1)");
+  // let aboutRight = select("#nav > p.to-right > span:nth-child(4)");
+  // let aboutBack = select("section#about .back");
+
+
+  // let tlAbout = gsap
+  //   .timeline({
+  //     paused: true,
+  //     defaults: { duration: 1.4,transformOrigin: "50% 50%", opacity: 0, ease: "elastic(.1, 1)" }
+  //   })
+
+  //   .fromTo("section#about", {yPercent: 50, xPercent: -50,scale: 0, opacity: 0, borderRadius: "50%"}, {yPercent: -50, xPercent: -50,scale: 1, opacity: 1, borderRadius: "0px"})
+    
+  //   .to(".logo", {
+  //     color:"hsl(251, 60%, 17%)",
+  //     opacity: 1
+  //   }, "<.6")
+  //   .to(".copyright", {
+  //     color:"hsl(251, 60%, 17%)",
+  //     opacity: 1
+  //   }, "<.6")
+    
+
+  //   .fromTo("section#about .about-img", {duration: 5, y: -100, opacity: 0, ease: "elastic(2, .1)"}, {
+  //     y:0, opacity:1
+  // }, "<.6")
+
+  //   .from("section#about .splitting .char", {
+  //       y: 40,
+  //       duration: 1.8,
+  //       stagger: 0.008,
+  //       ease: "elastic(.8, 0.0)"
+  //     }, "<.6")
+
+
+  //     .to("#tracker", {
+  //       background:"hsl(56, 19%, 16%)",
+  //       opacity: 1
+  //     }, "<.6")
+
+  //   aboutLeft.addEventListener("click", () => tlAbout.play());
+  //   aboutRight.addEventListener("click", () => tlAbout.play());
+  //   aboutBack.addEventListener("click", () => tlAbout.reverse());
+
+
+  // // ARTORKS SECTION
+  // let artworksLeft = select("#nav > p.to-left > span:nth-child(2)");
+  // let artworksRight = select("#nav > p.to-right > span:nth-child(3)");
+  // let artworksBack = select("section#artworks .back");
+
+
+  // let tlArtworks = gsap
+  //   .timeline({
+  //     paused: true,
+  //     defaults: { duration: 1.4,transformOrigin: "50% 50%", opacity: 0, ease: "elastic(.1, 1)" }
+  //   })
+
+  //   .fromTo("section#artworks", {yPercent: 50,xPercent: -50,scale: 0, opacity: 0, borderRadius: "50%"}, {yPercent: -50, xPercent: -50,scale: 1, opacity: 1, borderRadius: "0px"})
+    
+  
+  //   .to(".logo", {
+  //     color:"hsl(251, 60%, 17%)",
+  //     opacity: 1
+  //   }, "<.6")
+  //   .to(".copyright", {
+  //     color:"hsl(251, 60%, 17%)",
+  //     opacity: 1
+  //   }, "<.6")
+    
+
+
+  //   .fromTo("section#artworks .work-img", {duration: 5, y: -100, opacity: 0, ease: "elastic(2, .1)"}, {
+  //       y:0, opacity:1
+  //   }, "<.6")
+
+  //   .from("section#artworks .splitting .char", {
+  //       y: 40,
+  //       duration: 1.8,
+  //       stagger: 0.01,
+  //       ease: "elastic(.8, 0.0)"
+  //     }, "<.6")
+
+
+  //     .to("#tracker", {
+  //       background:"hsl(56, 19%, 16%)",
+  //       opacity: 1
+  //     }, "<.6")
+
+  // artworksLeft.addEventListener("click", () => tlArtworks.play());
+  // artworksRight.addEventListener("click", () => tlArtworks.play());
+  // artworksBack.addEventListener("click", () => tlArtworks.reverse());
+
+  // // WEBSITES SECTION
+  // let websitesLeft = select("#nav > p.to-left > span:nth-child(3)");
+  // let websitesRight = select("#nav > p.to-right > span:nth-child(2)");
+  // let websitesBack = select("section#websites .back");
+
+
+  // let tlWebsites = gsap
+  //   .timeline({
+  //     paused: true,
+  //     defaults: { duration: 1.4,transformOrigin: "50% 50%", opacity: 0, ease: "elastic(.1, 1)" }
+  //   })
+  //   .fromTo("section#websites", {yPercent: 50,xPercent: -50,scale: 0, opacity: 0, borderRadius: "50%"}, {yPercent: -50,xPercent: -50,scale: 1, opacity: 1, borderRadius: "0px"})
+  //   .to(".logo", {
+  //     color:"hsl(251, 60%, 17%)",
+  //     opacity: 1
+  //   }, "<.6")
+  //   .to(".copyright", {
+  //     color:"hsl(251, 60%, 17%)",
+  //     opacity: 1
+  //   }, "<.6")
+  //   .fromTo("section#websites .work-img", {duration: 5, y: -100, opacity: 0, ease: "elastic(2, .1)"}, {
+  //       y:0, opacity:1
+  //   }, "<.6")
+  //   .from("section#websites .splitting .char", {
+  //       y: 40,
+  //       duration: 1.8,
+  //       stagger: 0.01,
+  //       ease: "elastic(.8, 0.0)"
+  //   }, "<.6")
+  //   .to("#tracker", {
+  //     background:"hsl(56, 19%, 16%)",
+  //     opacity: 1
+  //   }, "<.6")
+
+  //   websitesLeft.addEventListener("click", () => tlWebsites.play());
+  //   websitesRight.addEventListener("click", () => tlWebsites.play());
+  //   websitesBack.addEventListener("click", () => tlWebsites.reverse());
+
+  //   // CONTACT SECTION
+  // let contactLeft = select("#nav > p.to-left > span:nth-child(4)");
+  // let contactRight = select("#nav > p.to-right > span:nth-child(1)");
+  // let contactBack = select("section#contact .back");
+  
+  // let tlContact = gsap
+  // .timeline({
+  //     paused: true,
+  //     defaults: { duration: 1.4,transformOrigin: "50% 50%", opacity: 0, ease: "elastic(.1, 1)" }
+  //   })
+
+  //   .fromTo("section#contact", {yPercent: 50,xPercent: -50,scale: 0, opacity: 0, borderRadius: "50%"}, {yPercent: -50,xPercent: -50,scale: 1, opacity: 1, borderRadius: "0px"})
+    
+  //   .to(".logo", {
+  //     color:"hsl(251, 60%, 17%)",
+  //     opacity: 1
+  //   }, "<.6")
+  //   .to(".copyright", {
+  //     color:"hsl(251, 60%, 17%)",
+  //     opacity: 1
+  //   }, "<")
+
+    
+  //   .from("section#contact .splitting .char", {
+  //     y: 40,
+  //       duration: 1.8,
+  //       stagger: 0.01,
+  //       ease: "elastic(.8, 0.0)"
+  //     }, "<.6")
+      
+  //   .to("#tracker", {
+  //     background:"hsl(56, 19%, 16%)",
+  //     opacity: 1
+  //   }, "<.6")
+      
+  //   contactLeft.addEventListener("click", () => tlContact.play());
+  //   contactRight.addEventListener("click", () => tlContact.play());
+  //   contactBack.addEventListener("click", () => tlContact.reverse());
 
   
     // let theLongDark = select("section#ipsum #the-long-dark >div");
