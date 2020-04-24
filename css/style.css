@@ -1461,7 +1461,7 @@ main section#contact .lines-bl::before {
     left: -28%;
     width: 140px;
     height: 24px;
-    line-height: 26px;
+    line-height: 24px;
     letter-spacing: 0.2px;
     font-size: 0.8rem;
   }
@@ -1519,10 +1519,10 @@ main section#contact .lines-bl::before {
             transform: translateX(-720px);
   }
   main section#nav p span {
-    font-size: 5rem;
-    letter-spacing: 1.1px;
-    -webkit-text-stroke: 1px #ddc06e;
-    margin-right: 60px;
+    font-size: 4rem;
+    letter-spacing: 1px;
+    -webkit-text-stroke: 0.6px #ddc06e;
+    margin-right: 50px;
   }
   main section#nav p:nth-child(1) span:hover::before {
     -webkit-transform: translate(10px, -10px);
@@ -1533,15 +1533,14 @@ main section#contact .lines-bl::before {
             transform: translate(-10px, 10px);
   }
   main section#about {
-    display: none;
     width: 100%;
     height: 100vh;
-    padding: 0 120px;
+    padding: 0px 110px;
   }
   main section#about .about-img {
-    width: 45%;
-    height: 300px;
-    margin-top: -50px;
+    width: 50%;
+    height: 240px;
+    margin-top: -90px;
   }
   main section#about .about-img img {
     -o-object-fit: cover;
@@ -1549,26 +1548,26 @@ main section#contact .lines-bl::before {
   }
   main section#about .text {
     width: 60%;
-    height: 424px;
-    margin-left: 32px;
+    height: 430px;
+    margin-left: 30px;
   }
   main section#about .text h2 {
     width: 100%;
-    font-size: 2.6rem;
-    line-height: 45px;
+    font-size: 2.1rem;
+    line-height: 35px;
     letter-spacing: 1px;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
   }
   main section#about .text h3 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin-bottom: 5px;
   }
   main section#about .text p {
     width: 100%;
-    font-size: .95rem;
-    line-height: 23px;
-    letter-spacing: 0.5px;
-    margin-bottom: -10px;
+    font-size: 0.8rem;
+    line-height: 19px;
+    letter-spacing: 0.3px;
+    margin-bottom: -8px;
   }
   main section#about .back {
     top: 30px;
@@ -1594,7 +1593,6 @@ main section#contact .lines-bl::before {
     height: 105px;
   }
   main section#artworks {
-    display: none;
     width: 100%;
     height: 100%;
   }
@@ -1660,7 +1658,6 @@ main section#contact .lines-bl::before {
     height: 105px;
   }
   main section#websites {
-    display: none;
     width: 100%;
     height: 100%;
   }
@@ -1726,7 +1723,6 @@ main section#contact .lines-bl::before {
     height: 105px;
   }
   main section#contact {
-    display: none;
     padding: 0 180px;
   }
   main section#contact h2#find-me {
@@ -1755,19 +1751,19 @@ main section#contact .lines-bl::before {
     font-weight: 800;
   }
   main section#contact h2#feel-free a.copied::before {
-    top: -75%;
+    top: -56%;
     left: -28%;
-    width: 140px;
-    height: 24px;
-    line-height: 26px;
-    letter-spacing: 0.2px;
-    font-size: 0.8rem;
+    width: 100px;
+    height: 20px;
+    line-height: 20px;
+    letter-spacing: 0.1px;
+    font-size: 0.62rem;
   }
   main section#contact h2#feel-free a.copied::after {
-    top: -26%;
+    top: -12%;
     left: 47%;
-    width: 9px;
-    height: 9px;
+    width: 7px;
+    height: 7px;
   }
   main section#contact .back {
     top: 30px;
@@ -1803,6 +1799,24 @@ main section#contact .lines-bl::before {
     letter-spacing: 1.9px;
     bottom: 12px;
     right: -40px;
+  }
+  .lines-tr {
+    top: 18px;
+    width: 160px;
+  }
+  .lines-tr::before {
+    top: -18px;
+    right: 18px;
+    height: 105px;
+  }
+  .lines-bl {
+    bottom: 18px;
+    width: 160px;
+  }
+  .lines-bl::before {
+    bottom: -18px;
+    left: 18px;
+    height: 105px;
   }
 }
 /*# sourceMappingURL=style.css.map */
