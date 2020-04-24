@@ -1488,8 +1488,8 @@ main section#contact .lines-bl::before {
 
 @media only screen and (max-width: 1001px) {
   .wrapper .loader {
-    width: 220px;
-    height: 220px;
+    width: 180px;
+    height: 180px;
   }
   .wrapper h1 {
     font-size: 100px;
@@ -1571,9 +1571,27 @@ main section#contact .lines-bl::before {
     margin-bottom: -10px;
   }
   main section#about .back {
-    top: 35px;
-    font-size: 1.1rem;
-    letter-spacing: 1px;
+    top: 30px;
+    font-size: 0.9rem;
+    letter-spacing: 0.7px;
+  }
+  main section#about .lines-tr {
+    top: 18px;
+    width: 160px;
+  }
+  main section#about .lines-tr::before {
+    top: -18px;
+    right: 18px;
+    height: 105px;
+  }
+  main section#about .lines-bl {
+    bottom: 18px;
+    width: 160px;
+  }
+  main section#about .lines-bl::before {
+    bottom: -18px;
+    left: 18px;
+    height: 105px;
   }
   main section#artworks {
     display: none;
@@ -1581,42 +1599,65 @@ main section#contact .lines-bl::before {
     height: 100%;
   }
   main section#artworks .works-wrapper {
-    margin: 0px 0px 0px 0;
-    padding: 0 223px;
+    padding: 0 183px;
+  }
+  main section#artworks .works-wrapper::-webkit-scrollbar {
+    width: 8px;
+  }
+  main section#artworks .works-wrapper::-webkit-scrollbar-track {
+    width: 6px;
+  }
+  main section#artworks .works-wrapper::-webkit-scrollbar-thumb {
+    width: 6px;
   }
   main section#artworks .works-wrapper .work-container {
     margin-top: 100px;
     margin-bottom: 100px;
-    width: 125%;
-    height: 320px;
+    width: 130%;
+    height: 250px;
   }
   main section#artworks .works-wrapper .work-container .work-img {
-    width: 80%;
-    height: 100%;
+    width: 76%;
   }
   main section#artworks .works-wrapper .work-container .work-img img {
-    height: 320px;
+    height: 250px;
     -o-object-fit: cover;
        object-fit: cover;
   }
   main section#artworks .works-wrapper .work-container div.work-title {
     width: 54%;
-    height: 100%;
   }
   main section#artworks .works-wrapper .work-container div.work-title a {
-    width: 100%;
-    margin-left: -80px;
-    margin-top: 50px;
+    margin-left: -60px;
+    margin-top: 40px;
   }
   main section#artworks .works-wrapper .work-container div.work-title a p {
-    font-size: 3.5rem;
-    line-height: 60px;
-    letter-spacing: 1px;
+    font-size: 2.6rem;
+    line-height: 42px;
+    letter-spacing: 0px;
   }
   main section#artworks .back {
-    top: 35px;
-    font-size: 1.1rem;
-    letter-spacing: 1px;
+    top: 30px;
+    font-size: 0.9rem;
+    letter-spacing: 0.7px;
+  }
+  main section#artworks .lines-tr {
+    top: 18px;
+    width: 160px;
+  }
+  main section#artworks .lines-tr::before {
+    top: -18px;
+    right: 18px;
+    height: 105px;
+  }
+  main section#artworks .lines-bl {
+    bottom: 18px;
+    width: 160px;
+  }
+  main section#artworks .lines-bl::before {
+    bottom: -18px;
+    left: 18px;
+    height: 105px;
   }
   main section#websites {
     display: none;
@@ -1624,73 +1665,91 @@ main section#contact .lines-bl::before {
     height: 100%;
   }
   main section#websites .works-wrapper {
-    margin: 0px 0px 0px 0;
-    padding: 0 223px;
+    padding: 0 183px;
+  }
+  main section#websites .works-wrapper::-webkit-scrollbar {
+    width: 8px;
+  }
+  main section#websites .works-wrapper::-webkit-scrollbar-track {
+    width: 6px;
+  }
+  main section#websites .works-wrapper::-webkit-scrollbar-thumb {
+    width: 6px;
   }
   main section#websites .works-wrapper .work-container {
     margin-top: 100px;
     margin-bottom: 100px;
-    width: 125%;
-    height: 320px;
+    width: 130%;
+    height: 250px;
   }
   main section#websites .works-wrapper .work-container .work-img {
-    width: 80%;
-    height: 100%;
+    width: 76%;
   }
   main section#websites .works-wrapper .work-container .work-img img {
-    height: 320px;
+    height: 250px;
     -o-object-fit: cover;
        object-fit: cover;
   }
   main section#websites .works-wrapper .work-container div.work-title {
     width: 54%;
-    height: 100%;
   }
   main section#websites .works-wrapper .work-container div.work-title a {
-    width: 100%;
-    margin-left: -80px;
-    margin-top: 50px;
+    margin-left: -60px;
+    margin-top: 40px;
   }
   main section#websites .works-wrapper .work-container div.work-title a p {
-    font-size: 3.5rem;
-    line-height: 60px;
-    letter-spacing: 1px;
+    font-size: 2.6rem;
+    line-height: 42px;
+    letter-spacing: 0px;
   }
   main section#websites .back {
-    top: 35px;
-    font-size: 1.1rem;
-    letter-spacing: 1px;
+    top: 30px;
+    font-size: 0.9rem;
+    letter-spacing: 0.7px;
+  }
+  main section#websites .lines-tr {
+    top: 18px;
+    width: 160px;
+  }
+  main section#websites .lines-tr::before {
+    top: -18px;
+    right: 18px;
+    height: 105px;
+  }
+  main section#websites .lines-bl {
+    bottom: 18px;
+    width: 160px;
+  }
+  main section#websites .lines-bl::before {
+    bottom: -18px;
+    left: 18px;
+    height: 105px;
   }
   main section#contact {
     display: none;
     padding: 0 180px;
   }
   main section#contact h2#find-me {
-    font-size: 3rem;
-    line-height: 84px;
+    font-size: 2.4rem;
+    line-height: 50px;
     letter-spacing: 1.1px;
-    margin-bottom: 0px;
+    margin-bottom: 8px;
   }
   main section#contact .social-media-links {
-    margin-bottom: 32px;
-  }
-  main section#contact .social-media-links a {
-    text-decoration: none;
+    margin-bottom: 18px;
   }
   main section#contact .social-media-links a:not(:last-child) {
-    margin-right: 16px;
+    margin-right: 14px;
   }
   main section#contact .social-media-links a p {
-    font-size: 1.8rem;
-    line-height: 32px;
-    letter-spacing: 1px;
+    font-size: 1.4rem;
+    line-height: 30px;
+    letter-spacing: 0.8px;
   }
   main section#contact h2#feel-free {
-    font-size: 1.7rem;
-    font-weight: 200;
-    line-height: 32px;
-    letter-spacing: 1px;
-    margin-bottom: 0px;
+    font-size: 1.3rem;
+    line-height: 30px;
+    letter-spacing: 0.8px;
   }
   main section#contact h2#feel-free a {
     font-weight: 800;
@@ -1711,17 +1770,39 @@ main section#contact .lines-bl::before {
     height: 9px;
   }
   main section#contact .back {
-    top: 35px;
-    font-size: 1.1rem;
-    letter-spacing: 1px;
+    top: 30px;
+    font-size: 0.9rem;
+    letter-spacing: 0.7px;
+  }
+  main section#contact .lines-tr {
+    top: 18px;
+    width: 160px;
+  }
+  main section#contact .lines-tr::before {
+    top: -18px;
+    right: 18px;
+    height: 105px;
+  }
+  main section#contact .lines-bl {
+    bottom: 18px;
+    width: 160px;
+  }
+  main section#contact .lines-bl::before {
+    bottom: -18px;
+    left: 18px;
+    height: 105px;
   }
   .logo {
-    line-height: 26px;
-    font-size: 1rem;
+    line-height: 22px;
+    font-size: 0.8rem;
+    top: 16px;
+    left: 12px;
   }
   .copyright {
-    font-size: 0.75rem;
-    letter-spacing: 2.4px;
+    font-size: 0.66rem;
+    letter-spacing: 1.9px;
+    bottom: 12px;
+    right: -40px;
   }
 }
 /*# sourceMappingURL=style.css.map */

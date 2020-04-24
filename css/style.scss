@@ -1247,8 +1247,8 @@ body {
 @media only screen and (max-width: 1001px) {
     .wrapper {
         .loader {
-          width: 220px;
-          height:220px;
+          width: 180px;
+          height:180px;
         }
         h1 {
             font-size: 100px;
@@ -1347,10 +1347,28 @@ body {
           }
   
               .back{
-                  top: 35px;
-                  font-size: 1.1rem;
-                  letter-spacing: 1px;
+                top: 30px;
+                font-size: 0.9rem;
+                letter-spacing: 0.7px;            
               }
+              .lines-tr {
+                top: 18px;
+                width: 160px;
+                &::before{
+                    top: -18px;
+                    right: 18px;
+                    height: 105px;
+                }
+            }
+              .lines-bl {
+                bottom: 18px;
+                width: 160px;
+                &::before{
+                    bottom: -18px;
+                    left: 18px;
+                    height: 105px;
+                }
+            }
           }
   
           section#artworks{
@@ -1359,19 +1377,28 @@ body {
               height: 100%;
               
               .works-wrapper {
-                  margin: 0px 0px 0px 0;
-                  padding: 0 223px;
+                  padding: 0 183px;
+                  &::-webkit-scrollbar {
+                    width: 8px;
+                  }
+                  
+                  &::-webkit-scrollbar-track {
+                    width: 6px;
+                  }
+                  
+                  &::-webkit-scrollbar-thumb {
+                    width: 6px;
+                  }
                  
               .work-container{
                     margin-top: 100px;
                     margin-bottom: 100px;
-                    width: 125%;
-                    height: 320px;
+                    width: 130%;
+                    height: 250px;
                       .work-img{
-                          width: 80%;
-                          height: 100%;
+                        width: 76%;
                           img{
-                              height: 320px;
+                              height: 250px;
                               object-fit: cover;
                               
                           }
@@ -1379,15 +1406,13 @@ body {
   
                       div.work-title{
                         width: 54%;
-                        height: 100%;
                           a{
-                            width: 100%;
-                            margin-left: -80px;
-                            margin-top: 50px;
+                            margin-left: -60px;
+                            margin-top: 40px;
                               p{
-                                font-size: 3.5rem;
-                                line-height: 60px;
-                                letter-spacing: 1px;
+                                font-size: 2.6rem;
+                                line-height: 42px;
+                                letter-spacing: 0px;
                               }
                           }
                       }
@@ -1396,10 +1421,28 @@ body {
               }
               
               .back{
-                top: 35px;
-                font-size: 1.1rem;
-                letter-spacing: 1px;
+                top: 30px;
+                font-size: 0.9rem;
+                letter-spacing: 0.7px;            
               }
+              .lines-tr {
+                top: 18px;
+                width: 160px;
+                &::before{
+                    top: -18px;
+                    right: 18px;
+                    height: 105px;
+                }
+            }
+              .lines-bl {
+                bottom: 18px;
+                width: 160px;
+                &::before{
+                    bottom: -18px;
+                    left: 18px;
+                    height: 105px;
+                }
+            }
           }
           section#websites{
               display:none;
@@ -1407,35 +1450,42 @@ body {
               height: 100%;
               
               .works-wrapper {
-                  margin: 0px 0px 0px 0;
-                  padding: 0 223px;
+                padding: 0 183px;
+
+                &::-webkit-scrollbar {
+                width: 8px;
+                }
+                
+                &::-webkit-scrollbar-track {
+                width: 6px;
+                }
+                
+                &::-webkit-scrollbar-thumb {
+                width: 6px;
+                }
                   
-              .work-container{
+                .work-container{
                       margin-top: 100px;
                       margin-bottom: 100px;
-                      width: 125%;
-                      height: 320px;
-                      .work-img{
-                          width: 80%;
-                          height: 100%;
-                          img{
-                              height: 320px;
-                              object-fit: cover;
-                              
-                          }
-                      }
+                      width: 130%;
+                      height: 250px;
+                        .work-img{
+                            width: 76%;
+                            img{
+                                height: 250px;
+                                object-fit: cover;
+                            }
+                        }
   
                       div.work-title{
                         width: 54%;
-                        height: 100%;
-                          a{
-                            width: 100%;
-                            margin-left: -80px;
-                            margin-top: 50px;
+                            a{
+                              margin-left: -60px;
+                              margin-top: 40px;
                               p{
-                                font-size: 3.5rem;
-                                line-height: 60px;
-                                letter-spacing: 1px;
+                                font-size: 2.6rem;
+                                line-height: 42px;
+                                letter-spacing: 0px;
                               }
                           }
                       }
@@ -1444,10 +1494,28 @@ body {
               }
   
               .back{
-                top: 35px;
-                font-size: 1.1rem;
-                letter-spacing: 1px;                
+                top: 30px;
+                font-size: 0.9rem;
+                letter-spacing: 0.7px;            
               }
+              .lines-tr {
+                top: 18px;
+                width: 160px;
+                &::before{
+                    top: -18px;
+                    right: 18px;
+                    height: 105px;
+                }
+            }
+              .lines-bl {
+                bottom: 18px;
+                width: 160px;
+                &::before{
+                    bottom: -18px;
+                    left: 18px;
+                    height: 105px;
+                }
+            }
               
           }
           section#contact{
@@ -1455,33 +1523,30 @@ body {
               padding: 0 180px;
               
               h2#find-me{
-                  font-size: 3rem;
-                  line-height: 84px;
-                  letter-spacing: 1.1px;
-                  margin-bottom: 0px;              
+                font-size: 2.4rem;
+                line-height: 50px;
+                letter-spacing: 1.1px;
+                margin-bottom: 8px;            
               }
   
               .social-media-links{
-                    margin-bottom: 32px;
-                  a{
-                      text-decoration: none;
+                    margin-bottom: 18px;
+                    a{
                       &:not(:last-child){
-                          margin-right: 16px;
+                        margin-right: 14px;
                       }
                       p{
-                          font-size: 1.8rem;
-                          line-height: 32px;
-                          letter-spacing: 1px;
+                        font-size: 1.4rem;
+                        line-height: 30px;
+                        letter-spacing: 0.8px;
                       }
                   }
               }
   
               h2#feel-free{
-                  font-size: 1.7rem;
-                  font-weight: 200;
-                  line-height: 32px;
-                  letter-spacing: 1px;
-                  margin-bottom: 0px;
+                font-size: 1.3rem;
+                line-height: 30px;
+                letter-spacing: 0.8px;
                   
                   a{
                       font-weight: 800;
@@ -1504,22 +1569,43 @@ body {
        
                   }
               }
-              
               .back{
-                top: 35px;
-                font-size: 1.1rem;
-                letter-spacing: 1px;  
+                top: 30px;
+                font-size: 0.9rem;
+                letter-spacing: 0.7px;            
               }
+              .lines-tr {
+                top: 18px;
+                width: 160px;
+                &::before{
+                    top: -18px;
+                    right: 18px;
+                    height: 105px;
+                }
+            }
+              .lines-bl {
+                bottom: 18px;
+                width: 160px;
+                &::before{
+                    bottom: -18px;
+                    left: 18px;
+                    height: 105px;
+                }
+            }
          
           }
     }
     .logo{
-        line-height: 26px;
-        font-size: 1rem;
+        line-height: 22px;
+        font-size: 0.8rem;
+        top: 16px;
+        left: 12px;
     }
     .copyright{
-        font-size: 0.75rem;
-        letter-spacing: 2.4px;
+        font-size: 0.66rem;
+        letter-spacing: 1.9px;
+        bottom: 12px;
+        right: -40px;
     }
 
 }
