@@ -2007,7 +2007,7 @@ main section#contact .lines-bl::before {
     height: 100%;
   }
   main section#artworks .works-wrapper {
-    padding: 0 183px;
+    padding: 0 143px;
   }
   main section#artworks .works-wrapper::-webkit-scrollbar {
     width: 8px;
@@ -2019,13 +2019,13 @@ main section#contact .lines-bl::before {
     width: 6px;
   }
   main section#artworks .works-wrapper .work-container {
-    margin-top: 100px;
-    margin-bottom: 100px;
-    width: 130%;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    width: 120%;
     height: 250px;
   }
   main section#artworks .works-wrapper .work-container .work-img {
-    width: 76%;
+    width: 60%;
   }
   main section#artworks .works-wrapper .work-container .work-img img {
     height: 250px;
@@ -2033,14 +2033,14 @@ main section#contact .lines-bl::before {
        object-fit: cover;
   }
   main section#artworks .works-wrapper .work-container div.work-title {
-    width: 54%;
+    width: 40%;
   }
   main section#artworks .works-wrapper .work-container div.work-title a {
-    margin-left: -60px;
+    margin-left: -56px;
     margin-top: 40px;
   }
   main section#artworks .works-wrapper .work-container div.work-title a p {
-    font-size: 2.6rem;
+    font-size: 2.4rem;
     line-height: 42px;
     letter-spacing: 0px;
   }
@@ -2073,7 +2073,7 @@ main section#contact .lines-bl::before {
     height: 100%;
   }
   main section#websites .works-wrapper {
-    padding: 0 183px;
+    padding: 0 143px;
   }
   main section#websites .works-wrapper::-webkit-scrollbar {
     width: 8px;
@@ -2085,13 +2085,13 @@ main section#contact .lines-bl::before {
     width: 6px;
   }
   main section#websites .works-wrapper .work-container {
-    margin-top: 100px;
-    margin-bottom: 100px;
-    width: 130%;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    width: 120%;
     height: 250px;
   }
   main section#websites .works-wrapper .work-container .work-img {
-    width: 76%;
+    width: 60%;
   }
   main section#websites .works-wrapper .work-container .work-img img {
     height: 250px;
@@ -2099,14 +2099,14 @@ main section#contact .lines-bl::before {
        object-fit: cover;
   }
   main section#websites .works-wrapper .work-container div.work-title {
-    width: 54%;
+    width: 40%;
   }
   main section#websites .works-wrapper .work-container div.work-title a {
-    margin-left: -60px;
+    margin-left: -56px;
     margin-top: 40px;
   }
   main section#websites .works-wrapper .work-container div.work-title a p {
-    font-size: 2.6rem;
+    font-size: 2.4rem;
     line-height: 42px;
     letter-spacing: 0px;
   }
@@ -2135,47 +2135,51 @@ main section#contact .lines-bl::before {
     height: 85px;
   }
   main section#contact {
-    padding: 0 180px;
+    padding: 0 143px;
   }
   main section#contact h2#find-me {
-    font-size: 2.4rem;
-    line-height: 50px;
+    font-size: 2.2rem;
+    line-height: 40px;
     letter-spacing: 1.1px;
     margin-bottom: 8px;
   }
   main section#contact .social-media-links {
-    margin-bottom: 18px;
+    margin-bottom: 16px;
   }
   main section#contact .social-media-links a:not(:last-child) {
-    margin-right: 14px;
+    margin-right: 12px;
   }
   main section#contact .social-media-links a p {
-    font-size: 1.4rem;
-    line-height: 30px;
+    font-size: 1.2rem;
+    line-height: 26px;
     letter-spacing: 0.8px;
   }
   main section#contact h2#feel-free {
-    font-size: 1.3rem;
-    line-height: 30px;
+    font-size: 1.1rem;
+    line-height: 24px;
     letter-spacing: 0.8px;
   }
   main section#contact h2#feel-free a {
     font-weight: 800;
   }
   main section#contact h2#feel-free a.copied::before {
-    top: -56%;
+    top: -60%;
     left: -28%;
     width: 100px;
-    height: 20px;
-    line-height: 20px;
-    letter-spacing: 0.1px;
+    height: 16px;
+    line-height: 16px;
+    letter-spacing: 0px;
     font-size: 0.62rem;
+    border: 0.8px solid #24165a;
   }
   main section#contact h2#feel-free a.copied::after {
-    top: -12%;
+    top: -20%;
     left: 47%;
-    width: 7px;
-    height: 7px;
+    width: 6px;
+    height: 6px;
+    border: 0.8px solid #24165a;
+    border-top: .8px solid transparent;
+    border-left: .8px solid transparent;
   }
   main section#contact .back {
     top: 28px;
@@ -2376,7 +2380,7 @@ main section#contact .lines-bl::before {
     height: 100%;
   }
   main section#artworks .works-wrapper {
-    padding: 0 183px;
+    padding: 0 133px;
   }
   main section#artworks .works-wrapper::-webkit-scrollbar {
     width: 8px;
@@ -2388,13 +2392,13 @@ main section#contact .lines-bl::before {
     width: 6px;
   }
   main section#artworks .works-wrapper .work-container {
-    margin-top: 100px;
-    margin-bottom: 100px;
-    width: 130%;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    width: 120%;
     height: 250px;
   }
   main section#artworks .works-wrapper .work-container .work-img {
-    width: 76%;
+    width: 60%;
   }
   main section#artworks .works-wrapper .work-container .work-img img {
     height: 250px;
@@ -2402,14 +2406,14 @@ main section#contact .lines-bl::before {
        object-fit: cover;
   }
   main section#artworks .works-wrapper .work-container div.work-title {
-    width: 54%;
+    width: 40%;
   }
   main section#artworks .works-wrapper .work-container div.work-title a {
-    margin-left: -60px;
+    margin-left: -56px;
     margin-top: 40px;
   }
   main section#artworks .works-wrapper .work-container div.work-title a p {
-    font-size: 2.6rem;
+    font-size: 2.4rem;
     line-height: 42px;
     letter-spacing: 0px;
   }
@@ -2454,13 +2458,13 @@ main section#contact .lines-bl::before {
     width: 6px;
   }
   main section#websites .works-wrapper .work-container {
-    margin-top: 100px;
-    margin-bottom: 100px;
-    width: 130%;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    width: 120%;
     height: 250px;
   }
   main section#websites .works-wrapper .work-container .work-img {
-    width: 76%;
+    width: 60%;
   }
   main section#websites .works-wrapper .work-container .work-img img {
     height: 250px;
@@ -2468,14 +2472,14 @@ main section#contact .lines-bl::before {
        object-fit: cover;
   }
   main section#websites .works-wrapper .work-container div.work-title {
-    width: 54%;
+    width: 40%;
   }
   main section#websites .works-wrapper .work-container div.work-title a {
-    margin-left: -60px;
+    margin-left: -56px;
     margin-top: 40px;
   }
   main section#websites .works-wrapper .work-container div.work-title a p {
-    font-size: 2.6rem;
+    font-size: 2.4rem;
     line-height: 42px;
     letter-spacing: 0px;
   }
