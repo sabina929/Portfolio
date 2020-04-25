@@ -1958,23 +1958,23 @@ main section#contact .lines-bl::before {
     width: 90%;
     height: auto;
     margin-left: 0px;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
   }
   main section#about .about-wrapper .text h2 {
     width: 100%;
     font-size: 2.4rem;
     line-height: 40px;
     letter-spacing: 1px;
-    margin-bottom: 12px;
+    margin-bottom: 14px;
   }
   main section#about .about-wrapper .text h3 {
     font-size: 1.4rem;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
   }
   main section#about .about-wrapper .text p {
     width: 100%;
     font-size: 1rem;
-    line-height: 21px;
+    line-height: 24px;
     letter-spacing: 0.6px;
     margin-bottom: 0px;
   }
@@ -2270,10 +2270,10 @@ main section#contact .lines-bl::before {
             transform: translateX(-720px);
   }
   main section#nav p span {
-    font-size: 3.7rem;
+    font-size: 3.5rem;
     letter-spacing: .5px;
-    -webkit-text-stroke: 0.4px #ddc06e;
-    margin-right: 40px;
+    -webkit-text-stroke: 0.36px #ddc06e;
+    margin-right: 36px;
   }
   main section#nav p:nth-child(1) span:hover::before {
     -webkit-transform: translate(10px, -10px);
@@ -2333,24 +2333,24 @@ main section#contact .lines-bl::before {
     width: 90%;
     height: auto;
     margin-left: 0px;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
   }
   main section#about .about-wrapper .text h2 {
     width: 100%;
     font-size: 2.4rem;
     line-height: 40px;
     letter-spacing: 1px;
-    margin-bottom: 12px;
+    margin-bottom: 14px;
   }
   main section#about .about-wrapper .text h3 {
     font-size: 1.4rem;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
   }
   main section#about .about-wrapper .text p {
     width: 100%;
-    font-size: 1rem;
-    line-height: 21px;
-    letter-spacing: 0.6px;
+    font-size: .8rem;
+    line-height: 24px;
+    letter-spacing: 0.5px;
     margin-bottom: 0px;
   }
   main section#about .back {
@@ -2380,7 +2380,7 @@ main section#contact .lines-bl::before {
     height: 100%;
   }
   main section#artworks .works-wrapper {
-    padding: 0 133px;
+    padding: 0 123px;
   }
   main section#artworks .works-wrapper::-webkit-scrollbar {
     width: 8px;
@@ -2392,16 +2392,16 @@ main section#contact .lines-bl::before {
     width: 6px;
   }
   main section#artworks .works-wrapper .work-container {
-    margin-top: 80px;
-    margin-bottom: 80px;
+    margin-top: 75px;
+    margin-bottom: 75px;
     width: 120%;
-    height: 250px;
+    height: 220px;
   }
   main section#artworks .works-wrapper .work-container .work-img {
     width: 60%;
   }
   main section#artworks .works-wrapper .work-container .work-img img {
-    height: 250px;
+    height: 220px;
     -o-object-fit: cover;
        object-fit: cover;
   }
@@ -2409,12 +2409,12 @@ main section#contact .lines-bl::before {
     width: 40%;
   }
   main section#artworks .works-wrapper .work-container div.work-title a {
-    margin-left: -56px;
-    margin-top: 40px;
+    margin-left: -50px;
+    margin-top: 36px;
   }
   main section#artworks .works-wrapper .work-container div.work-title a p {
-    font-size: 2.4rem;
-    line-height: 42px;
+    font-size: 1.9rem;
+    line-height: 32px;
     letter-spacing: 0px;
   }
   main section#artworks .back {
@@ -2446,7 +2446,7 @@ main section#contact .lines-bl::before {
     height: 100%;
   }
   main section#websites .works-wrapper {
-    padding: 0 183px;
+    padding: 0 123px;
   }
   main section#websites .works-wrapper::-webkit-scrollbar {
     width: 8px;
@@ -2458,16 +2458,16 @@ main section#contact .lines-bl::before {
     width: 6px;
   }
   main section#websites .works-wrapper .work-container {
-    margin-top: 80px;
-    margin-bottom: 80px;
+    margin-top: 75px;
+    margin-bottom: 75px;
     width: 120%;
-    height: 250px;
+    height: 220px;
   }
   main section#websites .works-wrapper .work-container .work-img {
     width: 60%;
   }
   main section#websites .works-wrapper .work-container .work-img img {
-    height: 250px;
+    height: 220px;
     -o-object-fit: cover;
        object-fit: cover;
   }
@@ -2475,12 +2475,12 @@ main section#contact .lines-bl::before {
     width: 40%;
   }
   main section#websites .works-wrapper .work-container div.work-title a {
-    margin-left: -56px;
-    margin-top: 40px;
+    margin-left: -50px;
+    margin-top: 36px;
   }
   main section#websites .works-wrapper .work-container div.work-title a p {
-    font-size: 2.4rem;
-    line-height: 42px;
+    font-size: 1.9rem;
+    line-height: 32px;
     letter-spacing: 0px;
   }
   main section#websites .back {
@@ -2508,47 +2508,51 @@ main section#contact .lines-bl::before {
     height: 75px;
   }
   main section#contact {
-    padding: 0 180px;
+    padding: 0 123px;
   }
   main section#contact h2#find-me {
-    font-size: 2.4rem;
-    line-height: 50px;
-    letter-spacing: 1.1px;
-    margin-bottom: 8px;
+    font-size: 2rem;
+    line-height: 30px;
+    letter-spacing: 0.6px;
+    margin-bottom: 12px;
   }
   main section#contact .social-media-links {
-    margin-bottom: 18px;
+    margin-bottom: 20px;
   }
   main section#contact .social-media-links a:not(:last-child) {
     margin-right: 14px;
   }
   main section#contact .social-media-links a p {
-    font-size: 1.4rem;
-    line-height: 30px;
-    letter-spacing: 0.8px;
+    font-size: 1.24rem;
+    line-height: 24px;
+    letter-spacing: 0.6px;
   }
   main section#contact h2#feel-free {
-    font-size: 1.3rem;
-    line-height: 30px;
-    letter-spacing: 0.8px;
+    font-size: 1.14rem;
+    line-height: 24px;
+    letter-spacing: 0.6px;
   }
   main section#contact h2#feel-free a {
     font-weight: 800;
   }
   main section#contact h2#feel-free a.copied::before {
-    top: -56%;
+    top: -64%;
     left: -28%;
     width: 100px;
-    height: 20px;
-    line-height: 20px;
+    height: 18px;
+    line-height: 18px;
     letter-spacing: 0.1px;
     font-size: 0.62rem;
+    border: 0.8px solid #24165a;
   }
   main section#contact h2#feel-free a.copied::after {
-    top: -12%;
+    top: -16%;
     left: 47%;
-    width: 7px;
-    height: 7px;
+    width: 6px;
+    height: 6px;
+    border: 0.8px solid #24165a;
+    border-top: .8px solid transparent;
+    border-left: .8px solid transparent;
   }
   main section#contact .back {
     top: 24px;
