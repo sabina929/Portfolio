@@ -2609,4 +2609,380 @@ main section#contact .lines-bl::before {
     height: 75px;
   }
 }
+
+@media only screen and (max-width: 610px) {
+  .wrapper .loader {
+    width: 140px;
+    height: 140px;
+  }
+  .wrapper h1 {
+    font-size: 100px;
+    color: transparent;
+    -webkit-text-stroke: 2.4px #84691f;
+    margin-top: -300px;
+  }
+  .wrapper svg {
+    overflow: visible;
+  }
+  .wrapper path {
+    margin-top: -50px;
+  }
+  main {
+    height: 100vh;
+    width: 100vw;
+  }
+  main section#nav {
+    width: 100%;
+    height: 100vh;
+  }
+  main section#nav p {
+    width: 160%;
+  }
+  main section#nav p:nth-child(1) {
+    margin-bottom: 12px;
+  }
+  main section#nav p:nth-child(2) {
+    -webkit-transform: translateX(-720px);
+            transform: translateX(-720px);
+  }
+  main section#nav p span {
+    font-size: 2.9rem;
+    letter-spacing: .5px;
+    -webkit-text-stroke: 0.29px #ddc06e;
+    margin-right: 30px;
+  }
+  main section#nav p:nth-child(1) span:hover::before {
+    -webkit-transform: translate(10px, -10px);
+            transform: translate(10px, -10px);
+  }
+  main section#nav p:nth-child(2) span:hover::before {
+    -webkit-transform: translate(-10px, 10px);
+            transform: translate(-10px, 10px);
+  }
+  main section#about .about-wrapper {
+    margin: 0px 0px 0px 0;
+    padding: 85px 85px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 300px 1fr;
+        grid-template-rows: 300px 1fr;
+    grid-row-gap: 40px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: auto;
+    width: 100vw;
+    overflow-y: scroll;
+  }
+  main section#about .about-wrapper::-webkit-scrollbar {
+    width: 6px;
+  }
+  main section#about .about-wrapper::-webkit-scrollbar-track {
+    width: 2px;
+  }
+  main section#about .about-wrapper::-webkit-scrollbar-thumb {
+    width: 2px;
+  }
+  main section#about .about-wrapper .about-img {
+    width: 90%;
+    height: 300px;
+    margin-top: 0px;
+  }
+  main section#about .about-wrapper .about-img img {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main section#about .about-wrapper .text {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    margin-left: 0px;
+    margin-bottom: 75px;
+  }
+  main section#about .about-wrapper .text h2 {
+    width: 100%;
+    font-size: 2.1rem;
+    line-height: 40px;
+    letter-spacing: -.7px;
+    margin-bottom: 10px;
+  }
+  main section#about .about-wrapper .text h3 {
+    font-size: 1.3rem;
+    margin-bottom: 6px;
+  }
+  main section#about .about-wrapper .text p {
+    width: 100%;
+    font-size: .98rem;
+    line-height: 24px;
+    letter-spacing: 0px;
+    margin-bottom: 0px;
+  }
+  main section#about .back {
+    top: 24px;
+    right: 24px;
+  }
+  main section#about .lines-tr {
+    top: 12px;
+    width: 75px;
+  }
+  main section#about .lines-tr::before {
+    top: -12px;
+    right: 12px;
+    height: 60px;
+  }
+  main section#about .lines-bl {
+    bottom: 12px;
+    width: 75px;
+  }
+  main section#about .lines-bl::before {
+    bottom: -12px;
+    left: 12px;
+    height: 60px;
+  }
+  main section#artworks {
+    width: 100%;
+    height: 100%;
+  }
+  main section#artworks .works-wrapper {
+    padding: 0 85px;
+  }
+  main section#artworks .works-wrapper::-webkit-scrollbar {
+    width: 6px;
+  }
+  main section#artworks .works-wrapper::-webkit-scrollbar-track {
+    width: 2px;
+  }
+  main section#artworks .works-wrapper::-webkit-scrollbar-thumb {
+    width: 2px;
+  }
+  main section#artworks .works-wrapper .work-container {
+    margin-top: 55px;
+    margin-bottom: 55px;
+    width: 120%;
+    height: 200px;
+  }
+  main section#artworks .works-wrapper .work-container .work-img {
+    width: 60%;
+  }
+  main section#artworks .works-wrapper .work-container .work-img img {
+    height: 200px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main section#artworks .works-wrapper .work-container div.work-title {
+    width: 40%;
+  }
+  main section#artworks .works-wrapper .work-container div.work-title a {
+    margin-left: -40px;
+    margin-top: 30px;
+  }
+  main section#artworks .works-wrapper .work-container div.work-title a p {
+    font-size: 1.9rem;
+    line-height: 32px;
+    letter-spacing: 0px;
+  }
+  main section#artworks .back {
+    top: 24px;
+    right: 24px;
+    font-size: 0.8rem;
+    letter-spacing: 0.4px;
+  }
+  main section#artworks .lines-tr {
+    top: 12px;
+    width: 75px;
+  }
+  main section#artworks .lines-tr::before {
+    top: -12px;
+    right: 12px;
+    height: 60px;
+  }
+  main section#artworks .lines-bl {
+    bottom: 12px;
+    width: 75px;
+  }
+  main section#artworks .lines-bl::before {
+    bottom: -12px;
+    left: 12px;
+    height: 60px;
+  }
+  main section#websites {
+    width: 100%;
+    height: 100%;
+  }
+  main section#websites .works-wrapper {
+    padding: 0 85px;
+  }
+  main section#websites .works-wrapper::-webkit-scrollbar {
+    width: 6px;
+  }
+  main section#websites .works-wrapper::-webkit-scrollbar-track {
+    width: 2px;
+  }
+  main section#websites .works-wrapper::-webkit-scrollbar-thumb {
+    width: 2px;
+  }
+  main section#websites .works-wrapper .work-container {
+    margin-top: 55px;
+    margin-bottom: 55px;
+    width: 120%;
+    height: 200px;
+  }
+  main section#websites .works-wrapper .work-container .work-img {
+    width: 60%;
+  }
+  main section#websites .works-wrapper .work-container .work-img img {
+    height: 200px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main section#websites .works-wrapper .work-container div.work-title {
+    width: 40%;
+  }
+  main section#websites .works-wrapper .work-container div.work-title a {
+    margin-left: -40px;
+    margin-top: 30px;
+  }
+  main section#websites .works-wrapper .work-container div.work-title a p {
+    font-size: 1.9rem;
+    line-height: 32px;
+    letter-spacing: 0px;
+  }
+  main section#websites .back {
+    top: 24px;
+    right: 24px;
+    font-size: 0.8rem;
+    letter-spacing: 0.4px;
+  }
+  main section#websites .lines-tr {
+    top: 12px;
+    width: 75px;
+  }
+  main section#websites .lines-tr::before {
+    top: -12px;
+    right: 12px;
+    height: 60px;
+  }
+  main section#websites .lines-bl {
+    bottom: 12px;
+    width: 75px;
+  }
+  main section#websites .lines-bl::before {
+    bottom: -12px;
+    left: 12px;
+    height: 60px;
+  }
+  main section#contact {
+    padding: 0 85px;
+  }
+  main section#contact h2#find-me {
+    font-size: 2rem;
+    line-height: 30px;
+    letter-spacing: 0.6px;
+    margin-bottom: 12px;
+  }
+  main section#contact .social-media-links {
+    margin-bottom: 20px;
+  }
+  main section#contact .social-media-links a:not(:last-child) {
+    margin-right: 14px;
+  }
+  main section#contact .social-media-links a p {
+    font-size: 1.24rem;
+    line-height: 24px;
+    letter-spacing: 0.6px;
+  }
+  main section#contact h2#feel-free {
+    font-size: 1.14rem;
+    line-height: 24px;
+    letter-spacing: 0.6px;
+  }
+  main section#contact h2#feel-free a {
+    font-weight: 800;
+  }
+  main section#contact h2#feel-free a.copied::before {
+    top: -64%;
+    left: -28%;
+    width: 100px;
+    height: 18px;
+    line-height: 18px;
+    letter-spacing: 0.1px;
+    font-size: 0.62rem;
+    border: 0.8px solid #24165a;
+  }
+  main section#contact h2#feel-free a.copied::after {
+    top: -16%;
+    left: 47%;
+    width: 6px;
+    height: 6px;
+    border: 0.8px solid #24165a;
+    border-top: .8px solid transparent;
+    border-left: .8px solid transparent;
+  }
+  main section#contact .back {
+    top: 24px;
+    right: 24px;
+    font-size: 0.8rem;
+    letter-spacing: 0.4px;
+  }
+  main section#contact .lines-tr {
+    top: 12px;
+    width: 75px;
+  }
+  main section#contact .lines-tr::before {
+    top: -12px;
+    right: 12px;
+    height: 60px;
+  }
+  main section#contact .lines-bl {
+    bottom: 12px;
+    width: 75px;
+  }
+  main section#contact .lines-bl::before {
+    bottom: -12px;
+    left: 12px;
+    height: 60px;
+  }
+  .logo {
+    line-height: 17px;
+    font-size: 0.73rem;
+    top: 12px;
+    left: 9px;
+  }
+  .copyright {
+    font-size: 0.52rem;
+    letter-spacing: 1px;
+    bottom: 9px;
+    right: -45px;
+  }
+  .lines-tr {
+    top: 14px;
+    width: 105px;
+  }
+  .lines-tr::before {
+    top: -14px;
+    right: 14px;
+    height: 75px;
+  }
+  .lines-bl {
+    bottom: 14px;
+    width: 105px;
+  }
+  .lines-bl::before {
+    bottom: -14px;
+    left: 14px;
+    height: 75px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
