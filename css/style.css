@@ -254,6 +254,26 @@ main section#about {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #c5c3aa;
+  z-index: 1;
+  opacity: 0;
+  border-radius: 50%;
+}
+
+main section#about .about-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -264,14 +284,14 @@ main section#about {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #c5c3aa;
-  z-index: 1;
-  opacity: 0;
-  border-radius: 50%;
+  margin: 0px 0px 0px 0;
   padding: 0 150px;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: hidden;
 }
 
-main section#about .about-img {
+main section#about .about-wrapper .about-img {
   width: 500px;
   height: 500px;
   margin-top: -50px;
@@ -294,7 +314,7 @@ main section#about .about-img {
           backface-visibility: hidden;
 }
 
-main section#about .about-img img {
+main section#about .about-wrapper .about-img img {
   -webkit-filter: saturate(0);
           filter: saturate(0);
   width: 100%;
@@ -311,14 +331,14 @@ main section#about .about-img img {
           transform: translate(0px, 0px) scale(1);
 }
 
-main section#about .about-img img:hover {
+main section#about .about-wrapper .about-img img:hover {
   -webkit-filter: saturate(0.99) contrast(0.99);
           filter: saturate(0.99) contrast(0.99);
   -webkit-transform: translate(0px, 0px) scale(1.05);
           transform: translate(0px, 0px) scale(1.05);
 }
 
-main section#about .text {
+main section#about .about-wrapper .text {
   z-index: 2;
   width: 600px;
   height: 500px;
@@ -338,7 +358,7 @@ main section#about .text {
   mix-blend-mode: color-burn;
 }
 
-main section#about .text h2 {
+main section#about .about-wrapper .text h2 {
   width: 106%;
   font-size: 5rem;
   font-style: italic;
@@ -348,7 +368,7 @@ main section#about .text h2 {
   color: #615f42;
 }
 
-main section#about .text h3 {
+main section#about .about-wrapper .text h3 {
   color: #777755;
   /* font-style: italic; */
   font-weight: 800;
@@ -356,7 +376,7 @@ main section#about .text h3 {
   margin-bottom: 12px;
 }
 
-main section#about .text p {
+main section#about .about-wrapper .text p {
   width: 100%;
   font-size: 1.2rem;
   line-height: 30px;
@@ -365,7 +385,7 @@ main section#about .text p {
   margin-bottom: -60px;
 }
 
-main section#about .text p a {
+main section#about .about-wrapper .text p a {
   text-decoration: none;
   color: #777755;
   font-style: italic;
@@ -375,7 +395,7 @@ main section#about .text p a {
   transition: all .5s ease;
 }
 
-main section#about .text p a:hover {
+main section#about .about-wrapper .text p a:hover {
   color: #24165a;
 }
 
@@ -1294,42 +1314,47 @@ main section#contact .lines-bl::before {
             transform: translate(-10px, 10px);
   }
   main section#about {
-    display: none;
     width: 100%;
     height: 100vh;
-    padding: 0 120px;
   }
-  main section#about .about-img {
+  main section#about .about-wrapper {
+    margin: 0px 0px 0px 0;
+    padding: 120px 120px 0;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  main section#about .about-wrapper .about-img {
     width: 45%;
     height: 300px;
-    margin-top: -50px;
+    margin-top: 0px;
   }
-  main section#about .about-img img {
+  main section#about .about-wrapper .about-img img {
     -o-object-fit: cover;
        object-fit: cover;
   }
-  main section#about .text {
+  main section#about .about-wrapper .text {
     width: 60%;
-    height: 424px;
+    height: auto;
     margin-left: 32px;
   }
-  main section#about .text h2 {
+  main section#about .about-wrapper .text h2 {
     width: 100%;
     font-size: 2.6rem;
     line-height: 45px;
     letter-spacing: 1px;
     margin-bottom: 5px;
   }
-  main section#about .text h3 {
+  main section#about .about-wrapper .text h3 {
     font-size: 1.5rem;
     margin-bottom: 5px;
   }
-  main section#about .text p {
+  main section#about .about-wrapper .text p {
     width: 100%;
     font-size: .95rem;
     line-height: 23px;
     letter-spacing: 0.5px;
-    margin-bottom: -10px;
+    margin-bottom: 0px;
   }
   main section#about .back {
     top: 35px;
@@ -1337,7 +1362,6 @@ main section#contact .lines-bl::before {
     letter-spacing: 1px;
   }
   main section#artworks {
-    display: none;
     width: 100%;
     height: 100%;
   }
@@ -1380,7 +1404,6 @@ main section#contact .lines-bl::before {
     letter-spacing: 1px;
   }
   main section#websites {
-    display: none;
     width: 100%;
     height: 100%;
   }
@@ -1423,7 +1446,6 @@ main section#contact .lines-bl::before {
     letter-spacing: 1px;
   }
   main section#contact {
-    display: none;
     padding: 0 180px;
   }
   main section#contact h2#find-me {
@@ -1535,34 +1557,417 @@ main section#contact .lines-bl::before {
   main section#about {
     width: 100%;
     height: 100vh;
-    padding: 0px 110px;
   }
-  main section#about .about-img {
+  main section#about .about-wrapper {
+    padding: 110px 110px 0;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  main section#about .about-wrapper .about-img {
     width: 50%;
     height: 240px;
-    margin-top: -90px;
+    margin-top: 0px;
   }
-  main section#about .about-img img {
+  main section#about .about-wrapper .about-img img {
     -o-object-fit: cover;
        object-fit: cover;
   }
-  main section#about .text {
+  main section#about .about-wrapper .text {
     width: 60%;
-    height: 430px;
+    height: auto;
     margin-left: 30px;
   }
-  main section#about .text h2 {
+  main section#about .about-wrapper .text h2 {
     width: 100%;
     font-size: 2.1rem;
     line-height: 35px;
     letter-spacing: 1px;
     margin-bottom: 8px;
   }
-  main section#about .text h3 {
+  main section#about .about-wrapper .text h3 {
     font-size: 1.3rem;
     margin-bottom: 5px;
   }
-  main section#about .text p {
+  main section#about .about-wrapper .text p {
+    width: 100%;
+    font-size: 0.8rem;
+    line-height: 19px;
+    letter-spacing: 0.3px;
+    margin-bottom: 0px;
+  }
+  main section#about .back {
+    top: 30px;
+    font-size: 0.9rem;
+    letter-spacing: 0.7px;
+  }
+  main section#about .lines-tr {
+    top: 18px;
+    width: 160px;
+  }
+  main section#about .lines-tr::before {
+    top: -18px;
+    right: 18px;
+    height: 105px;
+  }
+  main section#about .lines-bl {
+    bottom: 18px;
+    width: 160px;
+  }
+  main section#about .lines-bl::before {
+    bottom: -18px;
+    left: 18px;
+    height: 105px;
+  }
+  main section#artworks {
+    width: 100%;
+    height: 100%;
+  }
+  main section#artworks .works-wrapper {
+    padding: 0 183px;
+  }
+  main section#artworks .works-wrapper::-webkit-scrollbar {
+    width: 8px;
+  }
+  main section#artworks .works-wrapper::-webkit-scrollbar-track {
+    width: 6px;
+  }
+  main section#artworks .works-wrapper::-webkit-scrollbar-thumb {
+    width: 6px;
+  }
+  main section#artworks .works-wrapper .work-container {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 130%;
+    height: 250px;
+  }
+  main section#artworks .works-wrapper .work-container .work-img {
+    width: 76%;
+  }
+  main section#artworks .works-wrapper .work-container .work-img img {
+    height: 250px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main section#artworks .works-wrapper .work-container div.work-title {
+    width: 54%;
+  }
+  main section#artworks .works-wrapper .work-container div.work-title a {
+    margin-left: -60px;
+    margin-top: 40px;
+  }
+  main section#artworks .works-wrapper .work-container div.work-title a p {
+    font-size: 2.6rem;
+    line-height: 42px;
+    letter-spacing: 0px;
+  }
+  main section#artworks .back {
+    top: 30px;
+    font-size: 0.9rem;
+    letter-spacing: 0.7px;
+  }
+  main section#artworks .lines-tr {
+    top: 18px;
+    width: 160px;
+  }
+  main section#artworks .lines-tr::before {
+    top: -18px;
+    right: 18px;
+    height: 105px;
+  }
+  main section#artworks .lines-bl {
+    bottom: 18px;
+    width: 160px;
+  }
+  main section#artworks .lines-bl::before {
+    bottom: -18px;
+    left: 18px;
+    height: 105px;
+  }
+  main section#websites {
+    width: 100%;
+    height: 100%;
+  }
+  main section#websites .works-wrapper {
+    padding: 0 183px;
+  }
+  main section#websites .works-wrapper::-webkit-scrollbar {
+    width: 8px;
+  }
+  main section#websites .works-wrapper::-webkit-scrollbar-track {
+    width: 6px;
+  }
+  main section#websites .works-wrapper::-webkit-scrollbar-thumb {
+    width: 6px;
+  }
+  main section#websites .works-wrapper .work-container {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 130%;
+    height: 250px;
+  }
+  main section#websites .works-wrapper .work-container .work-img {
+    width: 76%;
+  }
+  main section#websites .works-wrapper .work-container .work-img img {
+    height: 250px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main section#websites .works-wrapper .work-container div.work-title {
+    width: 54%;
+  }
+  main section#websites .works-wrapper .work-container div.work-title a {
+    margin-left: -60px;
+    margin-top: 40px;
+  }
+  main section#websites .works-wrapper .work-container div.work-title a p {
+    font-size: 2.6rem;
+    line-height: 42px;
+    letter-spacing: 0px;
+  }
+  main section#websites .back {
+    top: 30px;
+    font-size: 0.9rem;
+    letter-spacing: 0.7px;
+  }
+  main section#websites .lines-tr {
+    top: 18px;
+    width: 160px;
+  }
+  main section#websites .lines-tr::before {
+    top: -18px;
+    right: 18px;
+    height: 105px;
+  }
+  main section#websites .lines-bl {
+    bottom: 18px;
+    width: 160px;
+  }
+  main section#websites .lines-bl::before {
+    bottom: -18px;
+    left: 18px;
+    height: 105px;
+  }
+  main section#contact {
+    padding: 0 180px;
+  }
+  main section#contact h2#find-me {
+    font-size: 2.4rem;
+    line-height: 50px;
+    letter-spacing: 1.1px;
+    margin-bottom: 8px;
+  }
+  main section#contact .social-media-links {
+    margin-bottom: 18px;
+  }
+  main section#contact .social-media-links a:not(:last-child) {
+    margin-right: 14px;
+  }
+  main section#contact .social-media-links a p {
+    font-size: 1.4rem;
+    line-height: 30px;
+    letter-spacing: 0.8px;
+  }
+  main section#contact h2#feel-free {
+    font-size: 1.3rem;
+    line-height: 30px;
+    letter-spacing: 0.8px;
+  }
+  main section#contact h2#feel-free a {
+    font-weight: 800;
+  }
+  main section#contact h2#feel-free a.copied::before {
+    top: -56%;
+    left: -28%;
+    width: 100px;
+    height: 20px;
+    line-height: 20px;
+    letter-spacing: 0.1px;
+    font-size: 0.62rem;
+  }
+  main section#contact h2#feel-free a.copied::after {
+    top: -12%;
+    left: 47%;
+    width: 7px;
+    height: 7px;
+  }
+  main section#contact .back {
+    top: 30px;
+    font-size: 0.9rem;
+    letter-spacing: 0.7px;
+  }
+  main section#contact .lines-tr {
+    top: 18px;
+    width: 160px;
+  }
+  main section#contact .lines-tr::before {
+    top: -18px;
+    right: 18px;
+    height: 105px;
+  }
+  main section#contact .lines-bl {
+    bottom: 18px;
+    width: 160px;
+  }
+  main section#contact .lines-bl::before {
+    bottom: -18px;
+    left: 18px;
+    height: 105px;
+  }
+  .logo {
+    line-height: 22px;
+    font-size: 0.8rem;
+    top: 16px;
+    left: 12px;
+  }
+  .copyright {
+    font-size: 0.66rem;
+    letter-spacing: 1.9px;
+    bottom: 12px;
+    right: -40px;
+  }
+  .lines-tr {
+    top: 18px;
+    width: 160px;
+  }
+  .lines-tr::before {
+    top: -18px;
+    right: 18px;
+    height: 105px;
+  }
+  .lines-bl {
+    bottom: 18px;
+    width: 160px;
+  }
+  .lines-bl::before {
+    bottom: -18px;
+    left: 18px;
+    height: 105px;
+  }
+}
+
+@media only screen and (max-width: 801px) {
+  .wrapper .loader {
+    width: 120px;
+    height: 120px;
+  }
+  .wrapper h1 {
+    font-size: 100px;
+    color: transparent;
+    -webkit-text-stroke: 2.4px #84691f;
+    margin-top: -300px;
+  }
+  .wrapper svg {
+    overflow: visible;
+  }
+  .wrapper path {
+    margin-top: -50px;
+  }
+  main {
+    height: 100vh;
+    width: 100vw;
+  }
+  main section#nav {
+    width: 100%;
+    height: 100vh;
+  }
+  main section#nav p {
+    width: 160%;
+  }
+  main section#nav p:nth-child(2) {
+    -webkit-transform: translateX(-720px);
+            transform: translateX(-720px);
+  }
+  main section#nav p span {
+    font-size: 4rem;
+    letter-spacing: 1px;
+    -webkit-text-stroke: 0.6px #ddc06e;
+    margin-right: 50px;
+  }
+  main section#nav p:nth-child(1) span:hover::before {
+    -webkit-transform: translate(10px, -10px);
+            transform: translate(10px, -10px);
+  }
+  main section#nav p:nth-child(2) span:hover::before {
+    -webkit-transform: translate(-10px, 10px);
+            transform: translate(-10px, 10px);
+  }
+  main section#about .about-wrapper {
+    margin: 0px 0px 0px 0;
+    padding: 100px 100px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 300px 1fr;
+        grid-template-rows: 300px 1fr;
+    grid-row-gap: 50px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: auto;
+    width: 100vw;
+    overflow-y: scroll;
+  }
+  main section#about .about-wrapper::-webkit-scrollbar {
+    width: 8px;
+    opacity: 1;
+  }
+  main section#about .about-wrapper::-webkit-scrollbar-track {
+    background: transparent;
+    width: 6px;
+    margin: 0px;
+  }
+  main section#about .about-wrapper::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.24);
+    opacity: 0.1;
+    width: 6px;
+    margin: 0px;
+    -webkit-transition: background-color .3s ease;
+    transition: background-color .3s ease;
+  }
+  main section#about .about-wrapper::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  main section#about .about-wrapper .about-img {
+    width: 80%;
+    height: 300px;
+    margin-top: 0px;
+  }
+  main section#about .about-wrapper .about-img img {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main section#about .about-wrapper .text {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    margin-left: 0px;
+    margin-bottom: 100px;
+  }
+  main section#about .about-wrapper .text h2 {
+    width: 100%;
+    font-size: 2.1rem;
+    line-height: 35px;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+  }
+  main section#about .about-wrapper .text h3 {
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+  }
+  main section#about .about-wrapper .text p {
     width: 100%;
     font-size: 0.8rem;
     line-height: 19px;

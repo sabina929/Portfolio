@@ -360,7 +360,7 @@ function loading() {
   }, 10);
 }
 
-function startGSAPAnimations (){
+function startGSAPAnimations(){
   let select = (selector) => {
     return document.querySelector(selector);
   };
