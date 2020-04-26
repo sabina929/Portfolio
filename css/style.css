@@ -1329,10 +1329,6 @@ main section#contact .lines-bl::before {
     height: 300px;
     margin-top: 0px;
   }
-  main section#about .about-wrapper .about-img img {
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
   main section#about .about-wrapper .text {
     width: 60%;
     height: auto;
@@ -1568,10 +1564,6 @@ main section#contact .lines-bl::before {
     width: 50%;
     height: 240px;
     margin-top: 0px;
-  }
-  main section#about .about-wrapper .about-img img {
-    -o-object-fit: cover;
-       object-fit: cover;
   }
   main section#about .about-wrapper .text {
     width: 60%;
@@ -1943,10 +1935,6 @@ main section#contact .lines-bl::before {
     height: 350px;
     margin-top: 0px;
   }
-  main section#about .about-wrapper .about-img img {
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
   main section#about .about-wrapper .text {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -2317,10 +2305,6 @@ main section#contact .lines-bl::before {
     width: 75%;
     height: 320px;
     margin-top: 0px;
-  }
-  main section#about .about-wrapper .about-img img {
-    -o-object-fit: cover;
-       object-fit: cover;
   }
   main section#about .about-wrapper .text {
     -webkit-box-align: center;
@@ -2694,10 +2678,6 @@ main section#contact .lines-bl::before {
     height: 300px;
     margin-top: 0px;
   }
-  main section#about .about-wrapper .about-img img {
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
   main section#about .about-wrapper .text {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -3069,10 +3049,6 @@ main section#contact .lines-bl::before {
     width: 100%;
     height: 240px;
     margin-top: 0px;
-  }
-  main section#about .about-wrapper .about-img img {
-    -o-object-fit: cover;
-       object-fit: cover;
   }
   main section#about .about-wrapper .text {
     -webkit-box-align: start;
