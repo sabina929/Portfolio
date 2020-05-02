@@ -241,6 +241,7 @@ main section#nav p:nth-child(2) span:hover::before {
 }
 
 main section#about {
+  overflow: hidden;
   display: none;
   width: 100%;
   height: 100vh;
@@ -456,6 +457,7 @@ main section#about .lines-bl::before {
 }
 
 main section#artworks {
+  overflow: hidden;
   display: none;
   width: 100%;
   height: 100%;
@@ -680,6 +682,7 @@ main section#artworks .lines-bl::before {
 }
 
 main section#websites {
+  overflow: hidden;
   display: none;
   width: 100%;
   height: 100%;
@@ -904,6 +907,7 @@ main section#websites .lines-bl::before {
 }
 
 main section#contact {
+  overflow: hidden;
   display: none;
   width: 100%;
   height: 100vh;

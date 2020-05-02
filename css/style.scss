@@ -183,6 +183,7 @@ body {
         }
 
         section#about{
+            overflow: hidden;
             display: none;
             width: 100%;
             height: 100vh;
@@ -348,6 +349,7 @@ body {
         }
 
         section#artworks{
+            overflow: hidden;
             display: none;
             width: 100%;
             height: 100%;
@@ -516,6 +518,7 @@ body {
             }
         }
         section#websites{
+            overflow: hidden;
             display: none;
             width: 100%;
             height: 100%;
@@ -685,6 +688,7 @@ body {
             }
         }
         section#contact{
+            overflow: hidden;
             display: none;
             width: 100%;
             height: 100vh;
