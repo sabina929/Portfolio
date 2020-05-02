@@ -907,7 +907,7 @@ body {
     pointer-events: none;
 }
 .copyright{
-    position: absolute;
+    position: fixed;
     bottom: 15px;
     right: -33px;
     font-size: 0.9rem;
@@ -1096,12 +1096,10 @@ body {
       }
       }      
   }
-  }
-
-     
+  }   
 
 }
-@media only screen and (max-width: 1410px) {
+@media only screen and (max-width: 1310px) {
   main {
     section#about{    
       .about-wrapper {
