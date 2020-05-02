@@ -1504,6 +1504,14 @@ main section#contact .lines-bl::before {
     height: 100vh;
     width: 100vw;
   }
+  main .logo {
+    line-height: 26px;
+    font-size: 1rem;
+  }
+  main .copyright {
+    font-size: 0.75rem;
+    letter-spacing: 2.4px;
+  }
   main section#nav {
     width: 100%;
     height: 100vh;
@@ -1710,14 +1718,6 @@ main section#contact .lines-bl::before {
     font-size: 1.1rem;
     letter-spacing: 1px;
   }
-  .logo {
-    line-height: 26px;
-    font-size: 1rem;
-  }
-  .copyright {
-    font-size: 0.75rem;
-    letter-spacing: 2.4px;
-  }
 }
 
 @media only screen and (max-width: 1030px) {
@@ -1843,6 +1843,36 @@ main section#contact .lines-bl::before {
   main {
     height: 100vh;
     width: 100vw;
+  }
+  main .logo {
+    line-height: 22px;
+    font-size: 0.8rem;
+    top: 16px;
+    left: 12px;
+  }
+  main .copyright {
+    font-size: 0.66rem;
+    letter-spacing: 1.9px;
+    bottom: 12px;
+    right: -40px;
+  }
+  main .lines-tr {
+    top: 18px;
+    width: 160px;
+  }
+  main .lines-tr::before {
+    top: -18px;
+    right: 18px;
+    height: 105px;
+  }
+  main .lines-bl {
+    bottom: 18px;
+    width: 160px;
+  }
+  main .lines-bl::before {
+    bottom: -18px;
+    left: 18px;
+    height: 105px;
   }
   main section#nav {
     width: 100%;
@@ -2175,36 +2205,6 @@ main section#contact .lines-bl::before {
     left: 18px;
     height: 105px;
   }
-  .logo {
-    line-height: 22px;
-    font-size: 0.8rem;
-    top: 16px;
-    left: 12px;
-  }
-  .copyright {
-    font-size: 0.66rem;
-    letter-spacing: 1.9px;
-    bottom: 12px;
-    right: -40px;
-  }
-  .lines-tr {
-    top: 18px;
-    width: 160px;
-  }
-  .lines-tr::before {
-    top: -18px;
-    right: 18px;
-    height: 105px;
-  }
-  .lines-bl {
-    bottom: 18px;
-    width: 160px;
-  }
-  .lines-bl::before {
-    bottom: -18px;
-    left: 18px;
-    height: 105px;
-  }
 }
 
 @media only screen and (max-width: 801px) {
@@ -2227,6 +2227,36 @@ main section#contact .lines-bl::before {
   main {
     height: 100vh;
     width: 100vw;
+  }
+  main .logo {
+    line-height: 20px;
+    font-size: 0.75rem;
+    top: 16px;
+    left: 12px;
+  }
+  main .copyright {
+    font-size: 0.54rem;
+    letter-spacing: 1.6px;
+    bottom: 12px;
+    right: -40px;
+  }
+  main .lines-tr {
+    top: 16px;
+    width: 120px;
+  }
+  main .lines-tr::before {
+    top: -16px;
+    right: 16px;
+    height: 85px;
+  }
+  main .lines-bl {
+    bottom: 16px;
+    width: 120px;
+  }
+  main .lines-bl::before {
+    bottom: -16px;
+    left: 16px;
+    height: 85px;
   }
   main section#nav {
     width: 100%;
@@ -2557,36 +2587,6 @@ main section#contact .lines-bl::before {
     left: 16px;
     height: 85px;
   }
-  .logo {
-    line-height: 20px;
-    font-size: 0.75rem;
-    top: 16px;
-    left: 12px;
-  }
-  .copyright {
-    font-size: 0.54rem;
-    letter-spacing: 1.6px;
-    bottom: 12px;
-    right: -40px;
-  }
-  .lines-tr {
-    top: 16px;
-    width: 120px;
-  }
-  .lines-tr::before {
-    top: -16px;
-    right: 16px;
-    height: 85px;
-  }
-  .lines-bl {
-    bottom: 16px;
-    width: 120px;
-  }
-  .lines-bl::before {
-    bottom: -16px;
-    left: 16px;
-    height: 85px;
-  }
 }
 
 @media only screen and (max-width: 710px) {
@@ -2609,6 +2609,36 @@ main section#contact .lines-bl::before {
   main {
     height: 100vh;
     width: 100vw;
+  }
+  main .logo {
+    line-height: 17px;
+    font-size: 0.73rem;
+    top: 12px;
+    left: 9px;
+  }
+  main .copyright {
+    font-size: 0.5rem;
+    letter-spacing: 1.6px;
+    bottom: 10px;
+    right: -42px;
+  }
+  main .lines-tr {
+    top: 14px;
+    width: 105px;
+  }
+  main .lines-tr::before {
+    top: -14px;
+    right: 14px;
+    height: 75px;
+  }
+  main .lines-bl {
+    bottom: 14px;
+    width: 105px;
+  }
+  main .lines-bl::before {
+    bottom: -14px;
+    left: 14px;
+    height: 75px;
   }
   main section#nav {
     width: 100%;
@@ -2926,36 +2956,6 @@ main section#contact .lines-bl::before {
     left: 14px;
     height: 75px;
   }
-  .logo {
-    line-height: 17px;
-    font-size: 0.73rem;
-    top: 12px;
-    left: 9px;
-  }
-  .copyright {
-    font-size: 0.5rem;
-    letter-spacing: 1.6px;
-    bottom: 10px;
-    right: -42px;
-  }
-  .lines-tr {
-    top: 14px;
-    width: 105px;
-  }
-  .lines-tr::before {
-    top: -14px;
-    right: 14px;
-    height: 75px;
-  }
-  .lines-bl {
-    bottom: 14px;
-    width: 105px;
-  }
-  .lines-bl::before {
-    bottom: -14px;
-    left: 14px;
-    height: 75px;
-  }
 }
 
 @media only screen and (max-width: 610px) {
@@ -2978,6 +2978,36 @@ main section#contact .lines-bl::before {
   main {
     height: 100vh;
     width: 100vw;
+  }
+  main .logo {
+    line-height: 17px;
+    font-size: 0.73rem;
+    top: 12px;
+    left: 9px;
+  }
+  main .copyright {
+    font-size: 0.52rem;
+    letter-spacing: 1px;
+    bottom: 9px;
+    right: -45px;
+  }
+  main .lines-tr {
+    top: 12px;
+    width: 75px;
+  }
+  main .lines-tr::before {
+    top: -12px;
+    right: 12px;
+    height: 60px;
+  }
+  main .lines-bl {
+    bottom: 12px;
+    width: 75px;
+  }
+  main .lines-bl::before {
+    bottom: -12px;
+    left: 12px;
+    height: 60px;
   }
   main section#nav {
     width: 100%;
@@ -3298,36 +3328,6 @@ main section#contact .lines-bl::before {
     left: 12px;
     height: 60px;
   }
-  .logo {
-    line-height: 17px;
-    font-size: 0.73rem;
-    top: 12px;
-    left: 9px;
-  }
-  .copyright {
-    font-size: 0.52rem;
-    letter-spacing: 1px;
-    bottom: 9px;
-    right: -45px;
-  }
-  .lines-tr {
-    top: 12px;
-    width: 75px;
-  }
-  .lines-tr::before {
-    top: -12px;
-    right: 12px;
-    height: 60px;
-  }
-  .lines-bl {
-    bottom: 12px;
-    width: 75px;
-  }
-  .lines-bl::before {
-    bottom: -12px;
-    left: 12px;
-    height: 60px;
-  }
 }
 
 @media only screen and (max-width: 510px) {
@@ -3350,6 +3350,36 @@ main section#contact .lines-bl::before {
   main {
     height: 100vh;
     width: 100vw;
+  }
+  main .logo {
+    line-height: 17px;
+    font-size: 0.73rem;
+    top: 12px;
+    left: 9px;
+  }
+  main .copyright {
+    font-size: 0.52rem;
+    letter-spacing: 1px;
+    bottom: 9px;
+    right: -45px;
+  }
+  main .lines-tr {
+    top: 12px;
+    width: 75px;
+  }
+  main .lines-tr::before {
+    top: -12px;
+    right: 12px;
+    height: 60px;
+  }
+  main .lines-bl {
+    bottom: 12px;
+    width: 75px;
+  }
+  main .lines-bl::before {
+    bottom: -12px;
+    left: 12px;
+    height: 60px;
   }
   main section#nav {
     width: 100%;
@@ -3670,36 +3700,6 @@ main section#contact .lines-bl::before {
     left: 12px;
     height: 60px;
   }
-  .logo {
-    line-height: 17px;
-    font-size: 0.73rem;
-    top: 12px;
-    left: 9px;
-  }
-  .copyright {
-    font-size: 0.52rem;
-    letter-spacing: 1px;
-    bottom: 9px;
-    right: -45px;
-  }
-  .lines-tr {
-    top: 12px;
-    width: 75px;
-  }
-  .lines-tr::before {
-    top: -12px;
-    right: 12px;
-    height: 60px;
-  }
-  .lines-bl {
-    bottom: 12px;
-    width: 75px;
-  }
-  .lines-bl::before {
-    bottom: -12px;
-    left: 12px;
-    height: 60px;
-  }
 }
 
 @media only screen and (max-width: 410px) {
@@ -3718,6 +3718,36 @@ main section#contact .lines-bl::before {
   }
   .wrapper path {
     margin-top: -50px;
+  }
+  main .logo {
+    line-height: 17px;
+    font-size: 0.73rem;
+    top: 12px;
+    left: 9px;
+  }
+  main .copyright {
+    font-size: 0.52rem;
+    letter-spacing: 1px;
+    bottom: 9px;
+    right: -45px;
+  }
+  main .lines-tr {
+    top: 12px;
+    width: 75px;
+  }
+  main .lines-tr::before {
+    top: -12px;
+    right: 12px;
+    height: 60px;
+  }
+  main .lines-bl {
+    bottom: 12px;
+    width: 75px;
+  }
+  main .lines-bl::before {
+    bottom: -12px;
+    left: 12px;
+    height: 60px;
   }
   main section#nav {
     width: 100%;
@@ -3966,18 +3996,6 @@ main section#contact .lines-bl::before {
     left: 12px;
     height: 60px;
   }
-  .logo {
-    line-height: 17px;
-    font-size: 0.73rem;
-    top: 12px;
-    left: 9px;
-  }
-  .copyright {
-    font-size: 0.52rem;
-    letter-spacing: 1px;
-    bottom: 9px;
-    right: -45px;
-  }
 }
 
 @media only screen and (max-width: 360px) {
@@ -3996,6 +4014,36 @@ main section#contact .lines-bl::before {
   }
   .wrapper path {
     margin-top: -50px;
+  }
+  main .logo {
+    line-height: 17px;
+    font-size: 0.73rem;
+    top: 12px;
+    left: 9px;
+  }
+  main .copyright {
+    font-size: 0.52rem;
+    letter-spacing: 1px;
+    bottom: 9px;
+    right: -45px;
+  }
+  main .lines-tr {
+    top: 12px;
+    width: 75px;
+  }
+  main .lines-tr::before {
+    top: -12px;
+    right: 12px;
+    height: 60px;
+  }
+  main .lines-bl {
+    bottom: 12px;
+    width: 75px;
+  }
+  main .lines-bl::before {
+    bottom: -12px;
+    left: 12px;
+    height: 60px;
   }
   main section#nav {
     width: 100%;
@@ -4243,18 +4291,6 @@ main section#contact .lines-bl::before {
     bottom: -12px;
     left: 12px;
     height: 60px;
-  }
-  .logo {
-    line-height: 17px;
-    font-size: 0.73rem;
-    top: 12px;
-    left: 9px;
-  }
-  .copyright {
-    font-size: 0.52rem;
-    letter-spacing: 1px;
-    bottom: 9px;
-    right: -45px;
   }
 }
 /*# sourceMappingURL=style.css.map */
