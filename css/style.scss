@@ -3316,7 +3316,7 @@ body {
               }
              
               span {
-                  font-size: 2.9rem;
+                  font-size: 2.3rem;
                   letter-spacing: .5px;
                   -webkit-text-stroke: 0.29px  $main3-05;
                   margin-right: 30px;
@@ -4077,7 +4077,7 @@ body {
               }
              
               span {
-                  font-size: 2.3rem;
+                  font-size: 2.1rem;
                   letter-spacing: .5px;
                   -webkit-text-stroke: 0.28px  $main3-05;
                   margin-right: 20px;
@@ -4350,26 +4350,28 @@ body {
          
           }
     }
- 
-
-
 }
 
-
 @media only screen and (max-width: 340px) {
-  main section#contact {
-    padding: 0 40px;
+  main {
+    section#nav p span {
+      font-size: 1.8rem;
+    }
     
-    h2#find-me {
-      font-size: 1.5rem;
-      line-height: 24px;
-      letter-spacing: 0.6px;
-      margin-bottom: 12px;
-  }
-    .social-media-links a p {
-      font-size: 0.72rem;
-      line-height: 24px;
-      letter-spacing: 1.6px;
+    section#contact {
+      padding: 0 40px;
+      
+      h2#find-me {
+        font-size: 1.5rem;
+        line-height: 24px;
+        letter-spacing: 0.6px;
+        margin-bottom: 12px;
+      }
+      .social-media-links a p {
+        font-size: 0.72rem;
+        line-height: 24px;
+        letter-spacing: 1.6px;
+      }
     }
   }
 }

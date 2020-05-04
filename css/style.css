@@ -3395,7 +3395,7 @@ main section#contact .lines-bl::before {
             transform: translateX(-720px);
   }
   main section#nav p span {
-    font-size: 2.9rem;
+    font-size: 2.3rem;
     letter-spacing: .5px;
     -webkit-text-stroke: 0.29px #ddc06e;
     margin-right: 30px;
@@ -4059,7 +4059,7 @@ main section#contact .lines-bl::before {
             transform: translateX(-720px);
   }
   main section#nav p span {
-    font-size: 2.3rem;
+    font-size: 2.1rem;
     letter-spacing: .5px;
     -webkit-text-stroke: 0.28px #ddc06e;
     margin-right: 20px;
@@ -4294,6 +4294,9 @@ main section#contact .lines-bl::before {
 }
 
 @media only screen and (max-width: 340px) {
+  main section#nav p span {
+    font-size: 1.8rem;
+  }
   main section#contact {
     padding: 0 40px;
   }
