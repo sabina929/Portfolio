@@ -1823,7 +1823,7 @@ main section#contact .lines-bl::before {
   }
 }
 
-@media only screen and (max-width: 1001px) {
+@media only screen and (max-width: 1024px) {
   .wrapper .loader {
     width: 180px;
     height: 180px;
@@ -2142,24 +2142,24 @@ main section#contact .lines-bl::before {
     padding: 0 180px;
   }
   main section#contact h2#find-me {
-    font-size: 2.4rem;
-    line-height: 50px;
+    font-size: 4rem;
+    line-height: 84px;
     letter-spacing: 1.1px;
-    margin-bottom: 8px;
+    margin-bottom: 24px;
   }
   main section#contact .social-media-links {
-    margin-bottom: 18px;
+    margin-bottom: 50px;
   }
   main section#contact .social-media-links a:not(:last-child) {
-    margin-right: 14px;
+    margin-right: 24px;
   }
   main section#contact .social-media-links a p {
-    font-size: 1.4rem;
+    font-size: 2rem;
     line-height: 30px;
     letter-spacing: 0.8px;
   }
   main section#contact h2#feel-free {
-    font-size: 1.3rem;
+    font-size: 1.9rem;
     line-height: 30px;
     letter-spacing: 0.8px;
   }
@@ -2167,19 +2167,19 @@ main section#contact .lines-bl::before {
     font-weight: 800;
   }
   main section#contact h2#feel-free a.copied::before {
-    top: -56%;
+    top: -110%;
     left: -28%;
-    width: 100px;
-    height: 20px;
-    line-height: 20px;
+    width: 180px;
+    height: 30px;
+    line-height: 30px;
     letter-spacing: 0.1px;
-    font-size: 0.62rem;
+    font-size: 1.1rem;
   }
   main section#contact h2#feel-free a.copied::after {
-    top: -12%;
+    top: -40%;
     left: 47%;
-    width: 7px;
-    height: 7px;
+    width: 10px;
+    height: 10px;
   }
   main section#contact .back {
     top: 30px;
@@ -2517,27 +2517,27 @@ main section#contact .lines-bl::before {
     height: 85px;
   }
   main section#contact {
-    padding: 0 143px;
+    padding: 0 140px;
   }
   main section#contact h2#find-me {
-    font-size: 2.2rem;
+    font-size: 3rem;
     line-height: 40px;
     letter-spacing: 1.1px;
-    margin-bottom: 8px;
+    margin-bottom: 20px;
   }
   main section#contact .social-media-links {
-    margin-bottom: 16px;
+    margin-bottom: 30px;
   }
   main section#contact .social-media-links a:not(:last-child) {
-    margin-right: 12px;
+    margin-right: 24px;
   }
   main section#contact .social-media-links a p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     line-height: 26px;
     letter-spacing: 0.8px;
   }
   main section#contact h2#feel-free {
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     line-height: 24px;
     letter-spacing: 0.8px;
   }
@@ -2545,20 +2545,19 @@ main section#contact .lines-bl::before {
     font-weight: 800;
   }
   main section#contact h2#feel-free a.copied::before {
-    top: -60%;
+    top: -100%;
     left: -28%;
-    width: 100px;
-    height: 16px;
-    line-height: 16px;
+    width: 130px;
+    height: 20px;
+    line-height: 20px;
     letter-spacing: 0px;
-    font-size: 0.62rem;
-    border: 0.8px solid #24165a;
+    font-size: 0.8rem;
   }
   main section#contact h2#feel-free a.copied::after {
-    top: -20%;
+    top: -40%;
     left: 47%;
-    width: 6px;
-    height: 6px;
+    width: 8px;
+    height: 8px;
     border: 0.8px solid #24165a;
     border-top: .8px solid transparent;
     border-left: .8px solid transparent;
@@ -3261,24 +3260,24 @@ main section#contact .lines-bl::before {
     padding: 0 85px;
   }
   main section#contact h2#find-me {
-    font-size: 2rem;
+    font-size: 2.6rem;
     line-height: 30px;
     letter-spacing: 0.6px;
-    margin-bottom: 12px;
+    margin-bottom: 20px;
   }
   main section#contact .social-media-links {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
   main section#contact .social-media-links a:not(:last-child) {
     margin-right: 14px;
   }
   main section#contact .social-media-links a p {
-    font-size: 1.24rem;
+    font-size: 1.4rem;
     line-height: 24px;
     letter-spacing: 0.6px;
   }
   main section#contact h2#feel-free {
-    font-size: 1.14rem;
+    font-size: 1.3rem;
     line-height: 24px;
     letter-spacing: 0.6px;
   }
@@ -3286,20 +3285,20 @@ main section#contact .lines-bl::before {
     font-weight: 800;
   }
   main section#contact h2#feel-free a.copied::before {
-    top: -64%;
+    top: -90%;
     left: -28%;
-    width: 100px;
-    height: 18px;
-    line-height: 18px;
+    width: 120px;
+    height: 20px;
+    line-height: 20px;
     letter-spacing: 0.1px;
-    font-size: 0.62rem;
+    font-size: 0.72rem;
     border: 0.8px solid #24165a;
   }
   main section#contact h2#feel-free a.copied::after {
-    top: -16%;
+    top: -40%;
     left: 47%;
-    width: 6px;
-    height: 6px;
+    width: 8px;
+    height: 8px;
     border: 0.8px solid #24165a;
     border-top: .8px solid transparent;
     border-left: .8px solid transparent;
@@ -4222,7 +4221,7 @@ main section#contact .lines-bl::before {
     letter-spacing: 0.5px;
   }
   main section#contact {
-    padding: 0 61px;
+    padding: 0 40px 0 60px;
   }
   main section#contact h2#find-me {
     font-size: 1.4rem;
@@ -4291,6 +4290,23 @@ main section#contact .lines-bl::before {
     bottom: -12px;
     left: 12px;
     height: 60px;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  main section#contact {
+    padding: 0 40px;
+  }
+  main section#contact h2#find-me {
+    font-size: 1.5rem;
+    line-height: 24px;
+    letter-spacing: 0.6px;
+    margin-bottom: 12px;
+  }
+  main section#contact .social-media-links a p {
+    font-size: 0.72rem;
+    line-height: 24px;
+    letter-spacing: 1.6px;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -1551,7 +1551,7 @@ body {
     }
     
 }
-@media only screen and (max-width: 1001px) {
+@media only screen and (max-width: 1024px) {
     .wrapper {
         .loader {
           width: 180px;
@@ -1904,20 +1904,20 @@ body {
               padding: 0 180px;
               
               h2#find-me{
-                font-size: 2.4rem;
-                line-height: 50px;
+                font-size: 4rem;
+                line-height: 84px;
                 letter-spacing: 1.1px;
-                margin-bottom: 8px;            
+                margin-bottom: 24px;          
               }
   
               .social-media-links{
-                    margin-bottom: 18px;
+                    margin-bottom: 50px;
                     a{
                       &:not(:last-child){
-                        margin-right: 14px;
+                        margin-right: 24px;
                       }
                       p{
-                        font-size: 1.4rem;
+                        font-size: 2rem;
                         line-height: 30px;
                         letter-spacing: 0.8px;
                       }
@@ -1925,7 +1925,7 @@ body {
               }
   
               h2#feel-free{
-                font-size: 1.3rem;
+                font-size: 1.9rem;
                 line-height: 30px;
                 letter-spacing: 0.8px;
                   
@@ -1933,19 +1933,19 @@ body {
                       font-weight: 800;
   
                       &.copied::before{
-                          top: -56%;
+                          top: -110%;
                           left: -28%;
-                          width: 100px;
-                          height: 20px;
-                          line-height: 20px;
+                          width: 180px;
+                          height: 30px;
+                          line-height: 30px;
                           letter-spacing: 0.1px;
-                          font-size: 0.62rem;
+                          font-size: 1.1rem;
                       }
                       &.copied::after{
-                          top: -12%;
+                          top: -40%;
                           left: 47%;
-                          width: 7px;
-                          height: 7px;
+                          width: 10px;
+                          height: 10px;
                       }
        
                   }
@@ -2327,23 +2327,23 @@ body {
               
           }
           section#contact{
-              padding: 0 143px;
+              padding: 0 140px;
               
               h2#find-me{
-                font-size: 2.2rem;
+                font-size: 3rem;
                 line-height: 40px;
                 letter-spacing: 1.1px;
-                margin-bottom: 8px;            
+                margin-bottom: 20px;       
               }
   
               .social-media-links{
-                    margin-bottom: 16px;
+                    margin-bottom: 30px;
                     a{
                       &:not(:last-child){
-                        margin-right: 12px;
+                        margin-right: 24px;
                       }
                       p{
-                        font-size: 1.2rem;
+                        font-size: 1.5rem;
                         line-height: 26px;
                         letter-spacing: 0.8px;
                       }
@@ -2351,7 +2351,7 @@ body {
               }
   
               h2#feel-free{
-                font-size: 1.1rem;
+                font-size: 1.4rem;
                 line-height: 24px;
                 letter-spacing: 0.8px;
                   
@@ -2359,20 +2359,19 @@ body {
                       font-weight: 800;
   
                       &.copied::before{
-                          top: -60%;
+                          top: -100%;
                           left: -28%;
-                          width: 100px;
-                          height: 16px;
-                          line-height: 16px;
+                          width: 130px;
+                          height: 20px;
+                          line-height: 20px;
                           letter-spacing: 0px;
-                          font-size: 0.62rem;
-                          border: .8px solid hsl(252, 60%, 22%);
+                          font-size: 0.8rem;
                       }
                       &.copied::after{
-                          top: -20%;
+                          top: -40%;
                           left: 47%;
-                          width: 6px;
-                          height: 6px;
+                          width: 8px;
+                          height: 8px;
                           border: .8px solid hsl(252, 60%, 22%);
                           border-top: .8px solid transparent;
                         border-left: .8px solid transparent;
@@ -3166,20 +3165,20 @@ body {
               padding: 0 85px;
               
               h2#find-me{
-                font-size: 2rem;
+                font-size: 2.6rem;
                 line-height: 30px;
                 letter-spacing: 0.6px;
-                margin-bottom: 12px;           
+                margin-bottom: 20px;           
               }
   
               .social-media-links{
-                    margin-bottom: 20px;
+                    margin-bottom: 30px;
                     a{
                       &:not(:last-child){
                         margin-right: 14px;
                       }
                       p{
-                        font-size: 1.24rem;
+                        font-size: 1.4rem;
                         line-height: 24px;
                         letter-spacing: 0.6px;
                       }
@@ -3187,7 +3186,7 @@ body {
               }
   
               h2#feel-free{
-                font-size: 1.14rem;
+                font-size: 1.3rem;
                 line-height: 24px;
                 letter-spacing: 0.6px;
                   
@@ -3195,20 +3194,20 @@ body {
                       font-weight: 800;
   
                       &.copied::before{
-                          top: -64%;
+                          top: -90%;
                           left: -28%;
-                          width: 100px;
-                          height: 18px;
-                          line-height: 18px;
+                          width: 120px;
+                          height: 20px;
+                          line-height: 20px;
                           letter-spacing: 0.1px;
-                          font-size: 0.62rem;
+                          font-size: 0.72rem;
                           border: .8px solid hsl(252, 60%, 22%);
                       }
                       &.copied::after{
-                          top: -16%;
+                          top: -40%;
                           left: 47%;
-                          width: 6px;
-                          height: 6px;
+                          width: 8px;
+                          height: 8px;
                           border: .8px solid hsl(252, 60%, 22%);
                           border-top: .8px solid transparent;
                           border-left: .8px solid transparent;
@@ -4271,7 +4270,7 @@ body {
               
           }
           section#contact{
-            padding: 0 61px;
+            padding: 0 40px 0 60px;
               
               h2#find-me{
                 font-size: 1.4rem;
@@ -4354,4 +4353,23 @@ body {
  
 
 
+}
+
+
+@media only screen and (max-width: 340px) {
+  main section#contact {
+    padding: 0 40px;
+    
+    h2#find-me {
+      font-size: 1.5rem;
+      line-height: 24px;
+      letter-spacing: 0.6px;
+      margin-bottom: 12px;
+  }
+    .social-media-links a p {
+      font-size: 0.72rem;
+      line-height: 24px;
+      letter-spacing: 1.6px;
+    }
+  }
 }
