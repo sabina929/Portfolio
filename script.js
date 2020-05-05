@@ -372,10 +372,10 @@ function loading() {
     mediaQuery1024.addListener(checkMedia1000ForNav);
     checkMedia801ForNav();
     mediaQuery801.addListener(checkMedia801ForNav);
-    checkMedia710ForNav();
-    mediaQuery710.addListener(checkMedia710ForNav);
-    checkMedia610ForNav();
-    mediaQuery610.addListener(checkMedia610ForNav);
+    // checkMedia710ForNav();
+    // mediaQuery710.addListener(checkMedia710ForNav);
+    // checkMedia610ForNav();
+    // mediaQuery610.addListener(checkMedia610ForNav);
     
     // gsap.to(".to-left", {x: -720, duration: 15, ease: "linear", yoyo:true, repeat: -1})
     // gsap.to(".to-right", {x: 0, duration: 15, ease: "linear", yoyo:true, repeat: -1})

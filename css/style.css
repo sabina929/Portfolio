@@ -3037,12 +3037,6 @@ main section#contact .lines-bl::before {
     -webkit-text-stroke: 0.6px #ddc06e;
     margin-right: 60px;
   }
-  main section#nav p span {
-    font-size: 2.9rem;
-    letter-spacing: .5px;
-    -webkit-text-stroke: 0.29px #ddc06e;
-    margin-right: 30px;
-  }
   main section#nav p:nth-child(1) span:hover::before {
     -webkit-transform: translate(10px, -10px);
             transform: translate(10px, -10px);
