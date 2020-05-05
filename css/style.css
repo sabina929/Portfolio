@@ -1881,15 +1881,19 @@ main section#contact .lines-bl::before {
   main section#nav p {
     width: 160%;
   }
+  main section#nav p:nth-child(1) {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
   main section#nav p:nth-child(2) {
-    -webkit-transform: translateX(-720px);
-            transform: translateX(-720px);
+    -webkit-transform: translateX(-500px);
+            transform: translateX(-500px);
   }
   main section#nav p span {
-    font-size: 4rem;
+    font-size: 12rem;
     letter-spacing: 1px;
     -webkit-text-stroke: 0.6px #ddc06e;
-    margin-right: 50px;
+    margin-right: 120px;
   }
   main section#nav p:nth-child(1) span:hover::before {
     -webkit-transform: translate(10px, -10px);
@@ -2265,15 +2269,19 @@ main section#contact .lines-bl::before {
   main section#nav p {
     width: 160%;
   }
+  main section#nav p:nth-child(1) {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
   main section#nav p:nth-child(2) {
-    -webkit-transform: translateX(-720px);
-            transform: translateX(-720px);
+    -webkit-transform: translateX(-320px);
+            transform: translateX(-320px);
   }
   main section#nav p span {
-    font-size: 4rem;
+    font-size: 9rem;
     letter-spacing: 1px;
     -webkit-text-stroke: 0.6px #ddc06e;
-    margin-right: 50px;
+    margin-right: 80px;
   }
   main section#nav p:nth-child(1) span:hover::before {
     -webkit-transform: translate(10px, -10px);
@@ -2646,15 +2654,19 @@ main section#contact .lines-bl::before {
   main section#nav p {
     width: 160%;
   }
+  main section#nav p:nth-child(1) {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
   main section#nav p:nth-child(2) {
-    -webkit-transform: translateX(-720px);
-            transform: translateX(-720px);
+    -webkit-transform: translateX(-240px);
+            transform: translateX(-240px);
   }
   main section#nav p span {
-    font-size: 3.5rem;
-    letter-spacing: .5px;
-    -webkit-text-stroke: 0.36px #ddc06e;
-    margin-right: 36px;
+    font-size: 7rem;
+    letter-spacing: 2px;
+    -webkit-text-stroke: 0.6px #ddc06e;
+    margin-right: 60px;
   }
   main section#nav p:nth-child(1) span:hover::before {
     -webkit-transform: translate(10px, -10px);
@@ -3015,12 +3027,15 @@ main section#contact .lines-bl::before {
   main section#nav p {
     width: 160%;
   }
-  main section#nav p:nth-child(1) {
-    margin-bottom: 12px;
-  }
   main section#nav p:nth-child(2) {
-    -webkit-transform: translateX(-720px);
-            transform: translateX(-720px);
+    -webkit-transform: translateX(-200px);
+            transform: translateX(-200px);
+  }
+  main section#nav p span {
+    font-size: 7rem;
+    letter-spacing: 2px;
+    -webkit-text-stroke: 0.6px #ddc06e;
+    margin-right: 60px;
   }
   main section#nav p span {
     font-size: 2.9rem;

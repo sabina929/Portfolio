@@ -1616,15 +1616,18 @@ body {
                   
           p{
               width: 160%;  
+              &:nth-child(1){
+                 transform: translateX(0px);
+              }
               &:nth-child(2){
-                 transform: translateX(-720px);
+                 transform: translateX(-500px);
               }
              
               span {
-                  font-size: 4rem;
+                  font-size: 12rem;
                   letter-spacing: 1px;
                   -webkit-text-stroke: 0.6px  $main3-05;
-                  margin-right: 50px;
+                  margin-right: 120px;
                  
               }
   
@@ -2044,17 +2047,20 @@ body {
                   
           p{
               width: 160%;  
-              &:nth-child(2){
-                 transform: translateX(-720px);
-              }
-             
-              span {
-                  font-size: 4rem;
-                  letter-spacing: 1px;
-                  -webkit-text-stroke: 0.6px  $main3-05;
-                  margin-right: 50px;
-                 
-              }
+              &:nth-child(1){
+                transform: translateX(0px);
+             }
+             &:nth-child(2){
+                transform: translateX(-320px);
+             }
+            
+             span {
+                 font-size: 9rem;
+                 letter-spacing: 1px;
+                 -webkit-text-stroke: 0.6px  $main3-05;
+                 margin-right: 80px;
+                
+             }
   
               &:nth-child(1){
                   span {
@@ -2473,17 +2479,20 @@ body {
                   
           p{
               width: 160%;  
-              &:nth-child(2){
-                 transform: translateX(-720px);
-              }
-             
-              span {
-                  font-size: 3.5rem;
-                  letter-spacing: .5px;
-                  -webkit-text-stroke: 0.36px  $main3-05;
-                  margin-right: 36px;
-                 
-              }
+              &:nth-child(1){
+                transform: translateX(0px);
+             }
+             &:nth-child(2){
+                transform: translateX(-240px);
+             }
+            
+             span {
+                 font-size: 7rem;
+                 letter-spacing:2px;
+                 -webkit-text-stroke: 0.6px  $main3-05;
+                 margin-right: 60px;
+                
+             }
   
               &:nth-child(1){
                   span {
@@ -2889,12 +2898,18 @@ body {
                   
           p{
               width: 160%;  
-              &:nth-child(1){
-                margin-bottom: 12px;
-              }
-              &:nth-child(2){
-                 transform: translateX(-720px);
-              }
+              
+             &:nth-child(2){
+                transform: translateX(-200px);
+             }
+            
+             span {
+                 font-size: 7rem;
+                 letter-spacing:2px;
+                 -webkit-text-stroke: 0.6px  $main3-05;
+                 margin-right: 60px;
+                
+             }
              
               span {
                   font-size: 2.9rem;
