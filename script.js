@@ -325,11 +325,12 @@ function loading() {
     const mediaQuery801 = window.matchMedia("(max-width: 801px)");
     const mediaQuery710 = window.matchMedia("(max-width: 710px)");
     const mediaQuery610 = window.matchMedia("(max-width: 610px)");
+    const mediaQuery510 = window.matchMedia("(max-width: 510px)");
 
-    function checkMedia1000ForNav() {
+    function checkMedia1024ForNav() {
       if (mediaQuery1024.matches) {
-          gsap.to(".to-left", {x: -500, duration: 5, ease: "linear", yoyo:true, repeat: -1})
-          gsap.to(".to-right", {x: 0, duration: 5, ease: "linear", yoyo:true, repeat: -1})
+          gsap.to(".to-left", {x: -500, duration: 8, ease: "linear", yoyo:true, repeat: -1})
+          gsap.to(".to-right", {x: 0, duration: 8, ease: "linear", yoyo:true, repeat: -1})
           
       }
        else {
@@ -367,15 +368,45 @@ function loading() {
         gsap.to(".to-right", {x: 0, duration: 15, ease: "linear", yoyo:true, repeat: -1})
     }
     }
+    function checkMedia510ForNav() {
+      if (mediaQuery510.matches) {
+        gsap.to(".to-left", {x: -200, duration: 9, ease: "linear", yoyo:true, repeat: -1})
+        gsap.to(".to-right", {x: 0, duration: 9, ease: "linear", yoyo:true, repeat: -1})      
+    }
+     else {
+        gsap.to(".to-left", {x: -720, duration: 15, ease: "linear", yoyo:true, repeat: -1})
+        gsap.to(".to-right", {x: 0, duration: 15, ease: "linear", yoyo:true, repeat: -1})
+    }
+    }
   
-    checkMedia1000ForNav();
-    mediaQuery1024.addListener(checkMedia1000ForNav);
-    checkMedia801ForNav();
-    mediaQuery801.addListener(checkMedia801ForNav);
+
+    if (mediaQuery1024.matches) {
+      checkMedia1024ForNav();
+      mediaQuery1024.addListener(checkMedia1024ForNav);
+    }
+    if (mediaQuery801.matches) {
+      checkMedia801ForNav();
+      mediaQuery801.addListener(checkMedia801ForNav);
+    }
+    if (mediaQuery710.matches) {
+      checkMedia710ForNav();
+      mediaQuery710.addListener(checkMedia710ForNav);
+    }
+    if (mediaQuery610.matches) {
+      checkMedia610ForNav();
+      mediaQuery610.addListener(checkMedia610ForNav);
+    }
+    if (mediaQuery510.matches) {
+      checkMedia510ForNav();
+      mediaQuery510.addListener(checkMedia510ForNav);
+    }
+    // checkMedia1000ForNav();
+    // mediaQuery1024.addListener(checkMedia1000ForNav);
+    // checkMedia801ForNav();
+    // mediaQuery801.addListener(checkMedia801ForNav);
     // checkMedia710ForNav();
     // mediaQuery710.addListener(checkMedia710ForNav);
-    // checkMedia610ForNav();
-    // mediaQuery610.addListener(checkMedia610ForNav);
+    
     
     // gsap.to(".to-left", {x: -720, duration: 15, ease: "linear", yoyo:true, repeat: -1})
     // gsap.to(".to-right", {x: 0, duration: 15, ease: "linear", yoyo:true, repeat: -1})
