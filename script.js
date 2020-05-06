@@ -321,65 +321,56 @@ function loading() {
     setTimeout(() => (main.style.opacity = 1), 50); 
     
     // NAVIGATION
+    const mediaQueryRest = window.matchMedia("(min-width: 1024px)");
     const mediaQuery1024 = window.matchMedia("(max-width: 1024px)");
     const mediaQuery801 = window.matchMedia("(max-width: 801px)");
     const mediaQuery710 = window.matchMedia("(max-width: 710px)");
     const mediaQuery610 = window.matchMedia("(max-width: 610px)");
     const mediaQuery510 = window.matchMedia("(max-width: 510px)");
 
-    function checkMedia1024ForNav() {
-      if (mediaQuery1024.matches) {
-          gsap.to(".to-left", {x: -500, duration: 8, ease: "linear", yoyo:true, repeat: -1})
-          gsap.to(".to-right", {x: 0, duration: 8, ease: "linear", yoyo:true, repeat: -1})
-          
-      }
-       else {
+    function checkMediaRestForNav() {
+      if (mediaQueryRest.matches) {
           gsap.to(".to-left", {x: -720, duration: 15, ease: "linear", yoyo:true, repeat: -1})
           gsap.to(".to-right", {x: 0, duration: 15, ease: "linear", yoyo:true, repeat: -1})
       }
     }
+    function checkMedia1024ForNav() {
+      if (mediaQuery1024.matches) {
+          gsap.to(".to-left", {x: -480, duration: 7, ease: "linear", yoyo:true, repeat: -1})
+          gsap.to(".to-right", {x: 0, duration: 7, ease: "linear", yoyo:true, repeat: -1})
+          
+      }
+    }
     function checkMedia801ForNav() {
       if (mediaQuery801.matches) {
-        gsap.to(".to-left", {x: -320, duration: 8, ease: "linear", yoyo:true, repeat: -1})
-        gsap.to(".to-right", {x: 0, duration: 8, ease: "linear", yoyo:true, repeat: -1})      
-    }
-     else {
-        gsap.to(".to-left", {x: -720, duration: 15, ease: "linear", yoyo:true, repeat: -1})
-        gsap.to(".to-right", {x: 0, duration: 15, ease: "linear", yoyo:true, repeat: -1})
+        gsap.to(".to-left", {x: -260, duration: 7, ease: "linear", yoyo:true, repeat: -1})
+        gsap.to(".to-right", {x: 0, duration: 7, ease: "linear", yoyo:true, repeat: -1})      
     }
     }
     function checkMedia710ForNav() {
       if (mediaQuery710.matches) {
-        gsap.to(".to-left", {x: -240, duration: 9, ease: "linear", yoyo:true, repeat: -1})
-        gsap.to(".to-right", {x: 0, duration: 9, ease: "linear", yoyo:true, repeat: -1})      
-    }
-     else {
-        gsap.to(".to-left", {x: -720, duration: 15, ease: "linear", yoyo:true, repeat: -1})
-        gsap.to(".to-right", {x: 0, duration: 15, ease: "linear", yoyo:true, repeat: -1})
+        gsap.to(".to-left", {x: -240, duration: 8, ease: "linear", yoyo:true, repeat: -1})
+        gsap.to(".to-right", {x: 0, duration: 8, ease: "linear", yoyo:true, repeat: -1})      
     }
     }
     function checkMedia610ForNav() {
       if (mediaQuery610.matches) {
-        gsap.to(".to-left", {x: -200, duration: 9, ease: "linear", yoyo:true, repeat: -1})
-        gsap.to(".to-right", {x: 0, duration: 9, ease: "linear", yoyo:true, repeat: -1})      
-    }
-     else {
-        gsap.to(".to-left", {x: -720, duration: 15, ease: "linear", yoyo:true, repeat: -1})
-        gsap.to(".to-right", {x: 0, duration: 15, ease: "linear", yoyo:true, repeat: -1})
+        gsap.to(".to-left", {x: -280, duration: 8, ease: "linear", yoyo:true, repeat: -1})
+        gsap.to(".to-right", {x: 0, duration: 8, ease: "linear", yoyo:true, repeat: -1})      
     }
     }
     function checkMedia510ForNav() {
       if (mediaQuery510.matches) {
-        gsap.to(".to-left", {x: -200, duration: 9, ease: "linear", yoyo:true, repeat: -1})
-        gsap.to(".to-right", {x: 0, duration: 9, ease: "linear", yoyo:true, repeat: -1})      
-    }
-     else {
-        gsap.to(".to-left", {x: -720, duration: 15, ease: "linear", yoyo:true, repeat: -1})
-        gsap.to(".to-right", {x: 0, duration: 15, ease: "linear", yoyo:true, repeat: -1})
+        gsap.to(".to-left", {x: -200, duration: 8, ease: "linear", yoyo:true, repeat: -1})
+        gsap.to(".to-right", {x: 0, duration: 8, ease: "linear", yoyo:true, repeat: -1})      
     }
     }
   
 
+    if (mediaQueryRest.matches) {
+      checkMediaRestForNav();
+      mediaQueryRest.addListener(checkMediaRestForNav);
+    }
     if (mediaQuery1024.matches) {
       checkMedia1024ForNav();
       mediaQuery1024.addListener(checkMedia1024ForNav);
@@ -400,19 +391,12 @@ function loading() {
       checkMedia510ForNav();
       mediaQuery510.addListener(checkMedia510ForNav);
     }
-    // checkMedia1000ForNav();
-    // mediaQuery1024.addListener(checkMedia1000ForNav);
-    // checkMedia801ForNav();
-    // mediaQuery801.addListener(checkMedia801ForNav);
-    // checkMedia710ForNav();
-    // mediaQuery710.addListener(checkMedia710ForNav);
-    
     
     // gsap.to(".to-left", {x: -720, duration: 15, ease: "linear", yoyo:true, repeat: -1})
     // gsap.to(".to-right", {x: 0, duration: 15, ease: "linear", yoyo:true, repeat: -1})
     
     //MOUSE TRACKER
-    const mediaQuery = window.matchMedia("(min-width: 1200px)");
+    const mediaQuery = window.matchMedia("(min-width: 1100px)");
     function checkMediaForTracker(mediaQuery) {
       if (mediaQuery.matches) {
         const tracker = document.querySelector("#tracker");
@@ -651,10 +635,27 @@ function startGSAPAnimations(){
 
 }
 
+
+// const sectionLoader = document.querySelector('h1')
+// function resize() {
+// 	let vh = window.innerHeight;
+// 	let sh = sectionLoader.offsetHeight;
+// 	let scaleFactor = vh/sh;
+// 	if(scaleFactor<1) {
+// 		gsap.set(sectionLoader, { scale: scaleFactor });
+// 	}
+// 	else {
+//         gsap.set(sectionLoader, { scale: 1 });
+//     }
+// }
+
+// window.onresize = resize;
+
 document.addEventListener("DOMContentLoaded", function() {
   window.addEventListener(
     "load",
     function() {
+      // resize();
       setTimeout(() => {
         loading();
         startGSAPAnimations();
@@ -664,6 +665,13 @@ document.addEventListener("DOMContentLoaded", function() {
   );
 });
 
+
+
+// window.onload = () => {
+// 	// init();
+//          resize();
+//     // GSDevTools.create();
+// };
 
 
 

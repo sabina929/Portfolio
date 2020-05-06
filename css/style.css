@@ -1886,14 +1886,14 @@ main section#contact .lines-bl::before {
             transform: translateX(0px);
   }
   main section#nav p:nth-child(2) {
-    -webkit-transform: translateX(-500px);
-            transform: translateX(-500px);
+    -webkit-transform: translateX(-480px);
+            transform: translateX(-480px);
   }
   main section#nav p span {
-    font-size: 12rem;
+    font-size: 6rem;
     letter-spacing: 1px;
     -webkit-text-stroke: 0.6px #ddc06e;
-    margin-right: 120px;
+    margin-right: 40px;
   }
   main section#nav p:nth-child(1) span:hover::before {
     -webkit-transform: translate(10px, -10px);
@@ -2029,7 +2029,7 @@ main section#contact .lines-bl::before {
   main section#artworks .works-wrapper .work-container {
     margin-top: 100px;
     margin-bottom: 100px;
-    width: 130%;
+    width: 100%;
     height: 250px;
   }
   main section#artworks .works-wrapper .work-container .work-img {
@@ -2095,7 +2095,7 @@ main section#contact .lines-bl::before {
   main section#websites .works-wrapper .work-container {
     margin-top: 100px;
     margin-bottom: 100px;
-    width: 130%;
+    width: 100%;
     height: 250px;
   }
   main section#websites .works-wrapper .work-container .work-img {
@@ -2274,14 +2274,14 @@ main section#contact .lines-bl::before {
             transform: translateX(0px);
   }
   main section#nav p:nth-child(2) {
-    -webkit-transform: translateX(-320px);
-            transform: translateX(-320px);
+    -webkit-transform: translateX(-260px);
+            transform: translateX(-260px);
   }
   main section#nav p span {
-    font-size: 9rem;
+    font-size: 4rem;
     letter-spacing: 1px;
-    -webkit-text-stroke: 0.6px #ddc06e;
-    margin-right: 80px;
+    -webkit-text-stroke: 0.5px #ddc06e;
+    margin-right: 30px;
   }
   main section#nav p:nth-child(1) span:hover::before {
     -webkit-transform: translate(10px, -10px);
@@ -3028,14 +3028,14 @@ main section#contact .lines-bl::before {
     width: 160%;
   }
   main section#nav p:nth-child(2) {
-    -webkit-transform: translateX(-200px);
-            transform: translateX(-200px);
+    -webkit-transform: translateX(-280px);
+            transform: translateX(-280px);
   }
   main section#nav p span {
-    font-size: 7rem;
+    font-size: 3.2rem;
     letter-spacing: 2px;
-    -webkit-text-stroke: 0.6px #ddc06e;
-    margin-right: 60px;
+    -webkit-text-stroke: 0.4px #ddc06e;
+    margin-right: 30px;
   }
   main section#nav p:nth-child(1) span:hover::before {
     -webkit-transform: translate(10px, -10px);
