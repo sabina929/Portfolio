@@ -662,11 +662,40 @@ function resize() {
 	}
 	else if(scaleFactor<3 && scaleFactor >=2) {
     gsap.set(sectionLoader, { scale: .4 });
-    gsap.set(sectionLoadertext, { scale: .4, marginTop: -440 });
+    // gsap.set(sectionLoadertext, { scale: .4 });
+   
+    if(scaleFactor<3 && scaleFactor >=2.4) {
+      gsap.set(sectionLoadertext, { scale: .4, marginTop: -440 });
+    }
+    else if(scaleFactor<2.4 && scaleFactor >=2.3) {
+      gsap.set(sectionLoadertext, { scale: .4, marginTop: -560 });
+    }
+    else if(scaleFactor<2.3 && scaleFactor >=2.2) {
+      gsap.set(sectionLoadertext, { scale: .4, marginTop: -600 });
+    }
+    else if(scaleFactor<2.2 && scaleFactor >=2) {
+      gsap.set(sectionLoadertext, { scale: .4, marginTop: -680 });
+    }
 	}
 	else if(scaleFactor<2 && scaleFactor >=1) {
     gsap.set(sectionLoader, { scale: .4 });
-    gsap.set(sectionLoadertext, { scale: .4, marginTop: -500 });
+    // gsap.set(sectionLoadertext, { scale: .4});
+    
+    if(scaleFactor<2 && scaleFactor >=1.6) {
+      gsap.set(sectionLoadertext, { scale: .36, marginTop: -690 });
+    }
+    if(scaleFactor<1.6 && scaleFactor >=1.5) {
+      gsap.set(sectionLoadertext, { scale: .3, marginTop: -690 });
+    }
+    else if(scaleFactor<1.5 && scaleFactor >=1.4) {
+      gsap.set(sectionLoadertext, { scale: .28, marginTop: -690 });
+    }
+    else if(scaleFactor<1.4 && scaleFactor >=1.3) {
+      gsap.set(sectionLoadertext, { scale: .26, marginTop: -690 });
+    }
+    else if(scaleFactor<1.3 && scaleFactor >=1) {
+      gsap.set(sectionLoadertext, { scale: .24, marginTop: -940 });
+    }
 	}
 	else {
     gsap.set(sectionLoader, { scale: 1 });
@@ -681,10 +710,10 @@ document.addEventListener("DOMContentLoaded", function() {
     "load",
     function() {
       resize();
-      // setTimeout(() => {
-      //   loading();
-      //   startGSAPAnimations();
-      // }, 500);
+      setTimeout(() => {
+        loading();
+        startGSAPAnimations();
+      }, 500);
     },
     false
   );
