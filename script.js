@@ -636,30 +636,55 @@ function startGSAPAnimations(){
 }
 
 
-// const sectionLoader = document.querySelector('h1')
-// function resize() {
-// 	let vh = window.innerHeight;
-// 	let sh = sectionLoader.offsetHeight;
-// 	let scaleFactor = vh/sh;
-// 	if(scaleFactor<1) {
-// 		gsap.set(sectionLoader, { scale: scaleFactor });
-// 	}
-// 	else {
-//         gsap.set(sectionLoader, { scale: 1 });
-//     }
-// }
+const sectionLoader = document.querySelector('.loader')
+const sectionLoadertext = document.querySelector('h1')
+function resize() {
+	let vh = window.innerWidth;
+  let sh = sectionLoader.offsetWidth;
+  console.log(sh)
+  console.log(vh)
+	let scaleFactor = vh/sh;
+	if(scaleFactor<7 && scaleFactor >= 6) {
+		gsap.set(sectionLoader, { scale: .8 });
+		gsap.set(sectionLoadertext, { scale: .8 });
+	}
+	else if(scaleFactor<6 && scaleFactor >=5) {
+    gsap.set(sectionLoader, { scale: .7 });
+    gsap.set(sectionLoadertext, { scale: .7 });
+	}
+	else if(scaleFactor<5 && scaleFactor >=4) {
+    gsap.set(sectionLoader, { scale: .6 });
+    gsap.set(sectionLoadertext, { scale: .6, marginTop: -390 });
+	}
+	else if(scaleFactor<4 && scaleFactor >=3) {
+    gsap.set(sectionLoader, { scale: .5 });
+    gsap.set(sectionLoadertext, { scale: .5, marginTop: -420 });
+	}
+	else if(scaleFactor<3 && scaleFactor >=2) {
+    gsap.set(sectionLoader, { scale: .4 });
+    gsap.set(sectionLoadertext, { scale: .4, marginTop: -440 });
+	}
+	else if(scaleFactor<2 && scaleFactor >=1) {
+    gsap.set(sectionLoader, { scale: .4 });
+    gsap.set(sectionLoadertext, { scale: .4, marginTop: -500 });
+	}
+	else {
+    gsap.set(sectionLoader, { scale: 1 });
+    gsap.set(sectionLoadertext, { scale: 1 });
+    }
+}
 
-// window.onresize = resize;
+window.onresize = resize;
 
 document.addEventListener("DOMContentLoaded", function() {
   window.addEventListener(
     "load",
     function() {
-      // resize();
-      setTimeout(() => {
-        loading();
-        startGSAPAnimations();
-      }, 500);
+      resize();
+      // setTimeout(() => {
+      //   loading();
+      //   startGSAPAnimations();
+      // }, 500);
     },
     false
   );
