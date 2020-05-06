@@ -2483,14 +2483,14 @@ body {
                 transform: translateX(0px);
              }
              &:nth-child(2){
-                transform: translateX(-240px);
+                transform: translateX(-180px);
              }
             
              span {
-                 font-size: 7rem;
+                 font-size: 3rem;
                  letter-spacing:2px;
-                 -webkit-text-stroke: 0.6px  $main3-05;
-                 margin-right: 60px;
+                 -webkit-text-stroke: 0.3px  $main3-05;
+                 margin-right: 30px;
                 
              }
   
