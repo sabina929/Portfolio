@@ -3735,14 +3735,14 @@ body {
                 margin-bottom: 12px;
               }
               &:nth-child(2){
-                 transform: translateX(-720px);
+                 transform: translateX(-200px);
               }
              
               span {
-                  font-size: 2.3rem;
-                  letter-spacing: .5px;
-                  -webkit-text-stroke: 0.28px  $main3-05;
-                  margin-right: 20px;
+                font-size: 2.1rem;
+                letter-spacing: .5px;
+                -webkit-text-stroke: 0.28px  $main3-05;
+                margin-right: 20px;
                  
               }
   
@@ -3932,7 +3932,7 @@ body {
               
           }
           section#contact{
-              padding: 0 72px;
+              padding: 0 40px 0 70px;
               
               h2#find-me{
                 font-size: 1.7rem;

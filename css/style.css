@@ -3656,11 +3656,11 @@ main section#contact .lines-bl::before {
     margin-bottom: 12px;
   }
   main section#nav p:nth-child(2) {
-    -webkit-transform: translateX(-720px);
-            transform: translateX(-720px);
+    -webkit-transform: translateX(-200px);
+            transform: translateX(-200px);
   }
   main section#nav p span {
-    font-size: 2.3rem;
+    font-size: 2.1rem;
     letter-spacing: .5px;
     -webkit-text-stroke: 0.28px #ddc06e;
     margin-right: 20px;
@@ -3822,7 +3822,7 @@ main section#contact .lines-bl::before {
     letter-spacing: 0.5px;
   }
   main section#contact {
-    padding: 0 72px;
+    padding: 0 40px 0 70px;
   }
   main section#contact h2#find-me {
     font-size: 1.7rem;

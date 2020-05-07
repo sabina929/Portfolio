@@ -704,29 +704,23 @@ function resize() {
 }
 
 window.onresize = resize;
-
+window.onload = () => {
+         resize();
+};
 document.addEventListener("DOMContentLoaded", function() {
   window.addEventListener(
     "load",
     function() {
-      resize();
+      // resize();
       setTimeout(() => {
         loading();
         startGSAPAnimations();
-      }, 500);
+      // }, 500);
+      }, 12000);
     },
     false
   );
 });
-
-
-
-// window.onload = () => {
-// 	// init();
-//          resize();
-//     // GSDevTools.create();
-// };
-
 
 
 
