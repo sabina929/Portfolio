@@ -440,7 +440,7 @@ function loading() {
       menuItem.addEventListener("mouseout", scaleUp)
     })
 
-  }, 11400);
+  }, 500);
   // }, 10);
 }
 
@@ -687,7 +687,7 @@ function resize() {
 	}
 	else {
     gsap.set(sectionLoader, { scale: 1 });
-    gsap.set(sectionLoadertext, { scale: 1, marginTop: -250 });
+    gsap.set(sectionLoadertext, { scale: 1, marginTop: -300 });
     }
 }
 
@@ -702,12 +702,18 @@ document.addEventListener("DOMContentLoaded", function() {
       wrapper.style.visibility = "visible"
       resize();
       setTimeout(() => {
-        startloadingTextAnim()
+        startloadingTextAnim();
+
         setTimeout(() => {
-          loading();
           startGSAPAnimations();
-        // }, 500);
-        }, 500);
+          
+          
+          setTimeout(() => {
+            console.log("before execution")
+          loading();
+          console.log("after execution")
+          }, 2000);
+        }, 10000);
       }, 100);
     },
     false

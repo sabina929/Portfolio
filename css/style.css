@@ -91,7 +91,7 @@ body {
   font-size: 140px;
   color: transparent;
   -webkit-text-stroke: 3px #84691f;
-  margin-top: -250px;
+  margin-top: -300px;
   z-index: 999999;
 }
 
@@ -3858,7 +3858,7 @@ main section#contact .lines-bl::before {
     line-height: 20px;
     letter-spacing: 0.1px;
     font-size: 0.72rem;
-    font-weight: 600;
+    font-weight: 400;
     border: 0.8px solid #24165a;
   }
   main section#contact h2#feel-free a.copied::after {
@@ -4140,7 +4140,7 @@ main section#contact .lines-bl::before {
     line-height: 20px;
     letter-spacing: 0.1px;
     font-size: 0.72rem;
-    font-weight: 600;
+    font-weight: 400;
     border: 0.8px solid #24165a;
   }
   main section#contact h2#feel-free a.copied::after {

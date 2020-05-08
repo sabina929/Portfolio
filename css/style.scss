@@ -50,7 +50,7 @@ body {
         font-size: 140px;
         color: transparent;
         -webkit-text-stroke: 3px  hsl(44, 62%, 32%);
-        margin-top: -250px;
+        margin-top: -300px;
         z-index: 999999;
       }
       
@@ -3972,7 +3972,7 @@ body {
                         line-height: 20px;
                         letter-spacing: 0.1px;
                         font-size: 0.72rem;
-                        font-weight: 600;
+                        font-weight: 400;
                         border: .8px solid hsl(252, 60%, 22%);
                       }
                       &.copied::after{
@@ -4321,7 +4321,7 @@ body {
                           line-height: 20px;
                           letter-spacing: 0.1px;
                           font-size: 0.72rem;
-                          font-weight: 600;
+                          font-weight: 400;
                           border: .8px solid hsl(252, 60%, 22%);
                       }
                       &.copied::after{
