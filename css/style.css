@@ -4132,13 +4132,14 @@ main section#contact .lines-bl::before {
     font-weight: 800;
   }
   main section#contact h2#feel-free a.copied::before {
-    top: -78%;
+    top: -84%;
     left: -28%;
-    width: 110px;
+    width: 120px;
     height: 20px;
     line-height: 20px;
     letter-spacing: 0.1px;
     font-size: 0.72rem;
+    font-weight: 600;
     border: 0.8px solid #24165a;
   }
   main section#contact h2#feel-free a.copied::after {
