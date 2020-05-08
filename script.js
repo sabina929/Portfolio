@@ -394,9 +394,6 @@ function loading() {
       mediaQuery510.addListener(checkMedia510ForNav);
     }
     
-    // gsap.to(".to-left", {x: -720, duration: 15, ease: "linear", yoyo:true, repeat: -1})
-    // gsap.to(".to-right", {x: 0, duration: 15, ease: "linear", yoyo:true, repeat: -1})
-    
     //MOUSE TRACKER
     const mediaQuery = window.matchMedia("(min-width: 1100px)");
     function checkMediaForTracker(mediaQuery) {
@@ -407,29 +404,18 @@ function loading() {
               "style",
               "top: "+(e.pageY - 10)+"px; left: "+(e.pageX - 10)+"px; display:block;"
             );
-            // console.log("added");
           });
           
       } else {
           const tracker = document.querySelector("#tracker");
-          // console.log(tracker);
           tracker.style.display = "none";
       }
     }
 
-    
     setTimeout(()=>{
       checkMediaForTracker(mediaQuery);
       mediaQuery.addListener(checkMediaForTracker);
-      
     }, 2000)
-
-    // const tracker = document.querySelector('#tracker');
-    // setTimeout(() => {
-    //         document.addEventListener('mousemove', e => {
-    //           tracker.setAttribute("style", "top: "+(e.pageY - 10)+"px; left: "+(e.pageX - 10)+"px; display:block;")
-    //         })
-    // }, 2000)
 
     //  MENU ITEMS HOVER EFFECT
     let menuItemsUpper = document.querySelectorAll("#nav > p.to-left > span")
@@ -455,8 +441,8 @@ function loading() {
       menuItem.addEventListener("mouseout", scaleUp)
     })
 
-  // }, 12000);
-  }, 10);
+  }, 12000);
+  // }, 10);
 }
 
 function startGSAPAnimations(){
@@ -637,7 +623,6 @@ function startGSAPAnimations(){
 
 }
 
-
 const sectionLoader = document.querySelector('.loader')
 const sectionLoadertext = document.querySelector('h1')
 function resize() {
@@ -689,7 +674,7 @@ function resize() {
     }
     if(scaleFactor<1.6 && scaleFactor >=1.5) {
       // gsap.set(sectionLoadertext, { scale: .3, marginTop: -690 });
-      gsap.set(sectionLoadertext, { scale: .3, marginTop: -760 });
+      gsap.set(sectionLoadertext, { scale: .3, marginTop: -780 });
     }
     else if(scaleFactor<1.5 && scaleFactor >=1.4) {
       gsap.set(sectionLoadertext, { scale: .28, marginTop: -690 });
