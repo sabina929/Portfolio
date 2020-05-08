@@ -3938,9 +3938,7 @@ body {
                 font-size: 1.7rem;
                 line-height: 24px;
                 letter-spacing: 0.6px;
-                margin-bottom: 12px;    
-                color:yellow;
-      
+                margin-bottom: 12px;           
               }
   
               .social-media-links{
@@ -4279,15 +4277,15 @@ body {
               
           }
           section#contact{
-            padding: 0 40px 0 60px;
+            // padding: 0 40px 0 60px;
+            padding: 0 30px 0 50px;
               
               h2#find-me{
                 font-size: 1.4rem;
                 line-height: 24px;
                 letter-spacing: 0.6px;
                 margin-bottom: 12px; 
-                color:blue;
-          
+                color: blue;          
               }
   
               .social-media-links{
@@ -4377,7 +4375,6 @@ body {
         line-height: 24px;
         letter-spacing: 0.6px;
         margin-bottom: 12px;
-        color:red;
       }
       .social-media-links a p {
         font-size: 0.72rem;

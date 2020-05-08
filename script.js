@@ -685,7 +685,8 @@ function resize() {
       gsap.set(sectionLoadertext, { scale: .36, marginTop: -690 });
     }
     if(scaleFactor<1.6 && scaleFactor >=1.5) {
-      gsap.set(sectionLoadertext, { scale: .3, marginTop: -690 });
+      // gsap.set(sectionLoadertext, { scale: .3, marginTop: -690 });
+      gsap.set(sectionLoadertext, { scale: .3, marginTop: -720 });
     }
     else if(scaleFactor<1.5 && scaleFactor >=1.4) {
       gsap.set(sectionLoadertext, { scale: .28, marginTop: -690 });

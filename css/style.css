@@ -3829,7 +3829,6 @@ main section#contact .lines-bl::before {
     line-height: 24px;
     letter-spacing: 0.6px;
     margin-bottom: 12px;
-    color: yellow;
   }
   main section#contact .social-media-links {
     margin-bottom: 20px;
@@ -4103,7 +4102,7 @@ main section#contact .lines-bl::before {
     letter-spacing: 0.5px;
   }
   main section#contact {
-    padding: 0 40px 0 60px;
+    padding: 0 30px 0 50px;
   }
   main section#contact h2#find-me {
     font-size: 1.4rem;
@@ -4188,7 +4187,6 @@ main section#contact .lines-bl::before {
     line-height: 24px;
     letter-spacing: 0.6px;
     margin-bottom: 12px;
-    color: red;
   }
   main section#contact .social-media-links a p {
     font-size: 0.72rem;
