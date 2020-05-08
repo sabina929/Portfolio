@@ -90,7 +90,7 @@ body {
   font-size: 140px;
   color: transparent;
   -webkit-text-stroke: 3px #84691f;
-  margin-top: -300px;
+  margin-top: -250px;
   z-index: 999999;
 }
 
@@ -3829,6 +3829,7 @@ main section#contact .lines-bl::before {
     line-height: 24px;
     letter-spacing: 0.6px;
     margin-bottom: 12px;
+    color: yellow;
   }
   main section#contact .social-media-links {
     margin-bottom: 20px;
@@ -4109,6 +4110,7 @@ main section#contact .lines-bl::before {
     line-height: 24px;
     letter-spacing: 0.6px;
     margin-bottom: 12px;
+    color: blue;
   }
   main section#contact .social-media-links {
     margin-bottom: 20px;
@@ -4186,6 +4188,7 @@ main section#contact .lines-bl::before {
     line-height: 24px;
     letter-spacing: 0.6px;
     margin-bottom: 12px;
+    color: red;
   }
   main section#contact .social-media-links a p {
     font-size: 0.72rem;

@@ -699,14 +699,14 @@ function resize() {
 	}
 	else {
     gsap.set(sectionLoader, { scale: 1 });
-    gsap.set(sectionLoadertext, { scale: 1 });
+    gsap.set(sectionLoadertext, { scale: 1, marginTop: -250 });
     }
 }
 
 window.onresize = resize;
-window.onload = () => {
+// window.onload = () => {
          resize();
-};
+// };
 document.addEventListener("DOMContentLoaded", function() {
   window.addEventListener(
     "load",
