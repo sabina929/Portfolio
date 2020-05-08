@@ -639,6 +639,7 @@ function startGSAPAnimations(){
 const sectionLoader = document.querySelector('.loader')
 const sectionLoadertext = document.querySelector('h1')
 function resize() {
+  wrapper.style.visibility = "visible"
 	let vh = window.innerWidth;
   let sh = sectionLoader.offsetWidth;
   console.log(sh)
@@ -706,13 +707,13 @@ function resize() {
 
 window.onresize = resize;
 // window.onload = () => {
-         resize();
+        //  resize();
 // };
 document.addEventListener("DOMContentLoaded", function() {
   window.addEventListener(
     "load",
     function() {
-      // resize();
+      resize();
       setTimeout(() => {
         loading();
         startGSAPAnimations();
