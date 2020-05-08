@@ -367,7 +367,6 @@ function loading() {
         gsap.to(".to-right", {x: 0, duration: 8, ease: "linear", yoyo:true, repeat: -1})      
     }
     }
-  
 
     if (mediaQueryRest.matches) {
       checkMediaRestForNav();
@@ -441,7 +440,7 @@ function loading() {
       menuItem.addEventListener("mouseout", scaleUp)
     })
 
-  }, 12000);
+  }, 11400);
   // }, 10);
 }
 
@@ -708,7 +707,7 @@ document.addEventListener("DOMContentLoaded", function() {
           loading();
           startGSAPAnimations();
         // }, 500);
-        }, 11900);
+        }, 500);
       }, 100);
     },
     false
