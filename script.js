@@ -1,9 +1,10 @@
 const wrapper = document.querySelector(".wrapper");
 const main = document.querySelector("main");
 
-
 gsap.registerPlugin(MotionPathPlugin);
 Splitting();
+
+function startloadingTextAnim(){
 
 let target = document.querySelector(".wrapper h1")
 
@@ -302,6 +303,7 @@ gsap
     },
     "<.4"
   );
+}
 
 
 // LOADING SCREEN  
@@ -716,10 +718,13 @@ document.addEventListener("DOMContentLoaded", function() {
       wrapper.style.visibility = "visible"
       resize();
       setTimeout(() => {
-        loading();
-        startGSAPAnimations();
-      // }, 500);
-      }, 12000);
+        startloadingTextAnim()
+        setTimeout(() => {
+          loading();
+          startGSAPAnimations();
+        // }, 500);
+        }, 11900);
+      }, 100);
     },
     false
   );
