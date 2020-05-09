@@ -441,7 +441,6 @@ function loading() {
     })
 
   }, 500);
-  // }, 10);
 }
 
 function startGSAPAnimations(){
@@ -707,7 +706,6 @@ document.addEventListener("DOMContentLoaded", function() {
         setTimeout(() => {
           startGSAPAnimations();
           
-          
           setTimeout(() => {
             console.log("before execution")
           loading();
@@ -720,11 +718,6 @@ document.addEventListener("DOMContentLoaded", function() {
   );
 });
 
-
-
-// GSAP ANIMATIONS
-
-  
     // let theLongDark = select("section#ipsum #the-long-dark >div");
 
     // let tlTheLongDark = gsap.timeline({
