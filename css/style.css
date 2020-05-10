@@ -1355,64 +1355,15 @@ main section#contact .lines-bl::before {
 }
 
 @media only screen and (max-width: 1410px) {
-  main section#about .about-wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    padding: 120px 120px;
-    width: 100vw;
-    height: auto;
-    overflow-y: hidden;
-  }
   main section#about .about-wrapper .about-img {
     width: 480px;
     height: 480px;
-    margin-top: 0px;
-  }
-  main section#about .about-wrapper .text {
-    margin-left: 50px;
-    width: 600px;
-    height: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    mix-blend-mode: color-burn;
   }
   main section#about .about-wrapper .text h2 {
-    width: 106%;
     font-size: 4rem;
     line-height: 70px;
-    letter-spacing: 1.1px;
-    margin-bottom: 16px;
-  }
-  main section#about .about-wrapper .text h3 {
-    font-weight: 800;
-    font-size: 2.2rem;
-    margin-bottom: 12px;
   }
   main section#about .about-wrapper .text p {
-    width: 100%;
-    font-size: 1.2rem;
     line-height: 31px;
     letter-spacing: 0.6px;
     margin-bottom: 0px;
@@ -1420,64 +1371,15 @@ main section#contact .lines-bl::before {
 }
 
 @media only screen and (max-width: 1310px) {
-  main section#about .about-wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    padding: 120px 120px;
-    width: 100vw;
-    height: auto;
-    overflow-y: hidden;
-  }
   main section#about .about-wrapper .about-img {
     width: 400px;
     height: 400px;
-    margin-top: 0px;
-  }
-  main section#about .about-wrapper .text {
-    margin-left: 50px;
-    width: 600px;
-    height: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    mix-blend-mode: color-burn;
   }
   main section#about .about-wrapper .text h2 {
-    width: 106%;
     font-size: 4rem;
     line-height: 70px;
-    letter-spacing: 1.1px;
-    margin-bottom: 16px;
-  }
-  main section#about .about-wrapper .text h3 {
-    font-weight: 800;
-    font-size: 2.2rem;
-    margin-bottom: 12px;
   }
   main section#about .about-wrapper .text p {
-    width: 100%;
-    font-size: 1.2rem;
     line-height: 31px;
     letter-spacing: 0.6px;
     margin-bottom: 0px;
@@ -1765,10 +1667,8 @@ main section#contact .lines-bl::before {
     margin-bottom: 0px;
   }
   main section#about .about-wrapper .text h2 {
-    width: 100%;
     font-size: 2.8rem;
     line-height: 50px;
-    letter-spacing: 1px;
     margin-bottom: 20px;
   }
   main section#about .about-wrapper .text h3 {
@@ -1776,11 +1676,9 @@ main section#contact .lines-bl::before {
     margin-bottom: 10px;
   }
   main section#about .about-wrapper .text p {
-    width: 100%;
     font-size: 1.1rem;
     line-height: 36px;
     letter-spacing: 1.2px;
-    margin-bottom: 0px;
   }
   main section#about .back {
     top: 30px;
@@ -1876,66 +1774,12 @@ main section#contact .lines-bl::before {
     width: 100%;
     height: 100vh;
   }
-  main section#about .about-wrapper {
-    padding: 110px 110px;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    -ms-grid-rows: 400px 1fr;
-        grid-template-rows: 400px 1fr;
-    grid-row-gap: 60px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    justify-items: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    height: auto;
-    width: 100vw;
-    overflow-y: scroll;
-  }
-  main section#about .about-wrapper::-webkit-scrollbar {
-    width: 8px;
-    opacity: 1;
-  }
-  main section#about .about-wrapper::-webkit-scrollbar-track {
-    background: transparent;
-    width: 6px;
-    margin: 0px;
-  }
-  main section#about .about-wrapper::-webkit-scrollbar-thumb {
-    background-color: rgba(0, 0, 0, 0.24);
-    opacity: 0.1;
-    width: 6px;
-    margin: 0px;
-    -webkit-transition: background-color .3s ease;
-    transition: background-color .3s ease;
-  }
-  main section#about .about-wrapper::-webkit-scrollbar-thumb:hover {
-    background-color: rgba(0, 0, 0, 0.3);
-  }
   main section#about .about-wrapper .about-img {
     width: 50%;
     height: 240px;
-    margin-top: 0px;
   }
   main section#about .about-wrapper .text {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    text-align: center;
     width: 60%;
-    height: auto;
-    margin-left: 0px;
-    margin-bottom: 0px;
   }
   main section#about .about-wrapper .text h2 {
     width: 100%;
@@ -1954,30 +1798,6 @@ main section#contact .lines-bl::before {
     line-height: 19px;
     letter-spacing: 0.3px;
     margin-bottom: 0px;
-  }
-  main section#about .back {
-    top: 30px;
-    right: 30px;
-    font-size: 0.9rem;
-    letter-spacing: 0.7px;
-  }
-  main section#about .lines-tr {
-    top: 18px;
-    width: 160px;
-  }
-  main section#about .lines-tr::before {
-    top: -18px;
-    right: 18px;
-    height: 105px;
-  }
-  main section#about .lines-bl {
-    bottom: 18px;
-    width: 160px;
-  }
-  main section#about .lines-bl::before {
-    bottom: -18px;
-    left: 18px;
-    height: 105px;
   }
   main section#artworks {
     width: 100%;
@@ -2215,93 +2035,27 @@ main section#contact .lines-bl::before {
     left: 16px;
     height: 85px;
   }
-  main section#nav {
-    width: 100%;
-    height: 100vh;
-  }
-  main section#nav p {
-    width: 160%;
-  }
-  main section#nav p:nth-child(1) {
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
-  }
   main section#nav p:nth-child(2) {
     -webkit-transform: translateX(-260px);
             transform: translateX(-260px);
   }
   main section#nav p span {
     font-size: 4rem;
-    letter-spacing: 1px;
     -webkit-text-stroke: 0.5px #ddc06e;
     margin-right: 30px;
-  }
-  main section#nav p:nth-child(1) span:hover::before {
-    -webkit-transform: translate(10px, -10px);
-            transform: translate(10px, -10px);
-  }
-  main section#nav p:nth-child(2) span:hover::before {
-    -webkit-transform: translate(-10px, 10px);
-            transform: translate(-10px, 10px);
   }
   main section#about .about-wrapper {
     margin: 0px 0px 0px 0;
     padding: 100px 100px;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
     -ms-grid-rows: 300px 1fr;
         grid-template-rows: 300px 1fr;
-    grid-row-gap: 60px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    justify-items: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    height: auto;
-    width: 100vw;
-    overflow-y: scroll;
-  }
-  main section#about .about-wrapper::-webkit-scrollbar {
-    width: 8px;
-    opacity: 1;
-  }
-  main section#about .about-wrapper::-webkit-scrollbar-track {
-    background: transparent;
-    width: 6px;
-    margin: 0px;
-  }
-  main section#about .about-wrapper::-webkit-scrollbar-thumb {
-    background-color: rgba(0, 0, 0, 0.24);
-    opacity: 0.1;
-    width: 6px;
-    margin: 0px;
-    -webkit-transition: background-color .3s ease;
-    transition: background-color .3s ease;
-  }
-  main section#about .about-wrapper::-webkit-scrollbar-thumb:hover {
-    background-color: rgba(0, 0, 0, 0.3);
   }
   main section#about .about-wrapper .about-img {
     width: 68%;
     height: 350px;
-    margin-top: 0px;
   }
   main section#about .about-wrapper .text {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    text-align: center;
     width: 90%;
-    height: auto;
-    margin-left: 0px;
-    margin-bottom: 0px;
   }
   main section#about .about-wrapper .text h2 {
     width: 100%;
@@ -2345,47 +2099,25 @@ main section#contact .lines-bl::before {
     left: 16px;
     height: 85px;
   }
-  main section#artworks {
-    width: 100%;
-    height: 100%;
-  }
   main section#artworks .works-wrapper {
     padding: 0 143px;
-  }
-  main section#artworks .works-wrapper::-webkit-scrollbar {
-    width: 8px;
-  }
-  main section#artworks .works-wrapper::-webkit-scrollbar-track {
-    width: 6px;
-  }
-  main section#artworks .works-wrapper::-webkit-scrollbar-thumb {
-    width: 6px;
   }
   main section#artworks .works-wrapper .work-container {
     margin-top: 80px;
     margin-bottom: 80px;
     width: 120%;
-    height: 250px;
   }
   main section#artworks .works-wrapper .work-container .work-img {
     width: 60%;
-  }
-  main section#artworks .works-wrapper .work-container .work-img img {
-    height: 250px;
-    -o-object-fit: cover;
-       object-fit: cover;
   }
   main section#artworks .works-wrapper .work-container div.work-title {
     width: 40%;
   }
   main section#artworks .works-wrapper .work-container div.work-title a {
     margin-left: -56px;
-    margin-top: 40px;
   }
   main section#artworks .works-wrapper .work-container div.work-title a p {
     font-size: 2.4rem;
-    line-height: 42px;
-    letter-spacing: 0px;
   }
   main section#artworks .back {
     top: 28px;
@@ -2411,35 +2143,16 @@ main section#contact .lines-bl::before {
     left: 16px;
     height: 85px;
   }
-  main section#websites {
-    width: 100%;
-    height: 100%;
-  }
   main section#websites .works-wrapper {
     padding: 0 143px;
-  }
-  main section#websites .works-wrapper::-webkit-scrollbar {
-    width: 8px;
-  }
-  main section#websites .works-wrapper::-webkit-scrollbar-track {
-    width: 6px;
-  }
-  main section#websites .works-wrapper::-webkit-scrollbar-thumb {
-    width: 6px;
   }
   main section#websites .works-wrapper .work-container {
     margin-top: 80px;
     margin-bottom: 80px;
     width: 120%;
-    height: 250px;
   }
   main section#websites .works-wrapper .work-container .work-img {
     width: 60%;
-  }
-  main section#websites .works-wrapper .work-container .work-img img {
-    height: 250px;
-    -o-object-fit: cover;
-       object-fit: cover;
   }
   main section#websites .works-wrapper .work-container div.work-title {
     width: 40%;
@@ -2450,8 +2163,6 @@ main section#contact .lines-bl::before {
   }
   main section#websites .works-wrapper .work-container div.work-title a p {
     font-size: 2.4rem;
-    line-height: 42px;
-    letter-spacing: 0px;
   }
   main section#websites .back {
     top: 28px;
@@ -2483,31 +2194,21 @@ main section#contact .lines-bl::before {
   main section#contact h2#find-me {
     font-size: 3rem;
     line-height: 40px;
-    letter-spacing: 1.1px;
     margin-bottom: 20px;
   }
   main section#contact .social-media-links {
     margin-bottom: 30px;
   }
-  main section#contact .social-media-links a:not(:last-child) {
-    margin-right: 24px;
-  }
   main section#contact .social-media-links a p {
     font-size: 1.5rem;
     line-height: 26px;
-    letter-spacing: 0.8px;
   }
   main section#contact h2#feel-free {
     font-size: 1.4rem;
     line-height: 24px;
-    letter-spacing: 0.8px;
-  }
-  main section#contact h2#feel-free a {
-    font-weight: 800;
   }
   main section#contact h2#feel-free a.copied::before {
     top: -100%;
-    left: -28%;
     width: 130px;
     height: 20px;
     line-height: 20px;
@@ -2515,8 +2216,6 @@ main section#contact .lines-bl::before {
     font-size: 0.8rem;
   }
   main section#contact h2#feel-free a.copied::after {
-    top: -40%;
-    left: 47%;
     width: 8px;
     height: 8px;
     border: 0.8px solid #24165a;

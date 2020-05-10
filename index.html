@@ -368,7 +368,6 @@
             document.addEventListener('mousemove', e => {
               tracker.setAttribute("style", "top: "+(e.pageY - 10)+"px; left: "+(e.pageX - 10)+"px;")
             })
-
             var body = document.querySelector("body");
             var textTarget = document.querySelector("#feel-free > a")
             textTarget.addEventListener("click", copyText)
@@ -381,12 +380,10 @@
               document.execCommand("copy");
               body.removeChild(temp);
               textTarget.classList.add("copied")
-
               setTimeout(()=>{
                 textTarget.classList.remove("copied")
               }, 1200)
             }
-
     </script>
     <script src="./script.js"></script>
 </body>
