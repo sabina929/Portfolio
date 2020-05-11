@@ -407,6 +407,7 @@ function loading() {
           
       } else {
           const tracker = document.querySelector("#tracker");
+          tracker.style.width = 0;
           tracker.style.display = "none";
       }
     }
