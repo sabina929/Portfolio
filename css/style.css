@@ -32,7 +32,7 @@
 body {
   overflow: hidden;
   width: 100vw;
-  min-height: 100vh;
+  height: 100vh;
   background-color: #a2ae9e;
   -webkit-transition: all 0.8s ease-in;
   transition: all 0.8s ease-in;
