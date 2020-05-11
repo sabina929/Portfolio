@@ -111,7 +111,7 @@ body {
 
 main {
   display: none;
-  height: 100vh;
+  height: 100%;
   width: 100vw;
   opacity: 0;
   -webkit-transition: opacity 0.8s ease-in;
