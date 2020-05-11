@@ -338,33 +338,33 @@ function loading() {
     }
     function checkMedia1024ForNav() {
       if (mediaQuery1024.matches) {
-          gsap.to(".to-left", {x: -480, duration: 7, ease: "linear", yoyo:true, repeat: -1})
-          gsap.to(".to-right", {x: 0, duration: 7, ease: "linear", yoyo:true, repeat: -1})
+          gsap.to(".to-left", {x: -480, duration: 6, ease: "linear", yoyo:true, repeat: -1})
+          gsap.to(".to-right", {x: 0, duration: 6, ease: "linear", yoyo:true, repeat: -1})
           
       }
     }
     function checkMedia801ForNav() {
       if (mediaQuery801.matches) {
-        gsap.to(".to-left", {x: -260, duration: 7, ease: "linear", yoyo:true, repeat: -1})
-        gsap.to(".to-right", {x: 0, duration: 7, ease: "linear", yoyo:true, repeat: -1})      
+        gsap.to(".to-left", {x: -260, duration: 5, ease: "linear", yoyo:true, repeat: -1})
+        gsap.to(".to-right", {x: 0, duration: 5, ease: "linear", yoyo:true, repeat: -1})      
     }
     }
     function checkMedia710ForNav() {
       if (mediaQuery710.matches) {
-        gsap.to(".to-left", {x: -180, duration: 6, ease: "linear", yoyo:true, repeat: -1})
-        gsap.to(".to-right", {x: 0, duration: 6, ease: "linear", yoyo:true, repeat: -1})      
+        gsap.to(".to-left", {x: -180, duration: 5, ease: "linear", yoyo:true, repeat: -1})
+        gsap.to(".to-right", {x: 0, duration: 5, ease: "linear", yoyo:true, repeat: -1})      
     }
     }
     function checkMedia610ForNav() {
       if (mediaQuery610.matches) {
-        gsap.to(".to-left", {x: -280, duration: 7, ease: "linear", yoyo:true, repeat: -1})
-        gsap.to(".to-right", {x: 0, duration: 7, ease: "linear", yoyo:true, repeat: -1})      
+        gsap.to(".to-left", {x: -280, duration: 5, ease: "linear", yoyo:true, repeat: -1})
+        gsap.to(".to-right", {x: 0, duration: 5, ease: "linear", yoyo:true, repeat: -1})      
     }
     }
     function checkMedia510ForNav() {
       if (mediaQuery510.matches) {
-        gsap.to(".to-left", {x: -200, duration: 7, ease: "linear", yoyo:true, repeat: -1})
-        gsap.to(".to-right", {x: 0, duration: 7, ease: "linear", yoyo:true, repeat: -1})      
+        gsap.to(".to-left", {x: -200, duration: 5, ease: "linear", yoyo:true, repeat: -1})
+        gsap.to(".to-right", {x: 0, duration: 5, ease: "linear", yoyo:true, repeat: -1})      
     }
     }
 
@@ -698,8 +698,8 @@ function resize() {
   
 	let vh = window.innerWidth;
   let sh = sectionLoader.offsetWidth;
-  console.log(sh)
-  console.log(vh)
+  // console.log(sh)
+  // console.log(vh)
 	let scaleFactor = vh/sh;
 	if(scaleFactor<7 && scaleFactor >= 6) {
 		gsap.set(sectionLoader, { scale: .8 });
