@@ -448,6 +448,7 @@ function startGSAPAnimations(){
   let select = (selector) => {
     return document.querySelector(selector);
   };
+  let navSection = select("section#nav");
   let aboutSection = select("section#about");
   let artworksSection = select("section#artworks");
   let websitesSection = select("section#websites");
@@ -507,10 +508,24 @@ function startGSAPAnimations(){
         opacity: 1
       }, "<.6")
 
-    aboutLeft.addEventListener("click", () => tlAbout.play());
-    aboutRight.addEventListener("click", () => tlAbout.play());
-    aboutBack.addEventListener("click", () => tlAbout.reverse());
-
+    aboutLeft.addEventListener("click", () => {
+      tlAbout.play()
+      setTimeout(()=>{
+        navSection.style.display = "none";
+      },1000)
+    });
+    aboutRight.addEventListener("click", () => {
+      tlAbout.play()
+      setTimeout(()=>{
+        navSection.style.display = "none";
+      },1000)
+    });
+    aboutBack.addEventListener("click", () => {
+      tlAbout.reverse()
+      setTimeout(()=>{
+        navSection.style.display = "flex";
+      },50)
+    });
 
   // ARTORKS SECTION
   let tlArtworks = gsap
@@ -547,9 +562,28 @@ function startGSAPAnimations(){
         opacity: 1
       }, "<.6")
 
-  artworksLeft.addEventListener("click", () => tlArtworks.play());
-  artworksRight.addEventListener("click", () => tlArtworks.play());
-  artworksBack.addEventListener("click", () => tlArtworks.reverse());
+
+      artworksLeft.addEventListener("click", () => {
+        tlArtworks.play()
+        setTimeout(()=>{
+          navSection.style.display = "none";
+        },1000)
+      });
+      artworksRight.addEventListener("click", () => {
+        tlArtworks.play()
+        setTimeout(()=>{
+          navSection.style.display = "none";
+        },1000)
+      });
+      artworksBack.addEventListener("click", () => {
+        tlArtworks.reverse()
+        setTimeout(()=>{
+          navSection.style.display = "flex";
+        },50)
+      });
+  // artworksLeft.addEventListener("click", () => tlArtworks.play());
+  // artworksRight.addEventListener("click", () => tlArtworks.play());
+  // artworksBack.addEventListener("click", () => tlArtworks.reverse());
 
   // WEBSITES SECTION
   let tlWebsites = gsap
@@ -580,9 +614,27 @@ function startGSAPAnimations(){
       opacity: 1
     }, "<.6")
 
-    websitesLeft.addEventListener("click", () => tlWebsites.play());
-    websitesRight.addEventListener("click", () => tlWebsites.play());
-    websitesBack.addEventListener("click", () => tlWebsites.reverse());
+    websitesLeft.addEventListener("click", () => {
+      tlWebsites.play()
+      setTimeout(()=>{
+        navSection.style.display = "none";
+      },1000)
+    });
+    websitesRight.addEventListener("click", () => {
+      tlWebsites.play()
+      setTimeout(()=>{
+        navSection.style.display = "none";
+      },1000)
+    });
+    websitesBack.addEventListener("click", () => {
+      tlWebsites.reverse()
+      setTimeout(()=>{
+        navSection.style.display = "flex";
+      },50)
+    });
+    // websitesLeft.addEventListener("click", () => tlWebsites.play());
+    // websitesRight.addEventListener("click", () => tlWebsites.play());
+    // websitesBack.addEventListener("click", () => tlWebsites.reverse());
 
     // CONTACT SECTION  
   let tlContact = gsap
@@ -615,9 +667,28 @@ function startGSAPAnimations(){
       opacity: 1
     }, "<.6")
       
-    contactLeft.addEventListener("click", () => tlContact.play());
-    contactRight.addEventListener("click", () => tlContact.play());
-    contactBack.addEventListener("click", () => tlContact.reverse());
+    contactLeft.addEventListener("click", () => {
+      tlContact.play()
+      setTimeout(()=>{
+        navSection.style.display = "none";
+      },1000)
+    });
+    contactRight.addEventListener("click", () => {
+      tlContact.play()
+      setTimeout(()=>{
+        navSection.style.display = "none";
+      },1000)
+    });
+    contactBack.addEventListener("click", () => {
+      tlContact.reverse()
+      setTimeout(()=>{
+        navSection.style.display = "flex";
+      },50)
+    });
+
+    // contactLeft.addEventListener("click", () => tlContact.play());
+    // contactRight.addEventListener("click", () => tlContact.play());
+    // contactBack.addEventListener("click", () => tlContact.reverse());
 
 }
 
