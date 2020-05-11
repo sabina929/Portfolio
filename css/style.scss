@@ -75,6 +75,7 @@ body {
     opacity: 0;
     transition: opacity 0.8s ease-in;
     background-color:  $main1-05;
+    overflow: hidden;
 
  /* MOUSE TRACKER START */
 #tracker {
