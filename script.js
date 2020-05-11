@@ -332,8 +332,8 @@ function loading() {
 
     function checkMediaRestForNav() {
       if (mediaQueryRest.matches) {
-          gsap.to(".to-left", {x: -720, duration: 15, ease: "linear", yoyo:true, repeat: -1})
-          gsap.to(".to-right", {x: 0, duration: 15, ease: "linear", yoyo:true, repeat: -1})
+          gsap.to(".to-left", {x: -720, duration: 9, ease: "linear", yoyo:true, repeat: -1})
+          gsap.to(".to-right", {x: 0, duration: 9, ease: "linear", yoyo:true, repeat: -1})
       }
     }
     function checkMedia1024ForNav() {
@@ -357,14 +357,14 @@ function loading() {
     }
     function checkMedia610ForNav() {
       if (mediaQuery610.matches) {
-        gsap.to(".to-left", {x: -280, duration: 8, ease: "linear", yoyo:true, repeat: -1})
-        gsap.to(".to-right", {x: 0, duration: 8, ease: "linear", yoyo:true, repeat: -1})      
+        gsap.to(".to-left", {x: -280, duration: 7, ease: "linear", yoyo:true, repeat: -1})
+        gsap.to(".to-right", {x: 0, duration: 7, ease: "linear", yoyo:true, repeat: -1})      
     }
     }
     function checkMedia510ForNav() {
       if (mediaQuery510.matches) {
-        gsap.to(".to-left", {x: -200, duration: 8, ease: "linear", yoyo:true, repeat: -1})
-        gsap.to(".to-right", {x: 0, duration: 8, ease: "linear", yoyo:true, repeat: -1})      
+        gsap.to(".to-left", {x: -200, duration: 7, ease: "linear", yoyo:true, repeat: -1})
+        gsap.to(".to-right", {x: 0, duration: 7, ease: "linear", yoyo:true, repeat: -1})      
     }
     }
 
@@ -441,7 +441,7 @@ function loading() {
       menuItem.addEventListener("mouseout", scaleUp)
     })
 
-  }, 500);
+  }, 10500);
 }
 
 function startGSAPAnimations(){
@@ -501,7 +501,6 @@ function startGSAPAnimations(){
         stagger: 0.008,
         ease: "elastic(.8, 0.0)"
       }, "<.6")
-
 
       .to("#tracker", {
         background:"hsl(56, 19%, 16%)",
@@ -712,7 +711,7 @@ document.addEventListener("DOMContentLoaded", function() {
           loading();
           console.log("after execution")
           }, 2000);
-        }, 10000);
+        }, 100);
       }, 100);
     },
     false
