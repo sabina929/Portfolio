@@ -2249,10 +2249,6 @@ main section#contact .lines-bl::before {
 }
 
 @media only screen and (max-width: 710px) {
-  main {
-    height: 100vh;
-    width: 100vw;
-  }
   main .logo {
     line-height: 17px;
     font-size: 0.73rem;
@@ -2283,17 +2279,6 @@ main section#contact .lines-bl::before {
     left: 14px;
     height: 75px;
   }
-  main section#nav {
-    width: 100%;
-    height: 100vh;
-  }
-  main section#nav p {
-    width: 160%;
-  }
-  main section#nav p:nth-child(1) {
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
-  }
   main section#nav p:nth-child(2) {
     -webkit-transform: translateX(-180px);
             transform: translateX(-180px);
@@ -2304,37 +2289,11 @@ main section#contact .lines-bl::before {
     -webkit-text-stroke: 0.3px #ddc06e;
     margin-right: 30px;
   }
-  main section#nav p:nth-child(1) span:hover::before {
-    -webkit-transform: translate(10px, -10px);
-            transform: translate(10px, -10px);
-  }
-  main section#nav p:nth-child(2) span:hover::before {
-    -webkit-transform: translate(-10px, 10px);
-            transform: translate(-10px, 10px);
-  }
   main section#about .about-wrapper {
     margin: 0px 0px 0px 0;
     padding: 100px 100px;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
     -ms-grid-rows: 300px 1fr;
         grid-template-rows: 300px 1fr;
-    grid-row-gap: 60px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    justify-items: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    height: auto;
-    width: 100vw;
-    overflow-y: scroll;
-  }
-  main section#about .about-wrapper::-webkit-scrollbar {
-    width: 8px;
   }
   main section#about .about-wrapper::-webkit-scrollbar-track {
     width: 3px;
@@ -2345,19 +2304,9 @@ main section#contact .lines-bl::before {
   main section#about .about-wrapper .about-img {
     width: 75%;
     height: 320px;
-    margin-top: 0px;
   }
   main section#about .about-wrapper .text {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    text-align: center;
     width: 90%;
-    height: auto;
-    margin-left: 0px;
     margin-bottom: 80px;
   }
   main section#about .about-wrapper .text h2 {
@@ -2400,21 +2349,8 @@ main section#contact .lines-bl::before {
     left: 14px;
     height: 75px;
   }
-  main section#artworks {
-    width: 100%;
-    height: 100%;
-  }
   main section#artworks .works-wrapper {
     padding: 0 123px;
-  }
-  main section#artworks .works-wrapper::-webkit-scrollbar {
-    width: 8px;
-  }
-  main section#artworks .works-wrapper::-webkit-scrollbar-track {
-    width: 6px;
-  }
-  main section#artworks .works-wrapper::-webkit-scrollbar-thumb {
-    width: 6px;
   }
   main section#artworks .works-wrapper .work-container {
     margin-top: 75px;
@@ -2427,8 +2363,6 @@ main section#contact .lines-bl::before {
   }
   main section#artworks .works-wrapper .work-container .work-img img {
     height: 220px;
-    -o-object-fit: cover;
-       object-fit: cover;
   }
   main section#artworks .works-wrapper .work-container div.work-title {
     width: 40%;
@@ -2440,7 +2374,6 @@ main section#contact .lines-bl::before {
   main section#artworks .works-wrapper .work-container div.work-title a p {
     font-size: 1.9rem;
     line-height: 32px;
-    letter-spacing: 0px;
   }
   main section#artworks .back {
     top: 24px;
@@ -2466,21 +2399,8 @@ main section#contact .lines-bl::before {
     left: 14px;
     height: 75px;
   }
-  main section#websites {
-    width: 100%;
-    height: 100%;
-  }
   main section#websites .works-wrapper {
     padding: 0 123px;
-  }
-  main section#websites .works-wrapper::-webkit-scrollbar {
-    width: 8px;
-  }
-  main section#websites .works-wrapper::-webkit-scrollbar-track {
-    width: 6px;
-  }
-  main section#websites .works-wrapper::-webkit-scrollbar-thumb {
-    width: 6px;
   }
   main section#websites .works-wrapper .work-container {
     margin-top: 75px;
@@ -2493,8 +2413,6 @@ main section#contact .lines-bl::before {
   }
   main section#websites .works-wrapper .work-container .work-img img {
     height: 220px;
-    -o-object-fit: cover;
-       object-fit: cover;
   }
   main section#websites .works-wrapper .work-container div.work-title {
     width: 40%;
@@ -2506,7 +2424,6 @@ main section#contact .lines-bl::before {
   main section#websites .works-wrapper .work-container div.work-title a p {
     font-size: 1.9rem;
     line-height: 32px;
-    letter-spacing: 0px;
   }
   main section#websites .back {
     top: 24px;
@@ -2557,9 +2474,6 @@ main section#contact .lines-bl::before {
     line-height: 24px;
     letter-spacing: 0.6px;
   }
-  main section#contact h2#feel-free a {
-    font-weight: 800;
-  }
   main section#contact h2#feel-free a.copied::before {
     top: -64%;
     left: -28%;
@@ -2606,10 +2520,6 @@ main section#contact .lines-bl::before {
 }
 
 @media only screen and (max-width: 610px) {
-  main {
-    height: 100vh;
-    width: 100vw;
-  }
   main .logo {
     line-height: 17px;
     font-size: 0.73rem;
@@ -2640,13 +2550,6 @@ main section#contact .lines-bl::before {
     left: 12px;
     height: 60px;
   }
-  main section#nav {
-    width: 100%;
-    height: 100vh;
-  }
-  main section#nav p {
-    width: 160%;
-  }
   main section#nav p:nth-child(2) {
     -webkit-transform: translateX(-280px);
             transform: translateX(-280px);
@@ -2657,34 +2560,11 @@ main section#contact .lines-bl::before {
     -webkit-text-stroke: 0.4px #ddc06e;
     margin-right: 30px;
   }
-  main section#nav p:nth-child(1) span:hover::before {
-    -webkit-transform: translate(10px, -10px);
-            transform: translate(10px, -10px);
-  }
-  main section#nav p:nth-child(2) span:hover::before {
-    -webkit-transform: translate(-10px, 10px);
-            transform: translate(-10px, 10px);
-  }
   main section#about .about-wrapper {
-    margin: 0px 0px 0px 0;
     padding: 85px 85px;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
     -ms-grid-rows: 300px 1fr;
         grid-template-rows: 300px 1fr;
     grid-row-gap: 40px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    justify-items: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    height: auto;
-    width: 100vw;
-    overflow-y: scroll;
   }
   main section#about .about-wrapper::-webkit-scrollbar {
     width: 6px;
@@ -2698,19 +2578,9 @@ main section#contact .lines-bl::before {
   main section#about .about-wrapper .about-img {
     width: 90%;
     height: 300px;
-    margin-top: 0px;
   }
   main section#about .about-wrapper .text {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    text-align: center;
     width: 100%;
-    height: auto;
-    margin-left: 0px;
     margin-bottom: 75px;
   }
   main section#about .about-wrapper .text h2 {
@@ -2753,10 +2623,6 @@ main section#contact .lines-bl::before {
     left: 12px;
     height: 60px;
   }
-  main section#artworks {
-    width: 100%;
-    height: 100%;
-  }
   main section#artworks .works-wrapper {
     padding: 0 85px;
   }
@@ -2780,8 +2646,6 @@ main section#contact .lines-bl::before {
   }
   main section#artworks .works-wrapper .work-container .work-img img {
     height: 200px;
-    -o-object-fit: cover;
-       object-fit: cover;
   }
   main section#artworks .works-wrapper .work-container div.work-title {
     width: 40%;
@@ -2819,10 +2683,6 @@ main section#contact .lines-bl::before {
     left: 12px;
     height: 60px;
   }
-  main section#websites {
-    width: 100%;
-    height: 100%;
-  }
   main section#websites .works-wrapper {
     padding: 0 85px;
   }
@@ -2846,8 +2706,6 @@ main section#contact .lines-bl::before {
   }
   main section#websites .works-wrapper .work-container .work-img img {
     height: 200px;
-    -o-object-fit: cover;
-       object-fit: cover;
   }
   main section#websites .works-wrapper .work-container div.work-title {
     width: 40%;
@@ -2859,7 +2717,6 @@ main section#contact .lines-bl::before {
   main section#websites .works-wrapper .work-container div.work-title a p {
     font-size: 1.9rem;
     line-height: 32px;
-    letter-spacing: 0px;
   }
   main section#websites .back {
     top: 24px;
@@ -2910,9 +2767,6 @@ main section#contact .lines-bl::before {
     line-height: 24px;
     letter-spacing: 0.6px;
   }
-  main section#contact h2#feel-free a {
-    font-weight: 800;
-  }
   main section#contact h2#feel-free a.copied::before {
     top: -90%;
     left: -28%;
@@ -2959,10 +2813,6 @@ main section#contact .lines-bl::before {
 }
 
 @media only screen and (max-width: 510px) {
-  main {
-    height: 100vh;
-    width: 100vw;
-  }
   main .logo {
     line-height: 17px;
     font-size: 0.73rem;
@@ -2993,10 +2843,6 @@ main section#contact .lines-bl::before {
     left: 12px;
     height: 60px;
   }
-  main section#nav {
-    width: 100%;
-    height: 100vh;
-  }
   main section#nav p {
     width: 160%;
   }
@@ -3013,34 +2859,11 @@ main section#contact .lines-bl::before {
     -webkit-text-stroke: 0.29px #ddc06e;
     margin-right: 30px;
   }
-  main section#nav p:nth-child(1) span:hover::before {
-    -webkit-transform: translate(10px, -10px);
-            transform: translate(10px, -10px);
-  }
-  main section#nav p:nth-child(2) span:hover::before {
-    -webkit-transform: translate(-10px, 10px);
-            transform: translate(-10px, 10px);
-  }
   main section#about .about-wrapper {
-    margin: 0px 0px 0px 0;
     padding: 85px 68px;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
     -ms-grid-rows: 240px 1fr;
         grid-template-rows: 240px 1fr;
     grid-row-gap: 40px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    justify-items: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    height: auto;
-    width: 100vw;
-    overflow-y: scroll;
   }
   main section#about .about-wrapper::-webkit-scrollbar {
     width: 6px;
@@ -3054,7 +2877,6 @@ main section#contact .lines-bl::before {
   main section#about .about-wrapper .about-img {
     width: 100%;
     height: 240px;
-    margin-top: 0px;
   }
   main section#about .about-wrapper .text {
     -webkit-box-align: start;
@@ -3065,8 +2887,6 @@ main section#contact .lines-bl::before {
             justify-content: center;
     text-align: left;
     width: 100%;
-    height: auto;
-    margin-left: 0px;
     margin-bottom: 75px;
   }
   main section#about .about-wrapper .text h2 {
@@ -3109,10 +2929,6 @@ main section#contact .lines-bl::before {
     left: 12px;
     height: 60px;
   }
-  main section#artworks {
-    width: 100%;
-    height: 100%;
-  }
   main section#artworks .works-wrapper {
     padding: 0 72px;
   }
@@ -3136,8 +2952,6 @@ main section#contact .lines-bl::before {
   }
   main section#artworks .works-wrapper .work-container .work-img img {
     height: 170px;
-    -o-object-fit: cover;
-       object-fit: cover;
   }
   main section#artworks .works-wrapper .work-container div.work-title {
     width: 35%;
@@ -3175,10 +2989,6 @@ main section#contact .lines-bl::before {
     left: 12px;
     height: 60px;
   }
-  main section#websites {
-    width: 100%;
-    height: 100%;
-  }
   main section#websites .works-wrapper {
     padding: 0 72px;
   }
@@ -3202,8 +3012,6 @@ main section#contact .lines-bl::before {
   }
   main section#websites .works-wrapper .work-container .work-img img {
     height: 170px;
-    -o-object-fit: cover;
-       object-fit: cover;
   }
   main section#websites .works-wrapper .work-container div.work-title {
     width: 35%;
@@ -3265,9 +3073,6 @@ main section#contact .lines-bl::before {
     font-size: 1.2rem;
     line-height: 24px;
     letter-spacing: 0.3px;
-  }
-  main section#contact h2#feel-free a {
-    font-weight: 800;
   }
   main section#contact h2#feel-free a.copied::before {
     top: -64%;
@@ -3345,10 +3150,6 @@ main section#contact .lines-bl::before {
     left: 12px;
     height: 60px;
   }
-  main section#nav {
-    width: 100%;
-    height: 100vh;
-  }
   main section#nav p {
     width: 160%;
   }
@@ -3365,20 +3166,8 @@ main section#contact .lines-bl::before {
     -webkit-text-stroke: 0.28px #ddc06e;
     margin-right: 20px;
   }
-  main section#nav p:nth-child(1) span:hover::before {
-    -webkit-transform: translate(10px, -10px);
-            transform: translate(10px, -10px);
-  }
-  main section#nav p:nth-child(2) span:hover::before {
-    -webkit-transform: translate(-10px, 10px);
-            transform: translate(-10px, 10px);
-  }
   main section#about .about-wrapper {
     padding: 80px 60px;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
     -ms-grid-rows: 240px 1fr;
         grid-template-rows: 240px 1fr;
     grid-row-gap: 32;
@@ -3386,7 +3175,6 @@ main section#contact .lines-bl::before {
   main section#about .about-wrapper .about-img {
     width: 100%;
     height: 240px;
-    margin-top: 0px;
   }
   main section#about .about-wrapper .text {
     -webkit-box-align: start;
@@ -3434,10 +3222,6 @@ main section#contact .lines-bl::before {
     bottom: -12px;
     left: 12px;
     height: 60px;
-  }
-  main section#artworks {
-    width: 100%;
-    height: 100%;
   }
   main section#artworks .works-wrapper {
     padding: 0 60px;
@@ -3490,10 +3274,6 @@ main section#contact .lines-bl::before {
     left: 12px;
     height: 60px;
   }
-  main section#websites {
-    width: 100%;
-    height: 100%;
-  }
   main section#websites .works-wrapper {
     padding: 0 60px;
   }
@@ -3545,9 +3325,6 @@ main section#contact .lines-bl::before {
     font-size: 1rem;
     line-height: 24px;
     letter-spacing: 0.3px;
-  }
-  main section#contact h2#feel-free a {
-    font-weight: 800;
   }
   main section#contact h2#feel-free a.copied::before {
     top: -80%;
@@ -3626,10 +3403,6 @@ main section#contact .lines-bl::before {
     left: 12px;
     height: 60px;
   }
-  main section#nav {
-    width: 100%;
-    height: 100vh;
-  }
   main section#nav p {
     width: 160%;
   }
@@ -3646,14 +3419,6 @@ main section#contact .lines-bl::before {
     -webkit-text-stroke: 0.28px #ddc06e;
     margin-right: 20px;
   }
-  main section#nav p:nth-child(1) span:hover::before {
-    -webkit-transform: translate(10px, -10px);
-            transform: translate(10px, -10px);
-  }
-  main section#nav p:nth-child(2) span:hover::before {
-    -webkit-transform: translate(-10px, 10px);
-            transform: translate(-10px, 10px);
-  }
   main section#about .about-wrapper {
     padding: 80px 54px;
     display: -ms-grid;
@@ -3667,16 +3432,8 @@ main section#contact .lines-bl::before {
   main section#about .about-wrapper .about-img {
     width: 100%;
     height: 240px;
-    margin-top: 0px;
   }
   main section#about .about-wrapper .text {
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    text-align: left;
     width: 100%;
     height: auto;
     margin-left: 0px;
@@ -3716,10 +3473,6 @@ main section#contact .lines-bl::before {
     bottom: -12px;
     left: 12px;
     height: 60px;
-  }
-  main section#artworks {
-    width: 100%;
-    height: 100%;
   }
   main section#artworks .works-wrapper {
     padding: 0 60px;
@@ -3772,10 +3525,6 @@ main section#contact .lines-bl::before {
     left: 12px;
     height: 60px;
   }
-  main section#websites {
-    width: 100%;
-    height: 100%;
-  }
   main section#websites .works-wrapper {
     padding: 0 60px;
   }
@@ -3827,9 +3576,6 @@ main section#contact .lines-bl::before {
     font-size: 1rem;
     line-height: 24px;
     letter-spacing: 0.3px;
-  }
-  main section#contact h2#feel-free a {
-    font-weight: 800;
   }
   main section#contact h2#feel-free a.copied::before {
     top: -80%;
