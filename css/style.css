@@ -1389,7 +1389,7 @@ main section#contact .lines-bl::before {
 
 @media only screen and (max-width: 1170px) {
   main {
-    height: 100vh;
+    height: 100%;
     width: 100vw;
   }
   main .logo {
@@ -1689,10 +1689,6 @@ main section#contact .lines-bl::before {
 }
 
 @media only screen and (max-width: 1024px) {
-  main {
-    height: 100vh;
-    width: 100vw;
-  }
   main .logo {
     line-height: 22px;
     font-size: 0.8rem;
@@ -1967,10 +1963,6 @@ main section#contact .lines-bl::before {
 }
 
 @media only screen and (max-width: 801px) {
-  main {
-    height: 100vh;
-    width: 100vw;
-  }
   main .logo {
     line-height: 20px;
     font-size: 0.75rem;
