@@ -435,8 +435,8 @@ main section#about .about-wrapper {
           align-items: center;
   margin: 0px 0px 0px 0;
   padding: 0 150px;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   overflow-y: hidden;
 }
 
@@ -635,7 +635,7 @@ main section#artworks {
 main section#artworks .works-wrapper {
   margin: 0px 0px 0px 0;
   padding: 0 223px;
-  width: 100vw;
+  width: 100%;
   height: auto;
   overflow-y: scroll;
 }
@@ -860,7 +860,7 @@ main section#websites {
 main section#websites .works-wrapper {
   margin: 0px 0px 0px 0;
   padding: 0 223px;
-  width: 100vw;
+  width: 100%;
   height: auto;
   overflow-y: scroll;
 }

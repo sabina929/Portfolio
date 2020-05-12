@@ -326,8 +326,8 @@ body {
             align-items: center;
             margin: 0px 0px 0px 0;
             padding: 0 150px;
-            width: 100vw;
-            height: 100vh;
+            width: 100%;
+            height: 100%;
             overflow-y: hidden;
 
             .about-img{
@@ -481,8 +481,7 @@ body {
         .works-wrapper {
             margin: 0px 0px 0px 0;
             padding: 0 223px;
-            width: 100vw;
-        
+            width: 100%;
             height: auto;
             overflow-y: scroll;
 
@@ -650,7 +649,7 @@ body {
         .works-wrapper {
             margin: 0px 0px 0px 0;
             padding: 0 223px;
-            width: 100vw;
+            width: 100%;
             height: auto;
             overflow-y: scroll;
 
@@ -1025,7 +1024,6 @@ body {
       }      
   }
   }   
-
 }
 @media only screen and (max-width: 1310px) {
   main {
@@ -1040,16 +1038,6 @@ body {
   }
 }
 @media only screen and (max-width: 1170px) {
-    // .wrapper {          
-    //       svg {
-    //         overflow: visible;
-    //       }
-          
-    //       path {
-    //         margin-top: -50px;
-    //       }
-    //   }
-
       main {
       .logo{
         line-height: 26px;
