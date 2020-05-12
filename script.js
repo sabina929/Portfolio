@@ -581,9 +581,6 @@ function startGSAPAnimations(){
           navSection.style.display = "flex";
         },50)
       });
-  // artworksLeft.addEventListener("click", () => tlArtworks.play());
-  // artworksRight.addEventListener("click", () => tlArtworks.play());
-  // artworksBack.addEventListener("click", () => tlArtworks.reverse());
 
   // WEBSITES SECTION
   let tlWebsites = gsap
@@ -632,9 +629,6 @@ function startGSAPAnimations(){
         navSection.style.display = "flex";
       },50)
     });
-    // websitesLeft.addEventListener("click", () => tlWebsites.play());
-    // websitesRight.addEventListener("click", () => tlWebsites.play());
-    // websitesBack.addEventListener("click", () => tlWebsites.reverse());
 
     // CONTACT SECTION  
   let tlContact = gsap
