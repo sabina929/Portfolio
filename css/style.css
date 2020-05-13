@@ -1313,6 +1313,28 @@ main section#contact .lines-bl::before {
     width: 400px;
     height: 400px;
   }
+  main section#artworks .works-wrapper .work-container {
+    width: 125%;
+    height: 320px;
+  }
+  main section#artworks .works-wrapper .work-container .work-img {
+    width: 80%;
+  }
+  main section#artworks .works-wrapper .work-container .work-img img {
+    height: 320px;
+  }
+  main section#artworks .works-wrapper .work-container div.work-title {
+    width: 54%;
+  }
+  main section#artworks .works-wrapper .work-container div.work-title a {
+    margin-left: -80px;
+    margin-top: 50px;
+  }
+  main section#artworks .works-wrapper .work-container div.work-title a p {
+    font-size: 3.5rem;
+    line-height: 60px;
+    letter-spacing: 1px;
+  }
 }
 
 @media only screen and (max-width: 1170px) {

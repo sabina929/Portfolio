@@ -1035,6 +1035,34 @@ body {
       }
       }      
   }
+
+  section#artworks{
+    .works-wrapper {                 
+    .work-container{
+          width: 125%;
+          height: 320px;
+            .work-img{
+                width: 80%;
+                img{
+                    height: 320px;                              
+                }
+            }
+
+            div.work-title{
+              width: 54%;
+                a{
+                  margin-left: -80px;
+                  margin-top: 50px;
+                    p{
+                      font-size: 3.5rem;
+                      line-height: 60px;
+                      letter-spacing: 1px;
+                    }
+                }
+            }
+        }
+    }
+}
   }
 }
 @media only screen and (max-width: 1170px) {
