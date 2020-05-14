@@ -323,7 +323,11 @@ function loading() {
     setTimeout(() => (main.style.opacity = 1), 50); 
     
     // NAVIGATION
-    const mediaQueryRest = window.matchMedia("(min-width: 1024px)");
+    const mediaQueryRest = window.matchMedia("(min-width: 1510px)");
+    const mediaQuery1510 = window.matchMedia("(max-width: 1510px)");
+    const mediaQuery1410 = window.matchMedia("(max-width: 1410px)");
+    const mediaQuery1310 = window.matchMedia("(max-width: 1310px)");
+    const mediaQuery1170 = window.matchMedia("(max-width: 1170px)");
     const mediaQuery1024 = window.matchMedia("(max-width: 1024px)");
     const mediaQuery801 = window.matchMedia("(max-width: 801px)");
     const mediaQuery710 = window.matchMedia("(max-width: 710px)");
@@ -334,6 +338,34 @@ function loading() {
       if (mediaQueryRest.matches) {
           gsap.to(".to-left", {x: -720, duration: 9, ease: "linear", yoyo:true, repeat: -1})
           gsap.to(".to-right", {x: 0, duration: 9, ease: "linear", yoyo:true, repeat: -1})
+      }
+    }
+    function checkMedia1510ForNav() {
+      if (mediaQuery1510.matches) {
+          gsap.to(".to-left", {x: -440, duration: 5, ease: "linear", yoyo:true, repeat: -1})
+          gsap.to(".to-right", {x: 0, duration: 5, ease: "linear", yoyo:true, repeat: -1})
+          
+      }
+    }
+    function checkMedia1410ForNav() {
+      if (mediaQuery1410.matches) {
+          gsap.to(".to-left", {x: -300, duration: 4, ease: "linear", yoyo:true, repeat: -1})
+          gsap.to(".to-right", {x: 0, duration: 4, ease: "linear", yoyo:true, repeat: -1})
+          
+      }
+    }
+    function checkMedia1310ForNav() {
+      if (mediaQuery1310.matches) {
+          gsap.to(".to-left", {x: -440, duration: 5, ease: "linear", yoyo:true, repeat: -1})
+          gsap.to(".to-right", {x: 0, duration: 5, ease: "linear", yoyo:true, repeat: -1})
+          
+      }
+    }
+    function checkMedia1170ForNav() {
+      if (mediaQuery1170.matches) {
+          gsap.to(".to-left", {x: -310, duration: 5, ease: "linear", yoyo:true, repeat: -1})
+          gsap.to(".to-right", {x: 0, duration: 5, ease: "linear", yoyo:true, repeat: -1})
+          
       }
     }
     function checkMedia1024ForNav() {
@@ -371,6 +403,22 @@ function loading() {
     if (mediaQueryRest.matches) {
       checkMediaRestForNav();
       mediaQueryRest.addListener(checkMediaRestForNav);
+    }
+    if (mediaQuery1510.matches) {
+      checkMedia1510ForNav();
+      mediaQuery1510.addListener(checkMedia1510ForNav);
+    }
+    if (mediaQuery1410.matches) {
+      checkMedia1410ForNav();
+      mediaQuery1410.addListener(checkMedia1410ForNav);
+    }
+    if (mediaQuery1310.matches) {
+      checkMedia1310ForNav();
+      mediaQuery1310.addListener(checkMedia1310ForNav);
+    }
+    if (mediaQuery1170.matches) {
+      checkMedia1170ForNav();
+      mediaQuery1170.addListener(checkMedia1170ForNav);
     }
     if (mediaQuery1024.matches) {
       checkMedia1024ForNav();

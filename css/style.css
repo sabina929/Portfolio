@@ -1275,6 +1275,13 @@ main section#contact .lines-bl::before {
 }
 
 @media only screen and (max-width: 1510px) {
+  main section#nav p:nth-child(2) {
+    -webkit-transform: translateX(-440px);
+            transform: translateX(-440px);
+  }
+  main section#nav p span {
+    font-size: 7rem;
+  }
   main section#about .about-wrapper {
     -webkit-box-align: start;
         -ms-flex-align: start;
@@ -1290,9 +1297,28 @@ main section#contact .lines-bl::before {
     width: 600px;
     height: auto;
   }
+  main section#artworks .works-wrapper .work-container .work-img {
+    width: 50%;
+  }
+  main section#artworks .works-wrapper .work-container div.work-title {
+    width: 50%;
+  }
+  main section#websites .works-wrapper .work-container .work-img {
+    width: 50%;
+  }
+  main section#websites .works-wrapper .work-container div.work-title {
+    width: 50%;
+  }
 }
 
 @media only screen and (max-width: 1410px) {
+  main section#nav p:nth-child(2) {
+    -webkit-transform: translateX(-300px);
+            transform: translateX(-300px);
+  }
+  main section#nav p span {
+    font-size: 6rem;
+  }
   main section#about .about-wrapper .about-img {
     width: 480px;
     height: 480px;
@@ -1306,9 +1332,28 @@ main section#contact .lines-bl::before {
     letter-spacing: 0.6px;
     margin-bottom: 0px;
   }
+  main section#artworks .works-wrapper .work-container .work-img {
+    width: 50%;
+  }
+  main section#artworks .works-wrapper .work-container div.work-title {
+    width: 50%;
+  }
+  main section#websites .works-wrapper .work-container .work-img {
+    width: 50%;
+  }
+  main section#websites .works-wrapper .work-container div.work-title {
+    width: 50%;
+  }
 }
 
 @media only screen and (max-width: 1310px) {
+  main section#nav p:nth-child(2) {
+    -webkit-transform: translateX(-440px);
+            transform: translateX(-440px);
+  }
+  main section#nav p span {
+    font-size: 6rem;
+  }
   main section#about .about-wrapper .about-img {
     width: 400px;
     height: 400px;
@@ -1318,19 +1363,41 @@ main section#contact .lines-bl::before {
     height: 320px;
   }
   main section#artworks .works-wrapper .work-container .work-img {
-    width: 80%;
+    width: 45%;
   }
   main section#artworks .works-wrapper .work-container .work-img img {
     height: 320px;
   }
   main section#artworks .works-wrapper .work-container div.work-title {
-    width: 54%;
+    width: 55%;
   }
   main section#artworks .works-wrapper .work-container div.work-title a {
     margin-left: -80px;
     margin-top: 50px;
   }
   main section#artworks .works-wrapper .work-container div.work-title a p {
+    font-size: 3.5rem;
+    line-height: 60px;
+    letter-spacing: 1px;
+  }
+  main section#websites .works-wrapper .work-container {
+    width: 125%;
+    height: 320px;
+  }
+  main section#websites .works-wrapper .work-container .work-img {
+    width: 50%;
+  }
+  main section#websites .works-wrapper .work-container .work-img img {
+    height: 320px;
+  }
+  main section#websites .works-wrapper .work-container div.work-title {
+    width: 50%;
+  }
+  main section#websites .works-wrapper .work-container div.work-title a {
+    margin-left: -80px;
+    margin-top: 50px;
+  }
+  main section#websites .works-wrapper .work-container div.work-title a p {
     font-size: 3.5rem;
     line-height: 60px;
     letter-spacing: 1px;
@@ -1347,8 +1414,8 @@ main section#contact .lines-bl::before {
     letter-spacing: 2.4px;
   }
   main section#nav p:nth-child(2) {
-    -webkit-transform: translateX(-720px);
-            transform: translateX(-720px);
+    -webkit-transform: translateX(-310px);
+            transform: translateX(-310px);
   }
   main section#nav p span {
     font-size: 5rem;
