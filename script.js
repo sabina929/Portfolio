@@ -329,6 +329,7 @@ function loading() {
     const mediaQuery1310 = window.matchMedia("(max-width: 1310px)");
     const mediaQuery1170 = window.matchMedia("(max-width: 1170px)");
     const mediaQuery1024 = window.matchMedia("(max-width: 1024px)");
+    const mediaQuery910 = window.matchMedia("(max-width: 910px)");
     const mediaQuery801 = window.matchMedia("(max-width: 801px)");
     const mediaQuery710 = window.matchMedia("(max-width: 710px)");
     const mediaQuery610 = window.matchMedia("(max-width: 610px)");
@@ -370,8 +371,15 @@ function loading() {
     }
     function checkMedia1024ForNav() {
       if (mediaQuery1024.matches) {
-          gsap.to(".to-left", {x: -480, duration: 6, ease: "linear", yoyo:true, repeat: -1})
-          gsap.to(".to-right", {x: 0, duration: 6, ease: "linear", yoyo:true, repeat: -1})
+          gsap.to(".to-left", {x: -390, duration: 5, ease: "linear", yoyo:true, repeat: -1})
+          gsap.to(".to-right", {x: 0, duration: 5, ease: "linear", yoyo:true, repeat: -1})
+          
+      }
+    }
+    function checkMedia910ForNav() {
+      if (mediaQuery910.matches) {
+          gsap.to(".to-left", {x: -230, duration: 4, ease: "linear", yoyo:true, repeat: -1})
+          gsap.to(".to-right", {x: 0, duration: 4, ease: "linear", yoyo:true, repeat: -1})
           
       }
     }
@@ -423,6 +431,10 @@ function loading() {
     if (mediaQuery1024.matches) {
       checkMedia1024ForNav();
       mediaQuery1024.addListener(checkMedia1024ForNav);
+    }
+    if (mediaQuery910.matches) {
+      checkMedia910ForNav();
+      mediaQuery910.addListener(checkMedia910ForNav);
     }
     if (mediaQuery801.matches) {
       checkMedia801ForNav();

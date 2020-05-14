@@ -1681,22 +1681,15 @@ main section#contact .lines-bl::before {
     left: 18px;
     height: 105px;
   }
-  main section#nav p {
-    width: 160%;
-  }
-  main section#nav p:nth-child(1) {
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
-  }
   main section#nav p:nth-child(2) {
-    -webkit-transform: translateX(-480px);
-            transform: translateX(-480px);
+    -webkit-transform: translateX(-390px);
+            transform: translateX(-390px);
   }
   main section#nav p span {
-    font-size: 6rem;
+    font-size: 5rem;
     letter-spacing: 1px;
     -webkit-text-stroke: 0.6px #ddc06e;
-    margin-right: 40px;
+    margin-right: 60px;
   }
   main section#about .about-wrapper .about-img {
     width: 50%;
@@ -1900,6 +1893,19 @@ main section#contact .lines-bl::before {
     bottom: -18px;
     left: 18px;
     height: 105px;
+  }
+}
+
+@media only screen and (max-width: 910px) {
+  main section#nav p:nth-child(2) {
+    -webkit-transform: translateX(-230px);
+            transform: translateX(-230px);
+  }
+  main section#nav p span {
+    font-size: 4rem;
+    letter-spacing: 1px;
+    -webkit-text-stroke: 0.6px #ddc06e;
+    margin-right: 40px;
   }
 }
 
