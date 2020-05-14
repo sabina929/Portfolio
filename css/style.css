@@ -1420,7 +1420,7 @@ main section#contact .lines-bl::before {
   main section#nav p span {
     font-size: 5rem;
     letter-spacing: 1.1px;
-    -webkit-text-stroke: 1px #ddc06e;
+    -webkit-text-stroke: 0.6px #ddc06e;
     margin-right: 60px;
   }
   main section#about .about-wrapper {
