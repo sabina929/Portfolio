@@ -1523,30 +1523,33 @@ body {
       }
 
     section#about{
-        .about-wrapper {          
+        .about-wrapper {  
+          grid-template-rows: 330px 1fr;    
+          grid-row-gap: 40px;    
             .about-img{
-              width: 50%;
-              height: 240px;
+              width: 60%;
+              height: 320px;
           }
 
         .text{
-          width: 60%;
+          width: 68%;
+          margin-bottom: 110px;
             h2{
               width: 100%;
               font-size: 2.1rem;
               line-height: 35px;
               letter-spacing: 1px;
-              margin-bottom: 8px;
+              margin-bottom: 15px;
             }
             h3{
               font-size: 1.3rem;
-              margin-bottom: 5px;
+              margin-bottom: 12px;
             }
         
             p{
               width: 100%;
-              font-size: 0.8rem;
-              line-height: 19px;
+              font-size: 1rem;
+              line-height: 28px;
               letter-spacing: 0.3px;
               margin-bottom: 0px;
             }
@@ -1837,7 +1840,7 @@ body {
 
               .about-img{
                 width: 68%;
-                height: 350px;
+                height: 320px;
           }
               .text{
                   width: 90%;
