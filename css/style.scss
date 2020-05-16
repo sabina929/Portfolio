@@ -561,13 +561,13 @@ body {
                             line-height: 75px;
                             letter-spacing: 1.1px;
                             color: hsl(56, 19%, 32%);
-                            mix-blend-mode: normal;
+                            mix-blend-mode: color-burn;
                             z-index: 2;
                             position: relative;
                             transition: all .4s ease;
                             
                             &:hover {
-                                mix-blend-mode: color-burn;
+                              mix-blend-mode: normal;
                             }
 
                         }
@@ -734,11 +734,11 @@ body {
                             color: hsl(56, 19%, 32%);
                             z-index: 2;
                             position: relative;
-                            mix-blend-mode: normal;
+                            mix-blend-mode: color-burn;
                             transition: all .4s ease;
                             
                             &:hover {
-                                mix-blend-mode: color-burn;
+                              mix-blend-mode: normal;
                             }
 
                         }
@@ -2933,11 +2933,11 @@ body {
         section#nav {                  
           p{
               &:nth-child(2){
-                 transform: translateX(-140px);
+                 transform: translateX(-160px);
               }
              
               span {
-                font-size: 1.8rem;
+                font-size: 1.9rem;
                 -webkit-text-stroke: 0.24px $main3-05;
                  
               }
@@ -2996,8 +2996,6 @@ body {
 }
 @media only screen and (max-width: 340px) {
   main {
-    section#nav p span {
-    }
     section#artworks{
       .works-wrapper {
         padding: 0 47px;
