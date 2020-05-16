@@ -406,14 +406,14 @@ function loading() {
     }
     function checkMedia510ForNav() {
       if (mediaQuery510.matches) {
-        gsap.to(".to-left", {x: -155, duration: 4.2, ease: "linear", yoyo:true, repeat: -1})
-        gsap.to(".to-right", {x: 0, duration: 4.2, ease: "linear", yoyo:true, repeat: -1})      
+        gsap.to(".to-left", {x: -155, duration: 4, ease: "linear", yoyo:true, repeat: -1})
+        gsap.to(".to-right", {x: 0, duration: 4, ease: "linear", yoyo:true, repeat: -1})      
     }
     }
     function checkMedia410ForNav() {
       if (mediaQuery410.matches) {
-        gsap.to(".to-left", {x: -190, duration: 5, ease: "linear", yoyo:true, repeat: -1})
-        gsap.to(".to-right", {x: 0, duration: 5, ease: "linear", yoyo:true, repeat: -1})      
+        gsap.to(".to-left", {x: -190, duration: 4.2, ease: "linear", yoyo:true, repeat: -1})
+        gsap.to(".to-right", {x: 0, duration: 4.2, ease: "linear", yoyo:true, repeat: -1})      
     }
     }
     function checkMedia360ForNav() {
