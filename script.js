@@ -405,7 +405,7 @@ function loading() {
     }
     function checkMedia510ForNav() {
       if (mediaQuery510.matches) {
-        gsap.to(".to-left", {x: -180, duration: 5, ease: "linear", yoyo:true, repeat: -1})
+        gsap.to(".to-left", {x: -175, duration: 5, ease: "linear", yoyo:true, repeat: -1})
         gsap.to(".to-right", {x: 0, duration: 5, ease: "linear", yoyo:true, repeat: -1})      
     }
     }
