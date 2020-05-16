@@ -2933,7 +2933,7 @@ body {
         section#nav {                  
           p{
               &:nth-child(2){
-                 transform: translateX(-200px);
+                 transform: translateX(-180px);
               }
              
               span {
@@ -3000,7 +3000,7 @@ body {
       p{
           span {
             font-size: 1.8rem;
-            -webkit-text-stroke: 0.22px red; 
+            -webkit-text-stroke: 0.22px $main3-05; 
           }
         }
       }
