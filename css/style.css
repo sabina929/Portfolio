@@ -2886,13 +2886,13 @@ main section#contact .lines-bl::before {
 
 @media only screen and (max-width: 360px) {
   main section#nav p:nth-child(2) {
-    -webkit-transform: translateX(-190px);
-            transform: translateX(-190px);
+    -webkit-transform: translateX(-185px);
+            transform: translateX(-185px);
   }
   main section#nav p span {
     font-size: 2.1rem;
     -webkit-text-stroke: 0.22px #ddc06e;
-    margin-right: 12px;
+    margin-right: 10px;
   }
   main section#about .about-wrapper {
     padding: 80px 54px;
