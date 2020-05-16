@@ -2667,7 +2667,7 @@ body {
                 margin-bottom: 12px;
               }
               &:nth-child(2){
-                 transform: translateX(-175px);
+                 transform: translateX(-170px);
               }
              
               span {
@@ -2821,6 +2821,13 @@ body {
 }
 @media only screen and (max-width: 410px) {
       main {
+        section#nav {                  
+          p{
+              &:nth-child(2){
+                 transform: translateX(-180px);
+              }          
+            }
+          }
       section#about{
           .about-wrapper {
             padding: 80px 60px;
