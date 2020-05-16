@@ -2890,7 +2890,7 @@ main section#contact .lines-bl::before {
             transform: translateX(-200px);
   }
   main section#nav p span {
-    font-size: 2rem;
+    font-size: 1.8rem;
     -webkit-text-stroke: 0.28px  red;
   }
   main section#about .about-wrapper {
@@ -2926,6 +2926,24 @@ main section#contact .lines-bl::before {
 @media only screen and (max-width: 340px) {
   main section#nav p span {
     font-size: 1.8rem;
+  }
+  main section#artworks .works-wrapper {
+    padding: 0 47px;
+  }
+  main section#artworks .works-wrapper .work-container .work-img {
+    width: 42%;
+  }
+  main section#artworks .works-wrapper .work-container div.work-title {
+    width: 38%;
+  }
+  main section#websites .works-wrapper {
+    padding: 0 47px;
+  }
+  main section#websites .works-wrapper .work-container .work-img {
+    width: 62%;
+  }
+  main section#websites .works-wrapper .work-container div.work-title {
+    width: 38%;
   }
   main section#contact {
     padding: 0 40px;

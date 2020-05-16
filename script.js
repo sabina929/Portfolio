@@ -22,7 +22,7 @@ results[0].chars.forEach((char) => {
 gsap
   .timeline({
     defaults: {
-      duration: 6,
+      duration: 5,
       opacity: 1
     }
   })

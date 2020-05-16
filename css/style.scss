@@ -2937,7 +2937,7 @@ body {
               }
              
               span {
-                font-size: 2rem;
+                font-size: 1.8rem;
                 -webkit-text-stroke: 0.28px  red;
                  
               }
@@ -2999,6 +2999,36 @@ body {
     section#nav p span {
       font-size: 1.8rem;
     }
+    section#artworks{
+      .works-wrapper {
+        padding: 0 47px;
+          .work-container{
+            .work-img{
+              width: 42%;
+            }
+
+            div.work-title{
+              width: 38%;
+            }
+
+        }
+  
+      }
+  }   
+  section#websites{              
+    .works-wrapper {
+      padding: 0 47px;
+      .work-container{
+        .work-img{
+          width: 62%;
+        }
+        div.work-title{
+          width: 38%;
+        }
+    }
+
+    }              
+}
     
     section#contact {
       padding: 0 40px;
