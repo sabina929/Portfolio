@@ -2891,7 +2891,7 @@ main section#contact .lines-bl::before {
   }
   main section#nav p span {
     font-size: 2rem;
-    -webkit-text-stroke: 0.22px #ddc06e;
+    -webkit-text-stroke: 0.2px #ddc06e;
     margin-right: 10px;
   }
   main section#about .about-wrapper {

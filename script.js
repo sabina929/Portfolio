@@ -410,8 +410,8 @@ function loading() {
     }
     function checkMedia360ForNav() {
       if (mediaQuery360.matches) {
-        gsap.to(".to-left", {x: -200, duration: 5, ease: "linear", yoyo:true, repeat: -1})
-        gsap.to(".to-right", {x: 0, duration: 5, ease: "linear", yoyo:true, repeat: -1})      
+        gsap.to(".to-left", {x: -200, duration: 4.2, ease: "linear", yoyo:true, repeat: -1})
+        gsap.to(".to-right", {x: 0, duration: 4.2, ease: "linear", yoyo:true, repeat: -1})      
     }
     }
 
@@ -512,7 +512,7 @@ function loading() {
       menuItem.addEventListener("mouseout", scaleUp)
     })
 
-  }, 10000);
+  }, 9500);
 }
 
 function startGSAPAnimations(){
