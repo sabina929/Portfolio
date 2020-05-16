@@ -2930,6 +2930,19 @@ body {
 }
 @media only screen and (max-width: 360px) {
       main {
+        section#nav {                  
+          p{
+              &:nth-child(2){
+                 transform: translateX(-200px);
+              }
+             
+              span {
+                font-size: 2rem;
+                -webkit-text-stroke: 0.28px  red;
+                 
+              }
+            }
+          }
       section#about{
           .about-wrapper {
             padding: 80px 54px;
@@ -2944,7 +2957,35 @@ body {
               }
       }
     }
-      }     
+      }  
+      section#artworks{
+        .works-wrapper {
+            .work-container{
+              .work-img{
+                width: 60%;
+              }
+
+              div.work-title{
+                width: 40%;
+              }
+
+          }
+    
+        }
+    }   
+    section#websites{              
+      .works-wrapper {
+        .work-container{
+          .work-img{
+            width: 60%;
+          }
+          div.work-title{
+            width: 40%;
+          }
+      }
+
+      }              
+  }
       section#contact{
         padding: 0 30px 0 50px;
           h2#find-me{
