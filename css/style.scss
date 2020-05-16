@@ -2937,7 +2937,7 @@ body {
               }
              
               span {
-                font-size: 1.9rem;
+                font-size: 2rem;
                 -webkit-text-stroke: 0.24px $main3-05;
                  
               }
@@ -2996,6 +2996,14 @@ body {
 }
 @media only screen and (max-width: 340px) {
   main {
+    section#nav {                  
+      p{
+          span {
+            font-size: 1.8rem;
+            -webkit-text-stroke: 0.24px $main3-05; 
+          }
+        }
+      }
     section#artworks{
       .works-wrapper {
         padding: 0 47px;
