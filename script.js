@@ -512,7 +512,7 @@ function loading() {
       menuItem.addEventListener("mouseout", scaleUp)
     })
 
-  }, 10500);
+  }, 10000);
 }
 
 function startGSAPAnimations(){
