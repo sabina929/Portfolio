@@ -2890,9 +2890,9 @@ main section#contact .lines-bl::before {
             transform: translateX(-180px);
   }
   main section#nav p span {
-    font-size: 1.9rem;
+    font-size: 2.1rem;
     -webkit-text-stroke: 0.2px #ddc06e;
-    margin-right: 12px;
+    margin-right: 16px;
   }
   main section#about .about-wrapper {
     padding: 80px 54px;
