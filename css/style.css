@@ -2892,7 +2892,7 @@ main section#contact .lines-bl::before {
   main section#nav p span {
     font-size: 2.1rem;
     -webkit-text-stroke: 0.2px #ddc06e;
-    margin-right: 16px;
+    margin-right: 12px;
   }
   main section#about .about-wrapper {
     padding: 80px 54px;
