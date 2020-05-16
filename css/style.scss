@@ -2998,6 +2998,9 @@ body {
   main {
     section#nav {                  
       p{
+        &:nth-child(2){
+          transform: translateX(-140px);
+       }
           span {
             font-size: 1.8rem;
             -webkit-text-stroke: 0.22px $main3-05; 
