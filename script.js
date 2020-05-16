@@ -473,7 +473,7 @@ function loading() {
       checkMedia510ForNav();
       mediaQuery510.addListener(checkMedia510ForNav);
     }
-    if (mediaQuery510.matches) {
+    if (mediaQuery410.matches) {
       checkMedia410ForNav();
       mediaQuery410.addListener(checkMedia410ForNav);
     }
