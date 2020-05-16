@@ -2933,11 +2933,11 @@ body {
         section#nav {                  
           p{
               &:nth-child(2){
-                 transform: translateX(-190px);
+                 transform: translateX(-180px);
               }
              
               span {
-                font-size: 2rem;
+                font-size: 1.9rem;
                 -webkit-text-stroke: 0.22px $main3-05;
                 
                 &:not(:last-child){margin-right: 10px;}
