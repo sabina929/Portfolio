@@ -2894,7 +2894,7 @@ main section#contact .lines-bl::before {
     -webkit-text-stroke: 0.22px #ddc06e;
   }
   main section#nav p span:not(:last-child) {
-    margin-right: 10px;
+    margin-right: 14px;
   }
   main section#about .about-wrapper {
     padding: 80px 54px;
