@@ -1795,16 +1795,17 @@ main section#contact .lines-bl::before {
     width: 6px;
   }
   main section#websites .works-wrapper .work-container {
+    width: 100%;
     height: 250px;
   }
   main section#websites .works-wrapper .work-container .work-img {
-    width: 76%;
+    width: 50%;
   }
   main section#websites .works-wrapper .work-container .work-img img {
     height: 250px;
   }
   main section#websites .works-wrapper .work-container div.work-title {
-    width: 54%;
+    width: 50%;
   }
   main section#websites .works-wrapper .work-container div.work-title a {
     margin-left: -60px;
