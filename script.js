@@ -815,7 +815,7 @@ function resize() {
     }
 }
 
-window.onresize = resize;
+
 // window.onload = () => {
         //  resize();
 // };
@@ -824,6 +824,7 @@ document.addEventListener("DOMContentLoaded", function() {
     "load",
     function() {
       wrapper.style.visibility = "visible"
+      window.onresize = resize;
       resize();
       setTimeout(() => {
         startloadingTextAnim();

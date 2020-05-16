@@ -561,13 +561,13 @@ body {
                             line-height: 75px;
                             letter-spacing: 1.1px;
                             color: hsl(56, 19%, 32%);
-                            mix-blend-mode: color-burn;
+                            mix-blend-mode: normal;
                             z-index: 2;
                             position: relative;
                             transition: all .4s ease;
                             
                             &:hover {
-                                mix-blend-mode: normal;
+                                mix-blend-mode: color-burn;
                             }
 
                         }
@@ -734,11 +734,11 @@ body {
                             color: hsl(56, 19%, 32%);
                             z-index: 2;
                             position: relative;
-                            mix-blend-mode: color-burn;
+                            mix-blend-mode: normal;
                             transition: all .4s ease;
                             
                             &:hover {
-                                mix-blend-mode: normal;
+                                mix-blend-mode: color-burn;
                             }
 
                         }

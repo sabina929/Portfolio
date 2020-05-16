@@ -761,7 +761,7 @@ main section#artworks .works-wrapper .work-container div.work-title a p {
   line-height: 75px;
   letter-spacing: 1.1px;
   color: #615f42;
-  mix-blend-mode: color-burn;
+  mix-blend-mode: normal;
   z-index: 2;
   position: relative;
   -webkit-transition: all .4s ease;
@@ -769,7 +769,7 @@ main section#artworks .works-wrapper .work-container div.work-title a p {
 }
 
 main section#artworks .works-wrapper .work-container div.work-title a p:hover {
-  mix-blend-mode: normal;
+  mix-blend-mode: color-burn;
 }
 
 main section#artworks .back {
@@ -988,13 +988,13 @@ main section#websites .works-wrapper .work-container div.work-title a p {
   color: #615f42;
   z-index: 2;
   position: relative;
-  mix-blend-mode: color-burn;
+  mix-blend-mode: normal;
   -webkit-transition: all .4s ease;
   transition: all .4s ease;
 }
 
 main section#websites .works-wrapper .work-container div.work-title a p:hover {
-  mix-blend-mode: normal;
+  mix-blend-mode: color-burn;
 }
 
 main section#websites .back {
