@@ -410,7 +410,7 @@ function loading() {
     }
     function checkMedia360ForNav() {
       if (mediaQuery360.matches) {
-        gsap.to(".to-left", {x: -185, duration: 4.2, ease: "linear", yoyo:true, repeat: -1})
+        gsap.to(".to-left", {x: -190, duration: 4.2, ease: "linear", yoyo:true, repeat: -1})
         gsap.to(".to-right", {x: 0, duration: 4.2, ease: "linear", yoyo:true, repeat: -1})      
     }
     }
