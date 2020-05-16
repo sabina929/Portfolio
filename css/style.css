@@ -2927,7 +2927,7 @@ main section#contact .lines-bl::before {
 @media only screen and (max-width: 340px) {
   main section#nav p span {
     font-size: 1.8rem;
-    -webkit-text-stroke: 0.22px #ddc06e;
+    -webkit-text-stroke: 0.22px red;
   }
   main section#artworks .works-wrapper {
     padding: 0 47px;

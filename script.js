@@ -22,7 +22,7 @@ results[0].chars.forEach((char) => {
 gsap
   .timeline({
     defaults: {
-      duration: 5,
+      duration: 6,
       opacity: 1
     }
   })
@@ -512,7 +512,7 @@ function loading() {
       menuItem.addEventListener("mouseout", scaleUp)
     })
 
-  }, 9500);
+  }, 10500);
 }
 
 function startGSAPAnimations(){
