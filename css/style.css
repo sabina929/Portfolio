@@ -2926,8 +2926,8 @@ main section#contact .lines-bl::before {
 
 @media only screen and (max-width: 340px) {
   main section#nav p:nth-child(2) {
-    -webkit-transform: translateX(-140px);
-            transform: translateX(-140px);
+    -webkit-transform: translateX(-150px);
+            transform: translateX(-150px);
   }
   main section#nav p span {
     font-size: 1.8rem;
