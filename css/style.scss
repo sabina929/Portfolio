@@ -2933,12 +2933,12 @@ body {
         section#nav {                  
           p{
               &:nth-child(2){
-                 transform: translateX(-100px);
+                 transform: translateX(-130px);
               }
              
               span {
                 font-size: 1.8rem;
-                -webkit-text-stroke: 0.26px $main3-05;
+                -webkit-text-stroke: 0.24px $main3-05;
                  
               }
             }
