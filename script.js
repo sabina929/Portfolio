@@ -334,6 +334,7 @@ function loading() {
     const mediaQuery710 = window.matchMedia("(max-width: 710px)");
     const mediaQuery610 = window.matchMedia("(max-width: 610px)");
     const mediaQuery510 = window.matchMedia("(max-width: 510px)");
+    const mediaQuery360 = window.matchMedia("(max-width: 360px)");
 
     function checkMediaRestForNav() {
       if (mediaQueryRest.matches) {
@@ -407,6 +408,12 @@ function loading() {
         gsap.to(".to-right", {x: 0, duration: 5, ease: "linear", yoyo:true, repeat: -1})      
     }
     }
+    function checkMedia360ForNav() {
+      if (mediaQuery360.matches) {
+        gsap.to(".to-left", {x: -100, duration: 5, ease: "linear", yoyo:true, repeat: -1})
+        gsap.to(".to-right", {x: 0, duration: 5, ease: "linear", yoyo:true, repeat: -1})      
+    }
+    }
 
     if (mediaQueryRest.matches) {
       checkMediaRestForNav();
@@ -451,6 +458,10 @@ function loading() {
     if (mediaQuery510.matches) {
       checkMedia510ForNav();
       mediaQuery510.addListener(checkMedia510ForNav);
+    }
+    if (mediaQuery360.matches) {
+      checkMedia360ForNav();
+      mediaQuery360.addListener(checkMedia360ForNav);
     }
     
     //MOUSE TRACKER

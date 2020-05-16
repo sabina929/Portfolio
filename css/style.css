@@ -2886,12 +2886,12 @@ main section#contact .lines-bl::before {
 
 @media only screen and (max-width: 360px) {
   main section#nav p:nth-child(2) {
-    -webkit-transform: translateX(-200px);
-            transform: translateX(-200px);
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
   }
   main section#nav p span {
     font-size: 1.8rem;
-    -webkit-text-stroke: 0.28px  red;
+    -webkit-text-stroke: 0.26px #ddc06e;
   }
   main section#about .about-wrapper {
     padding: 80px 54px;
@@ -2924,9 +2924,6 @@ main section#contact .lines-bl::before {
 }
 
 @media only screen and (max-width: 340px) {
-  main section#nav p span {
-    font-size: 1.8rem;
-  }
   main section#artworks .works-wrapper {
     padding: 0 47px;
   }
