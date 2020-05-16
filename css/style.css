@@ -2673,8 +2673,8 @@ main section#contact .lines-bl::before {
     margin-bottom: 12px;
   }
   main section#nav p:nth-child(2) {
-    -webkit-transform: translateX(-170px);
-            transform: translateX(-170px);
+    -webkit-transform: translateX(-160px);
+            transform: translateX(-160px);
   }
   main section#nav p span {
     font-size: 2.1rem;
@@ -2804,8 +2804,8 @@ main section#contact .lines-bl::before {
 
 @media only screen and (max-width: 410px) {
   main section#nav p:nth-child(2) {
-    -webkit-transform: translateX(-180px);
-            transform: translateX(-180px);
+    -webkit-transform: translateX(-185px);
+            transform: translateX(-185px);
   }
   main section#about .about-wrapper {
     padding: 80px 60px;

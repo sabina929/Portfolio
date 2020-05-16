@@ -406,13 +406,13 @@ function loading() {
     }
     function checkMedia510ForNav() {
       if (mediaQuery510.matches) {
-        gsap.to(".to-left", {x: -170, duration: 5, ease: "linear", yoyo:true, repeat: -1})
+        gsap.to(".to-left", {x: -160, duration: 5, ease: "linear", yoyo:true, repeat: -1})
         gsap.to(".to-right", {x: 0, duration: 5, ease: "linear", yoyo:true, repeat: -1})      
     }
     }
     function checkMedia410ForNav() {
       if (mediaQuery410.matches) {
-        gsap.to(".to-left", {x: -180, duration: 5, ease: "linear", yoyo:true, repeat: -1})
+        gsap.to(".to-left", {x: -184, duration: 5, ease: "linear", yoyo:true, repeat: -1})
         gsap.to(".to-right", {x: 0, duration: 5, ease: "linear", yoyo:true, repeat: -1})      
     }
     }
