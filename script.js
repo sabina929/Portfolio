@@ -322,170 +322,6 @@ function loading() {
     main.style.display = "block";
     setTimeout(() => (main.style.opacity = 1), 50); 
     
-    // NAVIGATION
-    const mediaQueryRest = window.matchMedia("(min-width: 1510px)");
-    const mediaQuery1510 = window.matchMedia("(max-width: 1510px)");
-    const mediaQuery1410 = window.matchMedia("(max-width: 1410px)");
-    const mediaQuery1310 = window.matchMedia("(max-width: 1310px)");
-    const mediaQuery1170 = window.matchMedia("(max-width: 1170px)");
-    const mediaQuery1024 = window.matchMedia("(max-width: 1024px)");
-    const mediaQuery910 = window.matchMedia("(max-width: 910px)");
-    const mediaQuery801 = window.matchMedia("(max-width: 801px)");
-    const mediaQuery710 = window.matchMedia("(max-width: 710px)");
-    const mediaQuery610 = window.matchMedia("(max-width: 610px)");
-    const mediaQuery510 = window.matchMedia("(max-width: 510px)");
-    const mediaQuery410 = window.matchMedia("(max-width: 410px)");
-    const mediaQuery360 = window.matchMedia("(max-width: 360px)");
-    const mediaQuery340 = window.matchMedia("(max-width: 340px)");
-
-    function checkMediaRestForNav() {
-      if (mediaQueryRest.matches) {
-          gsap.to(".to-left", {x: -720, duration: 9, ease: "linear", yoyo:true, repeat: -1})
-          gsap.to(".to-right", {x: 0, duration: 9, ease: "linear", yoyo:true, repeat: -1})
-      }
-    }
-    function checkMedia1510ForNav() {
-      if (mediaQuery1510.matches) {
-          gsap.to(".to-left", {x: -440, duration: 5, ease: "linear", yoyo:true, repeat: -1})
-          gsap.to(".to-right", {x: 0, duration: 5, ease: "linear", yoyo:true, repeat: -1})
-          
-      }
-    }
-    function checkMedia1410ForNav() {
-      if (mediaQuery1410.matches) {
-          gsap.to(".to-left", {x: -300, duration: 4, ease: "linear", yoyo:true, repeat: -1})
-          gsap.to(".to-right", {x: 0, duration: 4, ease: "linear", yoyo:true, repeat: -1})
-          
-      }
-    }
-    function checkMedia1310ForNav() {
-      if (mediaQuery1310.matches) {
-          gsap.to(".to-left", {x: -440, duration: 5, ease: "linear", yoyo:true, repeat: -1})
-          gsap.to(".to-right", {x: 0, duration: 5, ease: "linear", yoyo:true, repeat: -1})
-          
-      }
-    }
-    function checkMedia1170ForNav() {
-      if (mediaQuery1170.matches) {
-          gsap.to(".to-left", {x: -310, duration: 5, ease: "linear", yoyo:true, repeat: -1})
-          gsap.to(".to-right", {x: 0, duration: 5, ease: "linear", yoyo:true, repeat: -1})
-          
-      }
-    }
-    function checkMedia1024ForNav() {
-      if (mediaQuery1024.matches) {
-          gsap.to(".to-left", {x: -390, duration: 5, ease: "linear", yoyo:true, repeat: -1})
-          gsap.to(".to-right", {x: 0, duration: 5, ease: "linear", yoyo:true, repeat: -1})
-          
-      }
-    }
-    function checkMedia910ForNav() {
-      if (mediaQuery910.matches) {
-          gsap.to(".to-left", {x: -230, duration: 4, ease: "linear", yoyo:true, repeat: -1})
-          gsap.to(".to-right", {x: 0, duration: 4, ease: "linear", yoyo:true, repeat: -1})
-          
-      }
-    }
-    function checkMedia801ForNav() {
-      if (mediaQuery801.matches) {
-        gsap.to(".to-left", {x: -260, duration: 5, ease: "linear", yoyo:true, repeat: -1})
-        gsap.to(".to-right", {x: 0, duration: 5, ease: "linear", yoyo:true, repeat: -1})      
-    }
-    }
-    function checkMedia710ForNav() {
-      if (mediaQuery710.matches) {
-        gsap.to(".to-left", {x: -180, duration: 5, ease: "linear", yoyo:true, repeat: -1})
-        gsap.to(".to-right", {x: 0, duration: 5, ease: "linear", yoyo:true, repeat: -1})      
-    }
-    }
-    function checkMedia610ForNav() {
-      if (mediaQuery610.matches) {
-        gsap.to(".to-left", {x: -280, duration: 5, ease: "linear", yoyo:true, repeat: -1})
-        gsap.to(".to-right", {x: 0, duration: 5, ease: "linear", yoyo:true, repeat: -1})      
-    }
-    }
-    function checkMedia510ForNav() {
-      if (mediaQuery510.matches) {
-        gsap.to(".to-left", {x: -155, duration: 4, ease: "linear", yoyo:true, repeat: -1})
-        gsap.to(".to-right", {x: 0, duration: 4, ease: "linear", yoyo:true, repeat: -1})      
-    }
-    }
-    function checkMedia410ForNav() {
-      if (mediaQuery410.matches) {
-        gsap.to(".to-left", {x: -190, duration: 4.2, ease: "linear", yoyo:true, repeat: -1})
-        gsap.to(".to-right", {x: 0, duration: 4.2, ease: "linear", yoyo:true, repeat: -1})      
-    }
-    }
-    function checkMedia360ForNav() {
-      if (mediaQuery360.matches) {
-        gsap.to(".to-left", {x: -188, duration: 4.2, ease: "linear", yoyo:true, repeat: -1})
-        gsap.to(".to-right", {x: 0, duration: 4.2, ease: "linear", yoyo:true, repeat: -1})      
-    }
-    }
-    function checkMedia340ForNav() {
-      if (mediaQuery340.matches) {
-        gsap.to(".to-left", {x: -150, duration: 4, ease: "linear", yoyo:true, repeat: -1})
-        gsap.to(".to-right", {x: 0, duration: 4, ease: "linear", yoyo:true, repeat: -1})      
-    }
-    }
-
-    if (mediaQueryRest.matches) {
-      checkMediaRestForNav();
-      mediaQueryRest.addListener(checkMediaRestForNav);
-    }
-    if (mediaQuery1510.matches) {
-      checkMedia1510ForNav();
-      mediaQuery1510.addListener(checkMedia1510ForNav);
-    }
-    if (mediaQuery1410.matches) {
-      checkMedia1410ForNav();
-      mediaQuery1410.addListener(checkMedia1410ForNav);
-    }
-    if (mediaQuery1310.matches) {
-      checkMedia1310ForNav();
-      mediaQuery1310.addListener(checkMedia1310ForNav);
-    }
-    if (mediaQuery1170.matches) {
-      checkMedia1170ForNav();
-      mediaQuery1170.addListener(checkMedia1170ForNav);
-    }
-    if (mediaQuery1024.matches) {
-      checkMedia1024ForNav();
-      mediaQuery1024.addListener(checkMedia1024ForNav);
-    }
-    if (mediaQuery910.matches) {
-      checkMedia910ForNav();
-      mediaQuery910.addListener(checkMedia910ForNav);
-    }
-    if (mediaQuery801.matches) {
-      checkMedia801ForNav();
-      mediaQuery801.addListener(checkMedia801ForNav);
-    }
-    if (mediaQuery710.matches) {
-      checkMedia710ForNav();
-      mediaQuery710.addListener(checkMedia710ForNav);
-    }
-    if (mediaQuery610.matches) {
-      checkMedia610ForNav();
-      mediaQuery610.addListener(checkMedia610ForNav);
-    }
-    if (mediaQuery510.matches) {
-      checkMedia510ForNav();
-      mediaQuery510.addListener(checkMedia510ForNav);
-    }
-    if (mediaQuery410.matches) {
-      checkMedia410ForNav();
-      mediaQuery410.addListener(checkMedia410ForNav);
-    }
-    if (mediaQuery360.matches) {
-      checkMedia360ForNav();
-      mediaQuery360.addListener(checkMedia360ForNav);
-    }
-    if (mediaQuery340.matches) {
-      checkMedia340ForNav();
-      mediaQuery340.addListener(checkMedia340ForNav);
-    }
-    
     //MOUSE TRACKER
     const mediaQuery = window.matchMedia("(min-width: 1100px)");
     function checkMediaForTracker(mediaQuery) {
@@ -847,7 +683,172 @@ function resize() {
     gsap.set(sectionLoadertext, { scale: 1, marginTop: -300 });
     }
 }
+function macthNav(){
+  // NAVIGATION
+  const mediaQueryRest = window.matchMedia("(min-width: 1510px)");
+  const mediaQuery1510 = window.matchMedia("(max-width: 1510px)");
+  const mediaQuery1410 = window.matchMedia("(max-width: 1410px)");
+  const mediaQuery1310 = window.matchMedia("(max-width: 1310px)");
+  const mediaQuery1170 = window.matchMedia("(max-width: 1170px)");
+  const mediaQuery1024 = window.matchMedia("(max-width: 1024px)");
+  const mediaQuery910 = window.matchMedia("(max-width: 910px)");
+  const mediaQuery801 = window.matchMedia("(max-width: 801px)");
+  const mediaQuery710 = window.matchMedia("(max-width: 710px)");
+  const mediaQuery610 = window.matchMedia("(max-width: 610px)");
+  const mediaQuery510 = window.matchMedia("(max-width: 510px)");
+  const mediaQuery410 = window.matchMedia("(max-width: 410px)");
+  const mediaQuery360 = window.matchMedia("(max-width: 360px)");
+  const mediaQuery340 = window.matchMedia("(max-width: 340px)");
 
+  function checkMediaRestForNav() {
+    if (mediaQueryRest.matches) {
+        gsap.to(".to-left", {x: -720, duration: 9, ease: "linear", yoyo:true, repeat: -1})
+        gsap.to(".to-right", {x: 0, duration: 9, ease: "linear", yoyo:true, repeat: -1})
+    }
+  }
+  function checkMedia1510ForNav() {
+    if (mediaQuery1510.matches) {
+        gsap.to(".to-left", {x: -440, duration: 5, ease: "linear", yoyo:true, repeat: -1})
+        gsap.to(".to-right", {x: 0, duration: 5, ease: "linear", yoyo:true, repeat: -1})
+        
+    }
+  }
+  function checkMedia1410ForNav() {
+    if (mediaQuery1410.matches) {
+        gsap.to(".to-left", {x: -300, duration: 4, ease: "linear", yoyo:true, repeat: -1})
+        gsap.to(".to-right", {x: 0, duration: 4, ease: "linear", yoyo:true, repeat: -1})
+        
+    }
+  }
+  function checkMedia1310ForNav() {
+    if (mediaQuery1310.matches) {
+        gsap.to(".to-left", {x: -440, duration: 5, ease: "linear", yoyo:true, repeat: -1})
+        gsap.to(".to-right", {x: 0, duration: 5, ease: "linear", yoyo:true, repeat: -1})
+        
+    }
+  }
+  function checkMedia1170ForNav() {
+    if (mediaQuery1170.matches) {
+        gsap.to(".to-left", {x: -310, duration: 5, ease: "linear", yoyo:true, repeat: -1})
+        gsap.to(".to-right", {x: 0, duration: 5, ease: "linear", yoyo:true, repeat: -1})
+        
+    }
+  }
+  function checkMedia1024ForNav() {
+    if (mediaQuery1024.matches) {
+        gsap.to(".to-left", {x: -390, duration: 5, ease: "linear", yoyo:true, repeat: -1})
+        gsap.to(".to-right", {x: 0, duration: 5, ease: "linear", yoyo:true, repeat: -1})
+        
+    }
+  }
+  function checkMedia910ForNav() {
+    if (mediaQuery910.matches) {
+        gsap.to(".to-left", {x: -230, duration: 4, ease: "linear", yoyo:true, repeat: -1})
+        gsap.to(".to-right", {x: 0, duration: 4, ease: "linear", yoyo:true, repeat: -1})
+        
+    }
+  }
+  function checkMedia801ForNav() {
+    if (mediaQuery801.matches) {
+      gsap.to(".to-left", {x: -260, duration: 5, ease: "linear", yoyo:true, repeat: -1})
+      gsap.to(".to-right", {x: 0, duration: 5, ease: "linear", yoyo:true, repeat: -1})      
+  }
+  }
+  function checkMedia710ForNav() {
+    if (mediaQuery710.matches) {
+      gsap.to(".to-left", {x: -180, duration: 5, ease: "linear", yoyo:true, repeat: -1})
+      gsap.to(".to-right", {x: 0, duration: 5, ease: "linear", yoyo:true, repeat: -1})      
+  }
+  }
+  function checkMedia610ForNav() {
+    if (mediaQuery610.matches) {
+      gsap.to(".to-left", {x: -280, duration: 5, ease: "linear", yoyo:true, repeat: -1})
+      gsap.to(".to-right", {x: 0, duration: 5, ease: "linear", yoyo:true, repeat: -1})      
+  }
+  }
+  function checkMedia510ForNav() {
+    if (mediaQuery510.matches) {
+      gsap.to(".to-left", {x: -155, duration: 4, ease: "linear", yoyo:true, repeat: -1})
+      gsap.to(".to-right", {x: 0, duration: 4, ease: "linear", yoyo:true, repeat: -1})      
+  }
+  }
+  function checkMedia410ForNav() {
+    if (mediaQuery410.matches) {
+      gsap.to(".to-left", {x: -190, duration: 4.2, ease: "linear", yoyo:true, repeat: -1})
+      gsap.to(".to-right", {x: 0, duration: 4.2, ease: "linear", yoyo:true, repeat: -1})      
+  }
+  }
+  function checkMedia360ForNav() {
+    if (mediaQuery360.matches) {
+      gsap.to(".to-left", {x: -188, duration: 4.2, ease: "linear", yoyo:true, repeat: -1})
+      gsap.to(".to-right", {x: 0, duration: 4.2, ease: "linear", yoyo:true, repeat: -1})      
+  }
+  }
+  function checkMedia340ForNav() {
+    if (mediaQuery340.matches) {
+      gsap.to(".to-left", {x: -150, duration: 4, ease: "linear", yoyo:true, repeat: -1})
+      gsap.to(".to-right", {x: 0, duration: 4, ease: "linear", yoyo:true, repeat: -1})      
+  }
+  }
+
+  if (mediaQueryRest.matches) {
+    checkMediaRestForNav();
+    mediaQueryRest.addListener(checkMediaRestForNav);
+  }
+  if (mediaQuery1510.matches) {
+    checkMedia1510ForNav();
+    mediaQuery1510.addListener(checkMedia1510ForNav);
+  }
+  if (mediaQuery1410.matches) {
+    checkMedia1410ForNav();
+    mediaQuery1410.addListener(checkMedia1410ForNav);
+  }
+  if (mediaQuery1310.matches) {
+    checkMedia1310ForNav();
+    mediaQuery1310.addListener(checkMedia1310ForNav);
+  }
+  if (mediaQuery1170.matches) {
+    checkMedia1170ForNav();
+    mediaQuery1170.addListener(checkMedia1170ForNav);
+  }
+  if (mediaQuery1024.matches) {
+    checkMedia1024ForNav();
+    mediaQuery1024.addListener(checkMedia1024ForNav);
+  }
+  if (mediaQuery910.matches) {
+    checkMedia910ForNav();
+    mediaQuery910.addListener(checkMedia910ForNav);
+  }
+  if (mediaQuery801.matches) {
+    checkMedia801ForNav();
+    mediaQuery801.addListener(checkMedia801ForNav);
+  }
+  if (mediaQuery710.matches) {
+    checkMedia710ForNav();
+    mediaQuery710.addListener(checkMedia710ForNav);
+  }
+  if (mediaQuery610.matches) {
+    checkMedia610ForNav();
+    mediaQuery610.addListener(checkMedia610ForNav);
+  }
+  if (mediaQuery510.matches) {
+    checkMedia510ForNav();
+    mediaQuery510.addListener(checkMedia510ForNav);
+  }
+  if (mediaQuery410.matches) {
+    checkMedia410ForNav();
+    mediaQuery410.addListener(checkMedia410ForNav);
+  }
+  if (mediaQuery360.matches) {
+    checkMedia360ForNav();
+    mediaQuery360.addListener(checkMedia360ForNav);
+  }
+  if (mediaQuery340.matches) {
+    checkMedia340ForNav();
+    mediaQuery340.addListener(checkMedia340ForNav);
+  }
+  
+}
 
 // window.onload = () => {
         //  resize();
@@ -880,6 +881,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 window.onresize = resize;
 window.onload = resize;
+macthNav()
     // let theLongDark = select("section#ipsum #the-long-dark >div");
 
     // let tlTheLongDark = gsap.timeline({
