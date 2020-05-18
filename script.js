@@ -407,32 +407,32 @@ function loading() {
     }
     function checkMedia564ForNav() {
       if (mediaQuery564.matches) {
-        gsap.to(".to-left", {x: -160, duration: 4, ease: "linear", yoyo:true, repeat: -1})
-        gsap.to(".to-right", {x: 0, duration: 4, ease: "linear", yoyo:true, repeat: -1})      
+        gsap.to(".to-left", {x: -160, duration: 3.8, ease: "linear", yoyo:true, repeat: -1})
+        gsap.to(".to-right", {x: 0, duration: 3.8, ease: "linear", yoyo:true, repeat: -1})      
     }
     }
     function checkMedia510ForNav() {
       if (mediaQuery510.matches) {
-        gsap.to(".to-left", {x: -155, duration: 4, ease: "linear", yoyo:true, repeat: -1})
-        gsap.to(".to-right", {x: 0, duration: 4, ease: "linear", yoyo:true, repeat: -1})      
+        gsap.to(".to-left", {x: -155, duration: 3.8, ease: "linear", yoyo:true, repeat: -1})
+        gsap.to(".to-right", {x: 0, duration: 3.8, ease: "linear", yoyo:true, repeat: -1})      
     }
     }
     function checkMedia410ForNav() {
       if (mediaQuery410.matches) {
-        gsap.to(".to-left", {x: -190, duration: 4.2, ease: "linear", yoyo:true, repeat: -1})
-        gsap.to(".to-right", {x: 0, duration: 4.2, ease: "linear", yoyo:true, repeat: -1})      
+        gsap.to(".to-left", {x: -190, duration: 4, ease: "linear", yoyo:true, repeat: -1})
+        gsap.to(".to-right", {x: 0, duration: 4, ease: "linear", yoyo:true, repeat: -1})      
     }
     }
     function checkMedia360ForNav() {
       if (mediaQuery360.matches) {
-        gsap.to(".to-left", {x: -188, duration: 4.2, ease: "linear", yoyo:true, repeat: -1})
-        gsap.to(".to-right", {x: 0, duration: 4.2, ease: "linear", yoyo:true, repeat: -1})      
+        gsap.to(".to-left", {x: -188, duration: 4, ease: "linear", yoyo:true, repeat: -1})
+        gsap.to(".to-right", {x: 0, duration: 4, ease: "linear", yoyo:true, repeat: -1})      
     }
     }
     function checkMedia340ForNav() {
       if (mediaQuery340.matches) {
-        gsap.to(".to-left", {x: -150, duration: 4, ease: "linear", yoyo:true, repeat: -1})
-        gsap.to(".to-right", {x: 0, duration: 4, ease: "linear", yoyo:true, repeat: -1})      
+        gsap.to(".to-left", {x: -150, duration: 3.8, ease: "linear", yoyo:true, repeat: -1})
+        gsap.to(".to-right", {x: 0, duration: 3.8, ease: "linear", yoyo:true, repeat: -1})      
     }
     }
 
