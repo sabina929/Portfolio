@@ -965,6 +965,9 @@ function resize() {
 	else {
     gsap.set(sectionLoader, { scale: 1 });
     gsap.set(sectionLoadertext, { scale: 1, marginTop: -300 });
+
+    gsap.to(".to-left", {x: -720, duration: 9, ease: "linear", yoyo:true, repeat: -1})
+    gsap.to(".to-right", {x: 0, duration: 9, ease: "linear", yoyo:true, repeat: -1})
     }
 }
 
