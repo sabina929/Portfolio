@@ -2669,17 +2669,13 @@ main section#contact .lines-bl::before {
 }
 
 @media only screen and (max-width: 564px) {
-  main section#nav p:nth-child(1) {
-    margin-bottom: 12px;
-  }
   main section#nav p:nth-child(2) {
-    -webkit-transform: translateX(-155px);
-            transform: translateX(-155px);
+    -webkit-transform: translateX(-200px);
+            transform: translateX(-200px);
   }
   main section#nav p span {
-    font-size: 2.1rem;
+    font-size: 2.8rem;
     letter-spacing: .5px;
-    -webkit-text-stroke: 0.28px #ddc06e;
     margin-right: 20px;
   }
 }

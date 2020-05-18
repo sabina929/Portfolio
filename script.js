@@ -333,6 +333,7 @@ function loading() {
     const mediaQuery801 = window.matchMedia("(max-width: 801px)");
     const mediaQuery710 = window.matchMedia("(max-width: 710px)");
     const mediaQuery610 = window.matchMedia("(max-width: 610px)");
+    const mediaQuery564 = window.matchMedia("(max-width: 564px)");
     const mediaQuery510 = window.matchMedia("(max-width: 510px)");
     const mediaQuery410 = window.matchMedia("(max-width: 410px)");
     const mediaQuery360 = window.matchMedia("(max-width: 360px)");
@@ -404,6 +405,12 @@ function loading() {
         gsap.to(".to-right", {x: 0, duration: 4.4, ease: "linear", yoyo:true, repeat: -1})      
     }
     }
+    function checkMedia564ForNav() {
+      if (mediaQuery564.matches) {
+        gsap.to(".to-left", {x: -200, duration: 4, ease: "linear", yoyo:true, repeat: -1})
+        gsap.to(".to-right", {x: 0, duration: 4, ease: "linear", yoyo:true, repeat: -1})      
+    }
+    }
     function checkMedia510ForNav() {
       if (mediaQuery510.matches) {
         gsap.to(".to-left", {x: -155, duration: 4, ease: "linear", yoyo:true, repeat: -1})
@@ -468,6 +475,10 @@ function loading() {
     if (mediaQuery610.matches) {
       checkMedia610ForNav();
       mediaQuery610.addListener(checkMedia610ForNav);
+    }
+    if (mediaQuery564.matches) {
+      checkMedia564ForNav();
+      mediaQuery564.addListener(checkMedia564ForNav);
     }
     if (mediaQuery510.matches) {
       checkMedia510ForNav();
