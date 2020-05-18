@@ -367,8 +367,8 @@ function loading() {
     }
     function checkMedia1170ForNav() {
       if (mediaQuery1170.matches) {
-          gsap.to(".to-left", {x: -310, duration: 5, ease: "linear", yoyo:true, repeat: -1})
-          gsap.to(".to-right", {x: 0, duration: 5, ease: "linear", yoyo:true, repeat: -1})
+          gsap.to(".to-left", {x: -310, duration: 4, ease: "linear", yoyo:true, repeat: -1})
+          gsap.to(".to-right", {x: 0, duration: 4, ease: "linear", yoyo:true, repeat: -1})
           
       }
     }
@@ -381,27 +381,27 @@ function loading() {
     }
     function checkMedia910ForNav() {
       if (mediaQuery910.matches) {
-          gsap.to(".to-left", {x: -230, duration: 4, ease: "linear", yoyo:true, repeat: -1})
-          gsap.to(".to-right", {x: 0, duration: 4, ease: "linear", yoyo:true, repeat: -1})
+          gsap.to(".to-left", {x: -230, duration: 4.2, ease: "linear", yoyo:true, repeat: -1})
+          gsap.to(".to-right", {x: 0, duration: 4.2, ease: "linear", yoyo:true, repeat: -1})
           
       }
     }
     function checkMedia801ForNav() {
       if (mediaQuery801.matches) {
-        gsap.to(".to-left", {x: -260, duration: 5, ease: "linear", yoyo:true, repeat: -1})
-        gsap.to(".to-right", {x: 0, duration: 5, ease: "linear", yoyo:true, repeat: -1})      
+        gsap.to(".to-left", {x: -260, duration: 4.4, ease: "linear", yoyo:true, repeat: -1})
+        gsap.to(".to-right", {x: 0, duration: 4.4, ease: "linear", yoyo:true, repeat: -1})      
     }
     }
     function checkMedia710ForNav() {
       if (mediaQuery710.matches) {
-        gsap.to(".to-left", {x: -180, duration: 5, ease: "linear", yoyo:true, repeat: -1})
-        gsap.to(".to-right", {x: 0, duration: 5, ease: "linear", yoyo:true, repeat: -1})      
+        gsap.to(".to-left", {x: -180, duration: 4.2, ease: "linear", yoyo:true, repeat: -1})
+        gsap.to(".to-right", {x: 0, duration: 4.2, ease: "linear", yoyo:true, repeat: -1})      
     }
     }
     function checkMedia610ForNav() {
       if (mediaQuery610.matches) {
-        gsap.to(".to-left", {x: -280, duration: 5, ease: "linear", yoyo:true, repeat: -1})
-        gsap.to(".to-right", {x: 0, duration: 5, ease: "linear", yoyo:true, repeat: -1})      
+        gsap.to(".to-left", {x: -280, duration: 4.4, ease: "linear", yoyo:true, repeat: -1})
+        gsap.to(".to-right", {x: 0, duration: 4.4, ease: "linear", yoyo:true, repeat: -1})      
     }
     }
     function checkMedia510ForNav() {
