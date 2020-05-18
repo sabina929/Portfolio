@@ -852,12 +852,14 @@ function resize() {
 // window.onload = () => {
         //  resize();
 // };
+
+
 document.addEventListener("DOMContentLoaded", function() {
   window.addEventListener(
     "load",
     function() {
       wrapper.style.visibility = "visible"
-      window.onresize = resize;
+      
       resize();
       setTimeout(() => {
         startloadingTextAnim();
@@ -876,7 +878,7 @@ document.addEventListener("DOMContentLoaded", function() {
     false
   );
 });
-
+window.onresize = resize;
     // let theLongDark = select("section#ipsum #the-long-dark >div");
 
     // let tlTheLongDark = gsap.timeline({
