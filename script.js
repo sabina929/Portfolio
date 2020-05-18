@@ -618,7 +618,7 @@ function startGSAPAnimations(){
 const sectionLoader = document.querySelector('.loader')
 const sectionLoadertext = document.querySelector('h1')
 function resize() {
-  
+  matchNav()
 	let vh = window.innerWidth;
   let sh = sectionLoader.offsetWidth;
   // console.log(sh)
@@ -683,22 +683,23 @@ function resize() {
     gsap.set(sectionLoadertext, { scale: 1, marginTop: -300 });
     }
 }
-function macthNav(){
-  // NAVIGATION
-  const mediaQueryRest = window.matchMedia("(min-width: 1510px)");
-  const mediaQuery1510 = window.matchMedia("(max-width: 1510px)");
-  const mediaQuery1410 = window.matchMedia("(max-width: 1410px)");
-  const mediaQuery1310 = window.matchMedia("(max-width: 1310px)");
-  const mediaQuery1170 = window.matchMedia("(max-width: 1170px)");
-  const mediaQuery1024 = window.matchMedia("(max-width: 1024px)");
-  const mediaQuery910 = window.matchMedia("(max-width: 910px)");
-  const mediaQuery801 = window.matchMedia("(max-width: 801px)");
-  const mediaQuery710 = window.matchMedia("(max-width: 710px)");
-  const mediaQuery610 = window.matchMedia("(max-width: 610px)");
-  const mediaQuery510 = window.matchMedia("(max-width: 510px)");
-  const mediaQuery410 = window.matchMedia("(max-width: 410px)");
-  const mediaQuery360 = window.matchMedia("(max-width: 360px)");
-  const mediaQuery340 = window.matchMedia("(max-width: 340px)");
+// NAVIGATION
+const mediaQueryRest = window.matchMedia("(min-width: 1510px)");
+const mediaQuery1510 = window.matchMedia("(max-width: 1510px)");
+const mediaQuery1410 = window.matchMedia("(max-width: 1410px)");
+const mediaQuery1310 = window.matchMedia("(max-width: 1310px)");
+const mediaQuery1170 = window.matchMedia("(max-width: 1170px)");
+const mediaQuery1024 = window.matchMedia("(max-width: 1024px)");
+const mediaQuery910 = window.matchMedia("(max-width: 910px)");
+const mediaQuery801 = window.matchMedia("(max-width: 801px)");
+const mediaQuery710 = window.matchMedia("(max-width: 710px)");
+const mediaQuery610 = window.matchMedia("(max-width: 610px)");
+const mediaQuery510 = window.matchMedia("(max-width: 510px)");
+const mediaQuery410 = window.matchMedia("(max-width: 410px)");
+const mediaQuery360 = window.matchMedia("(max-width: 360px)");
+const mediaQuery340 = window.matchMedia("(max-width: 340px)");
+function matchNav(){
+  
 
   function checkMediaRestForNav() {
     if (mediaQueryRest.matches) {
@@ -879,9 +880,9 @@ document.addEventListener("DOMContentLoaded", function() {
     false
   );
 });
-window.onresize = resize;
 window.onload = resize;
-macthNav()
+window.onresize = resize;
+
     // let theLongDark = select("section#ipsum #the-long-dark >div");
 
     // let tlTheLongDark = gsap.timeline({
