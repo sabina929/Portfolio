@@ -9,15 +9,11 @@ function startloadingTextAnim(){
 let target = document.querySelector(".wrapper h1")
 
 let results = Splitting({ target: target, by: "chars" });
-// console.log(results[0].chars);
 
 results[0].chars.forEach((char) => {
-  // console.log(char);
   char.style.marginRight = "5px";
   char.style.opacity = 1;
 });
-
-// console.log(results[0].words[0]);
 
 gsap
   .timeline({
@@ -783,10 +779,6 @@ function startGSAPAnimations(){
         navSection.style.display = "flex";
       },50)
     });
-
-    // contactLeft.addEventListener("click", () => tlContact.play());
-    // contactRight.addEventListener("click", () => tlContact.play());
-    // contactBack.addEventListener("click", () => tlContact.reverse());
 
 }
 
