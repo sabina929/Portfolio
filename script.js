@@ -844,12 +844,6 @@ function resize() {
     }
 }
 
-
-// window.onload = () => {
-        //  resize();
-// };
-
-
 document.addEventListener("DOMContentLoaded", function() {
   window.addEventListener(
     "load",

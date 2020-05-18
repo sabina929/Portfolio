@@ -2658,6 +2658,30 @@ body {
           }
     }
 }
+@media only screen and (max-width: 564px) {
+  main {
+    section#nav {                  
+      p{
+            
+          &:nth-child(1){
+            margin-bottom: 12px;
+          }
+          &:nth-child(2){
+             transform: translateX(-155px);
+          }
+         
+          span {
+            font-size: 2.1rem;
+            letter-spacing: .5px;
+            -webkit-text-stroke: 0.28px $main3-05;
+            margin-right: 20px;
+             
+          }
+        }
+      }
+    }
+}
+
 @media only screen and (max-width: 510px) {
       main {
         section#nav {                  
