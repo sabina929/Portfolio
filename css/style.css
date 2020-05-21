@@ -1573,6 +1573,7 @@ main section#contact .lines-bl::before {
     justify-items: center;
     height: auto;
     overflow-y: scroll;
+    scrollbar-width: thin;
     scrollbar-color: rgba(0, 0, 0, 0.24) #c5c3aa;
   }
   main section#about .about-wrapper::-webkit-scrollbar {
@@ -2199,9 +2200,6 @@ main section#contact .lines-bl::before {
     letter-spacing: 2px;
     -webkit-text-stroke: 0.3px #ddc06e;
   }
-  main section#about .about-wrapper {
-    scrollbar-width: thin;
-  }
   main section#about .about-wrapper::-webkit-scrollbar {
     width: 6px;
   }
@@ -2247,7 +2245,6 @@ main section#contact .lines-bl::before {
   }
   main section#artworks .works-wrapper {
     padding: 0 123px;
-    scrollbar-width: thin;
   }
   main section#artworks .works-wrapper::-webkit-scrollbar {
     width: 6px;
@@ -2307,7 +2304,6 @@ main section#contact .lines-bl::before {
   }
   main section#websites .works-wrapper {
     padding: 0 123px;
-    scrollbar-width: thin;
   }
   main section#websites .works-wrapper::-webkit-scrollbar {
     width: 6px;

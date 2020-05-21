@@ -1390,6 +1390,7 @@ body {
                 justify-items: center;
                 height: auto;
                 overflow-y: scroll;
+                scrollbar-width: thin;
                 scrollbar-color: rgba(0, 0, 0, 0.24) hsl(56, 19%, 72%);
               
   
@@ -2115,7 +2116,6 @@ body {
   
           section#about{
               .about-wrapper {
-                scrollbar-width: thin;
                   &::-webkit-scrollbar {
                     width: 6px;
                   }
@@ -2169,7 +2169,6 @@ body {
           section#artworks{              
               .works-wrapper {
                   padding: 0 123px;  
-                  scrollbar-width: thin;
                   &::-webkit-scrollbar {
                     width: 6px;
                   }
@@ -2237,7 +2236,6 @@ body {
           section#websites{              
               .works-wrapper {
                 padding: 0 123px;
-                scrollbar-width: thin;
                   &::-webkit-scrollbar {
                     width: 6px;
                   }
