@@ -1573,7 +1573,6 @@ main section#contact .lines-bl::before {
     justify-items: center;
     height: auto;
     overflow-y: scroll;
-    scrollbar-width: thin;
     scrollbar-color: rgba(0, 0, 0, 0.24) #c5c3aa;
   }
   main section#about .about-wrapper::-webkit-scrollbar {
@@ -1699,6 +1698,7 @@ main section#contact .lines-bl::before {
     -ms-grid-rows: 330px 1fr;
         grid-template-rows: 330px 1fr;
     grid-row-gap: 40px;
+    scrollbar-width: thin;
   }
   main section#about .about-wrapper .about-img {
     width: 60%;
@@ -1728,6 +1728,7 @@ main section#contact .lines-bl::before {
   }
   main section#artworks .works-wrapper {
     padding: 0 183px;
+    scrollbar-width: thin;
   }
   main section#artworks .works-wrapper::-webkit-scrollbar {
     width: 8px;
@@ -1788,6 +1789,7 @@ main section#contact .lines-bl::before {
   }
   main section#websites .works-wrapper {
     padding: 0 183px;
+    scrollbar-width: thin;
   }
   main section#websites .works-wrapper::-webkit-scrollbar {
     width: 8px;

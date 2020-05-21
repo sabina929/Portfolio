@@ -1390,11 +1390,8 @@ body {
                 justify-items: center;
                 height: auto;
                 overflow-y: scroll;
-                scrollbar-width: thin;
                 scrollbar-color: rgba(0, 0, 0, 0.24) hsl(56, 19%, 72%);
               
-  
-
                 &::-webkit-scrollbar {
                   width: 8px;
                   opacity: 1;
@@ -1530,7 +1527,8 @@ body {
     section#about{
         .about-wrapper {  
           grid-template-rows: 330px 1fr;    
-          grid-row-gap: 40px;    
+          grid-row-gap: 40px;
+          scrollbar-width: thin;    
             .about-img{
               width: 60%;
               height: 320px;
@@ -1565,6 +1563,8 @@ body {
     section#artworks{        
         .works-wrapper {
             padding: 0 183px;
+            scrollbar-width: thin;
+
             &::-webkit-scrollbar {
               width: 8px;
             }
@@ -1633,6 +1633,7 @@ body {
     section#websites{        
         .works-wrapper {
           padding: 0 183px;
+          scrollbar-width: thin;
 
           &::-webkit-scrollbar {
           width: 8px;
