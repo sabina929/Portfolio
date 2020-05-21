@@ -1428,6 +1428,7 @@ body {
                 height: auto;
                 margin-left: 0px;
                 margin-bottom: 0px;
+                padding-bottom: 0px;
                   h2{
                     font-size: 2.8rem;
                     line-height: 50px;
@@ -1536,7 +1537,8 @@ body {
 
         .text{
           width: 68%;
-          margin-bottom: 110px;
+          // margin-bottom: 110px;
+          padding-bottom: 110px;
             h2{
               width: 100%;
               font-size: 2.1rem;
@@ -2134,7 +2136,8 @@ body {
           }
   
               .text{
-                  margin-bottom: 80px;                               
+                  // margin-bottom: 80px;                               
+                  padding-bottom: 80px;                               
                   p{
                     font-size: .8rem;
                     letter-spacing: 0.5px;
@@ -2449,7 +2452,8 @@ body {
   
               .text{
                   width: 100%;
-                  margin-bottom: 75px;
+                  // margin-bottom: 75px;
+                  padding-bottom: 75px;
                   h2{
                     width: 100%;
                     font-size: 2.1rem;
@@ -2883,10 +2887,8 @@ body {
             padding: 80px 60px;
             grid-row-gap:32;
           .text{
-              width: 100%;
               height: auto;
               margin-left: 0px;
-              margin-bottom: 75px;
               h2{
                 font-size: 1.8rem;
                 line-height: 32px;

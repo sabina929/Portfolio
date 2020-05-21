@@ -1612,6 +1612,7 @@ main section#contact .lines-bl::before {
     height: auto;
     margin-left: 0px;
     margin-bottom: 0px;
+    padding-bottom: 0px;
   }
   main section#about .about-wrapper .text h2 {
     font-size: 2.8rem;
@@ -1706,7 +1707,7 @@ main section#contact .lines-bl::before {
   }
   main section#about .about-wrapper .text {
     width: 68%;
-    margin-bottom: 110px;
+    padding-bottom: 110px;
   }
   main section#about .about-wrapper .text h2 {
     width: 100%;
@@ -2216,7 +2217,7 @@ main section#contact .lines-bl::before {
     height: 320px;
   }
   main section#about .about-wrapper .text {
-    margin-bottom: 80px;
+    padding-bottom: 80px;
   }
   main section#about .about-wrapper .text p {
     font-size: .8rem;
@@ -2490,7 +2491,7 @@ main section#contact .lines-bl::before {
   }
   main section#about .about-wrapper .text {
     width: 100%;
-    margin-bottom: 75px;
+    padding-bottom: 75px;
   }
   main section#about .about-wrapper .text h2 {
     width: 100%;
@@ -2851,10 +2852,8 @@ main section#contact .lines-bl::before {
     grid-row-gap: 32;
   }
   main section#about .about-wrapper .text {
-    width: 100%;
     height: auto;
     margin-left: 0px;
-    margin-bottom: 75px;
   }
   main section#about .about-wrapper .text h2 {
     font-size: 1.8rem;
