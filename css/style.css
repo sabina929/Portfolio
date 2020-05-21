@@ -863,6 +863,7 @@ main section#websites .works-wrapper {
   width: 100%;
   height: auto;
   overflow-y: scroll;
+  scrollbar-color: rgba(0, 0, 0, 0.24) #c5c3aa;
 }
 
 main section#websites .works-wrapper::-webkit-scrollbar {

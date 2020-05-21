@@ -652,6 +652,7 @@ body {
             width: 100%;
             height: auto;
             overflow-y: scroll;
+            scrollbar-color: rgba(0, 0, 0, 0.24) hsl(56, 19%, 72%);
 
             &::-webkit-scrollbar {
                 width: 10px;
