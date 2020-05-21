@@ -484,6 +484,7 @@ body {
             width: 100%;
             height: auto;
             overflow-y: scroll;
+            scrollbar-color: rgba(0, 0, 0, 0.24) hsl(56, 19%, 72%);
 
             &::-webkit-scrollbar {
                 width: 10px;
@@ -1389,6 +1390,8 @@ body {
                 justify-items: center;
                 height: auto;
                 overflow-y: scroll;
+                scrollbar-color: rgba(0, 0, 0, 0.24) hsl(56, 19%, 72%);
+              
   
 
                 &::-webkit-scrollbar {
@@ -2112,6 +2115,10 @@ body {
   
           section#about{
               .about-wrapper {
+                scrollbar-width: thin;
+                  &::-webkit-scrollbar {
+                    width: 6px;
+                  }
                   &::-webkit-scrollbar-track {
                     width: 3px;
                   }
@@ -2161,7 +2168,18 @@ body {
   
           section#artworks{              
               .works-wrapper {
-                  padding: 0 123px;                 
+                  padding: 0 123px;  
+                  scrollbar-width: thin;
+                  &::-webkit-scrollbar {
+                    width: 6px;
+                  }
+                  &::-webkit-scrollbar-track {
+                    width: 3px;
+                  }
+                  
+                  &::-webkit-scrollbar-thumb {
+                    width: 3px;
+                  }               
                 
                   .work-container{
                     margin-top: 75px;
@@ -2219,6 +2237,17 @@ body {
           section#websites{              
               .works-wrapper {
                 padding: 0 123px;
+                scrollbar-width: thin;
+                  &::-webkit-scrollbar {
+                    width: 6px;
+                  }
+                  &::-webkit-scrollbar-track {
+                    width: 3px;
+                  }
+                  
+                  &::-webkit-scrollbar-thumb {
+                    width: 3px;
+                  }
                   
                 .work-container{
                   margin-top: 75px;
@@ -2413,6 +2442,7 @@ body {
                   &::-webkit-scrollbar-thumb {
                     width: 2px;
                   }
+                  
               .about-img{
                 width: 90%;
                 height: 300px;
